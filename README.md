@@ -10,6 +10,8 @@
 | メールアドレス | syhwang.web@gmail.com                   |
 | 学歴           | 大学卒                                  |
 | 英語力         | TOEIC 845点 および アメリカ留学経験あり |
+| ポートフォリオ   | [Goaal - タスク管理および共同作業ツール[Go]](https://github.com/SeungyeonHwang/tool-goaal) |
+|    | [LOEN - 韓国コスメ専門ECサイト[Ruby on Rails]](https://github.com/SeungyeonHwang/ec-loen) |
 
 ## #1 バックエンドエンジニア
 <u>I社【2021年03月 ～ 現在に至る】</u>
@@ -38,7 +40,7 @@
       - 製品の特性上、各クラウドサービスのログ取得API以外の処理が重複し、コードの重複が発生、開発工数が増加
       - 大量のログを扱うため、DB処理がボトルネックとなり、パフォーマンスが大幅に低下
     - 【打ち手・使用した技術】  
-      -  ログ取得以外の部分（ユーザー認証情報、バリデーションなど）をMaven Repositoryに共通ライブラリとしてアップロードし、開発工数削減とコード重複解消を実
+      -  ログ取得以外の部分（ユーザー認証情報、バリデーションなど）をMaven Repositoryに共通ライブラリとしてアップロードし、開発工数削減とコード重複解消
       -  Visual VMなどのプロファイリングツールを使用して、ボトルネックになる処理を特定。非効率的なデータ格納をバッチ単位で処理するように変更し、無意味なクエリの乱立や繰り返しをラムダ式などでバッチ単位に分けて処理するようにリファクタリング
 
 ---
@@ -55,7 +57,10 @@
 
 **【開発環境】**
 
-    マルチスレッドプログラミング | 低レイヤファイルI/O技術 | 文字列探索、加工技術 | JUnitテスト、CI(継続的インテグレーション) | REST-API、JSON | OAuth | TCP/UDP | TLS、HTTP(S) | Java | Kotlin | Linux | Slack | RedMine | Git
+    マルチスレッドプログラミング | 低レイヤファイルI/O技術 | 文字列探索、加工技術 | JUnitテスト、CI(継続的インテグレーション) | REST-API、JSON | OAuth | TCP/UDP | TLS、HTTP(S) | Jenkins
+    Java | Kotlin 
+    Linux | Windows | VM
+    Slack | RedMine | Git
 
 **【メンバー数】**
 
