@@ -1,4 +1,4 @@
-# U社 - BtoB営業支援SaaSプロダクト開発
+# 🏢 U社 - BtoB営業支援SaaSプロダクト開発
 
 ---
 
@@ -21,11 +21,11 @@ Kotlin • Spring Boot • PostgreSQL • Redis • Elasticsearch • Azure • 
 
 ---
 
-## 主な実装と成果
+## 🚀 主な実装と成果
 
-### 1. バッチ処理の最適化
+### 1️⃣ バッチ処理の最適化
 
-#### 大容量バッチ処理の最適化
+#### 📊 大容量バッチ処理の最適化
 
 **課題**  
 大容量データのバッチ処理によるDBへの負荷集中
@@ -38,9 +38,9 @@ Kotlin • Spring Boot • PostgreSQL • Redis • Elasticsearch • Azure • 
 **結果**  
 **DBストレージ使用率 70% → 30% に削減（57%改善）**
 
-### 2. 検索APIのパフォーマンス改善
+### 2️⃣ 検索APIのパフォーマンス改善
 
-#### 大規模データ検索の高速化
+#### 🔍 大規模データ検索の高速化
 
 **課題**  
 大企業ユーザーの大量データで検索が遅延
@@ -55,13 +55,13 @@ Kotlin • Spring Boot • PostgreSQL • Redis • Elasticsearch • Azure • 
 
 ---
 
-## 技術的取り組み
+## 🔧 技術的取り組み
 
 <table>
 <tr>
 <td valign="top" width="50%">
 
-### データ処理最適化
+### 📊 データ処理最適化
 - **Redis SDIFF**: 効率的な差分処理実装
 - **バッチ処理**: 負荷分散とエラーハンドリング
 - **メモリ管理**: 大容量データ処理の最適化
@@ -69,7 +69,7 @@ Kotlin • Spring Boot • PostgreSQL • Redis • Elasticsearch • Azure • 
 </td>
 <td valign="top" width="50%">
 
-### 検索システム構築
+### 🔍 検索システム構築
 - **Elasticsearch**: 高速全文検索システム
 - **データ同期**: リアルタイム同期パイプライン
 - **GraphQL API**: 型安全なAPI設計・実装
@@ -80,11 +80,11 @@ Kotlin • Spring Boot • PostgreSQL • Redis • Elasticsearch • Azure • 
 
 ---
 
-## 主な成果
+## 📊 主な成果
 
 ```diff
-+ 検索APIレスポンス時間80%改善（5秒→1秒以下）
-+ データベースストレージ使用率57%削減（70%→30%）
-+ Redis SDIFF活用による効率的な差分処理システム構築
-+ Elasticsearch導入による高速全文検索システム実現
++ 🔍 検索APIレスポンス時間80%改善（5秒→1秒以下）
++ 📊 データベースストレージ使用率57%削減（70%→30%）
++ 🔴 Redis SDIFF活用による効率的な差分処理システム構築
++ 🔍 Elasticsearch導入による高速全文検索システム実現
 ```
