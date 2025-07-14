@@ -192,23 +192,19 @@ _**作成日**: 2025年07月14日_
 
 ---
 
-### 📥 ダウンロードリンク
-- **マークダウン**: [resume-complete.md](resume-complete.md)
-- **HTML**: [Releases](../../releases) タブで確認
+<div align="center">
 
-<br>
+### 📥 ダウンロードリンク
+**MD**: [resume-complete.md](output/resume-complete.md) | **HTML**: [resume-complete.html](output/resume-complete.html) | **PDF**: [resume-complete.pdf](output/resume-complete.pdf)
 
 ### 📬 連絡先
-
 **メール**: syhwang.web@gmail.com
 
-<br>
 <br>
 
 *最後までご覧いただき、ありがとうございました。*
 
-<br>
-<br>
+</div>
 ---
 
 # S社 詳細情報

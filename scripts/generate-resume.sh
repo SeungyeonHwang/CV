@@ -79,12 +79,13 @@ if command -v pandoc &> /dev/null; then
   <title>$title$</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
-      line-height: 1.8;
+      font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", "Noto Sans CJK JP", sans-serif;
+      font-size: 11pt;
+      line-height: 1.6;
       color: #333;
-      max-width: 900px;
+      max-width: 210mm;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 15mm 20mm;
       background: #fff;
     }
     div[data-align="center"] {
@@ -102,15 +103,30 @@ if command -v pandoc &> /dev/null; then
     h3#連絡先 + p + p {
       text-align: center;
     }
+    h3 {
+      font-size: 14pt;
+    }
+    h4 {
+      font-size: 12pt;
+    }
+    p {
+      font-size: 11pt;
+      margin: 0.8em 0;
+    }
     h1, h2, h3, h4 {
       color: #2c3e50;
-      margin-top: 1.5em;
+      margin-top: 1.2em;
+      margin-bottom: 0.8em;
+      font-weight: 600;
     }
     h1 {
+      font-size: 20pt;
       border-bottom: 3px solid #3498db;
       padding-bottom: 0.5em;
+      margin-top: 0;
     }
     h2 {
+      font-size: 16pt;
       border-left: 4px solid #3498db;
       padding-left: 0.5em;
     }
@@ -121,8 +137,9 @@ if command -v pandoc &> /dev/null; then
     }
     th, td {
       border: 1px solid #ddd;
-      padding: 8px;
+      padding: 6px 8px;
       text-align: left;
+      font-size: 10pt;
     }
     th {
       background-color: #f8f9fa;
@@ -146,7 +163,8 @@ if command -v pandoc &> /dev/null; then
     }
     @media print {
       body {
-        font-size: 12pt;
+        font-size: 10pt;
+        padding: 10mm 15mm;
       }
       h1 {
         page-break-after: avoid;
