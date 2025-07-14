@@ -194,21 +194,16 @@
 
 ---
 
-### 📥 ダウンロードリンク
-- **マークダウン**: [resume-complete.md](output/resume-complete.md)
-- **HTML**: [resume-complete.html](output/resume-complete.html)
-- **PDF**: [resume-complete.pdf](output/resume-complete.pdf)
+<div align="center">
 
-<br>
+### 📥 ダウンロードリンク
+**MD**: [resume-complete.md](output/resume-complete.md) | **HTML**: [resume-complete.html](output/resume-complete.html) | **PDF**: [resume-complete.pdf](output/resume-complete.pdf)
 
 ### 📬 連絡先
-
 **メール**: syhwang.web@gmail.com
 
-<br>
 <br>
 
 *最後までご覧いただき、ありがとうございました。*
 
-<br>
-<br>
+</div>
