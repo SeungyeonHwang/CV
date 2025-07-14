@@ -3,9 +3,17 @@
 # 履歴書生成スクリプト
 echo "📄 履歴書生成開始..."
 
+# スクリプトのディレクトリを取得
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+PROJECT_ROOT="$( cd "$SCRIPT_DIR/.." && pwd )"
+
+# プロジェクトルートに移動
+cd "$PROJECT_ROOT"
+
 # 1. 基本情報設定
 OUTPUT_DIR="./output"
 COMBINED_FILE="$OUTPUT_DIR/resume-complete.md"
+HTML_FILE="$OUTPUT_DIR/resume-complete.html"
 PDF_FILE="$OUTPUT_DIR/resume-complete.pdf"
 
 # 2. 出力ディレクトリ生成
@@ -18,7 +26,7 @@ echo "🔄 マークダウンファイル統合中..."
 # 最初の行 # 職務経歴書 の後に生成日を追加
 head -1 README.md > "$COMBINED_FILE"
 echo "" >> "$COMBINED_FILE"
-echo "_**生成日**: $(date '+%Y年%m月%d日')_" >> "$COMBINED_FILE"
+echo "_**作成日**: $(date '+%Y年%m月%d日')_" >> "$COMBINED_FILE"
 echo "" >> "$COMBINED_FILE"
 tail -n +2 README.md | sed '/\*\*詳細情報\*\*:/d' >> "$COMBINED_FILE"
 echo "" >> "$COMBINED_FILE"
@@ -55,7 +63,7 @@ if command -v pandoc &> /dev/null; then
     echo "🔄 HTML 生成中..."
     
     # スタンドアロンHTMLを生成（日本語対応）
-    pandoc "$COMBINED_FILE" -o "${PDF_FILE%.pdf}.html" \
+    pandoc "$COMBINED_FILE" -o "$HTML_FILE" \
         --standalone \
         --metadata title="職務経歴書 - 黄 丞涓（ファン スンヨン）" \
         --metadata lang=ja \
@@ -89,9 +97,9 @@ if command -v pandoc &> /dev/null; then
     h2#黄-丞涓ファン-スンヨン,
     h2#黄-丞涓ファン-スンヨン + p,
     h2#黄-丞涓ファン-スンヨン + p + p,
-    h3#お問い合わせ,
-    h3#お問い合わせ + p,
-    h3#お問い合わせ + p + p {
+    h3#連絡先,
+    h3#連絡先 + p,
+    h3#連絡先 + p + p {
       text-align: center;
     }
     h1, h2, h3, h4 {
@@ -166,9 +174,56 @@ EOF
 )
     
     if [ $? -eq 0 ]; then
-        echo "✅ HTML 生成完了: ${PDF_FILE%.pdf}.html"
+        echo "✅ HTML 生成完了: $HTML_FILE"
+        
+        # PDF生成試行
         echo ""
-        echo "💡 PDFに変換するには、生成されたHTMLファイルをブラウザで開いて印刷→PDFとして保存してください。"
+        echo "🔄 PDF 生成中..."
+        
+        # Chromeがインストールされているか確認（ヘッドレスPDF生成）
+        if [ -d "/Applications/Google Chrome.app" ]; then
+            echo "🔄 Chrome ヘッドレスモードでPDF生成中..."
+            /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
+                --headless \
+                --disable-gpu \
+                --print-to-pdf="$PDF_FILE" \
+                --no-pdf-header-footer \
+                --print-to-pdf-no-header \
+                "file://$PWD/$HTML_FILE" 2>/dev/null
+            
+            if [ $? -eq 0 ] && [ -f "$PDF_FILE" ]; then
+                echo "✅ PDF 生成完了: $PDF_FILE"
+            else
+                echo "⚠️  PDF生成に失敗しました。"
+                echo "💡 代替案: HTMLファイルをブラウザで開いて印刷→PDFとして保存してください。"
+            fi
+        else
+            # XeLaTeXがインストールされているか確認
+            if command -v xelatex &> /dev/null; then
+                pandoc "$COMBINED_FILE" -o "$PDF_FILE" \
+                    --pdf-engine=xelatex \
+                    --variable mainfont="Hiragino Sans" \
+                    --variable papersize=a4 \
+                    --variable geometry:margin=2cm \
+                    --toc \
+                    --toc-depth=2 2>/dev/null
+                
+                if [ $? -eq 0 ]; then
+                    echo "✅ PDF 生成完了: $PDF_FILE"
+                else
+                    echo "⚠️  PDF生成に失敗しました。"
+                    echo "💡 代替案: HTMLファイルをブラウザで開いて印刷→PDFとして保存してください。"
+                fi
+            else
+                echo "⚠️  PDF生成ツールがインストールされていません。"
+                echo "💡 推奨: HTMLファイルをブラウザで開いて印刷→PDFとして保存"
+                echo ""
+                echo "📌 手動でPDFを作成する方法:"
+                echo "  1. open $HTML_FILE"
+                echo "  2. Cmd + P (印刷)"
+                echo "  3. 'PDFとして保存'を選択"
+            fi
+        fi
     else
         echo "❌ HTML生成中にエラーが発生しました。"
     fi
@@ -181,6 +236,7 @@ fi
 echo ""
 echo "📊 生成されたファイル情報:"
 echo "- マークダウン: $(wc -l < "$COMBINED_FILE") 行"
+echo "- HTML: $(du -h "$HTML_FILE" | cut -f1)"
 if [ -f "$PDF_FILE" ]; then
     echo "- PDF: $(du -h "$PDF_FILE" | cut -f1)"
 fi

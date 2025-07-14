@@ -1,6 +1,6 @@
 # 職務経歴書
 
-_**生成日**: 2025年07月14日_
+_**作成日**: 2025年07月14日_
 
 
 ## 👨‍💻 黄 丞涓（ファン スンヨン）
@@ -193,16 +193,22 @@ _**生成日**: 2025年07月14日_
 ---
 
 ### 📥 ダウンロードリンク
-- **最新の履歴書**: [Releases](https://github.com/SeungyeonHwang/CV/releases) ページで最新版をダウンロード
-- **生成済みファイル**: GitHub Actionsにより自動生成（プッシュ時）
+- **マークダウン**: [resume-complete.md](resume-complete.md)
+- **HTML**: [Releases](../../releases) タブで確認
 
----
+<br>
 
-### 📬 お問い合わせ
+### 📬 連絡先
 
-**syhwang.web@gmail.com**
+**メール**: syhwang.web@gmail.com
 
-最後までご覧いただき、ありがとうございました。
+<br>
+<br>
+
+*最後までご覧いただき、ありがとうございました。*
+
+<br>
+<br>
 ---
 
 # S社 詳細情報

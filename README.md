@@ -195,13 +195,20 @@
 ---
 
 ### 📥 ダウンロードリンク
-- **マークダウン**: [resume-complete.md](resume-complete.md)
-- **HTML**: [Releases](../../releases) タブで確認
+- **マークダウン**: [resume-complete.md](output/resume-complete.md)
+- **HTML**: [resume-complete.html](output/resume-complete.html)
+- **PDF**: [resume-complete.pdf](output/resume-complete.pdf)
 
----
+<br>
 
-### 📬 お問い合わせ
+### 📬 連絡先
 
-**syhwang.web@gmail.com**
+**メール**: syhwang.web@gmail.com
 
-最後までご覧いただき、ありがとうございました。
+<br>
+<br>
+
+*最後までご覧いただき、ありがとうございました。*
+
+<br>
+<br>
