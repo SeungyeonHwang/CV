@@ -194,7 +194,7 @@
 
 <div align="center">
 
-### 📥 ダウンロードリンク
+### 📥 ダウンロード
 [職務経歴書.pdf](https://github.com/SeungyeonHwang/CV/releases/latest/download/resume-complete.pdf)
 
 ### 📬 連絡先
