@@ -61,23 +61,18 @@ jobs:
         asset_name: resume-complete.pdf
         asset_content_type: application/pdf
     
-    - name: Update README with download link
+    - name: Update README with latest release link
       run: |
-        # Get the download URL from the release
-        DOWNLOAD_URL="${{ steps.create_release.outputs.html_url }}"
-        ASSET_URL="https://github.com/${{ github.repository }}/releases/download/${{ steps.release_name.outputs.tag }}/resume-complete.pdf"
+        # Always point to the latest release
+        LATEST_URL="https://github.com/${{ github.repository }}/releases/latest/download/resume-complete.pdf"
         
-        # Update README.md download links
-        sed -i "s|\[resume-complete.pdf\](output/resume-complete.pdf)|[resume-complete.pdf]($ASSET_URL)|g" README.md
-        
-        # Update output/resume-complete.md download links if exists
-        if [ -f "output/resume-complete.md" ]; then
-          sed -i "s|\[resume-complete.pdf\](output/resume-complete.pdf)|[resume-complete.pdf]($ASSET_URL)|g" output/resume-complete.md
-        fi
+        # Update README.md to use latest release link
+        sed -i "s|\[resume-complete.pdf\](output/resume-complete.pdf)|[resume-complete.pdf]($LATEST_URL)|g" README.md
+        sed -i "s|\[resume-complete.pdf\](https://github.com/.*/releases/download/.*/resume-complete.pdf)|[resume-complete.pdf]($LATEST_URL)|g" README.md
         
         # Commit the changes
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add README.md output/resume-complete.md
-        git diff --staged --quiet || git commit -m "Update download links to release v${{ steps.release_name.outputs.tag }}"
+        git add README.md
+        git diff --staged --quiet || git commit -m "Update download links to latest release"
         git push

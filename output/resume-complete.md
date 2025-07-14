@@ -260,7 +260,7 @@ _**作成日**: 2025年07月14日_
 
 
 ### 📥 ダウンロードリンク
-**MD**: [resume-complete.md](output/resume-complete.md) | **HTML**: [resume-complete.html](output/resume-complete.html) | **PDF**: [resume-complete.pdf](output/resume-complete.pdf)
+**PDF**: [最新版ダウンロード](https://github.com/SeungyeonHwang/CV/releases/latest/download/resume-complete.pdf)
 
 
 ### 📬 連絡先
