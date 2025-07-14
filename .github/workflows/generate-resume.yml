@@ -94,7 +94,7 @@ jobs:
           --remarkable-options '{"html": true, "breaks": true}'
     
     - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: resume-files
         path: |
