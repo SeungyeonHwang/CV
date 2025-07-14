@@ -24,76 +24,158 @@ jobs:
         
     - name: Generate combined markdown
       run: |
-        echo "# 職務経歴書" > combined-resume.md
-        echo "" >> combined-resume.md
-        echo "_**生成日**: $(date '+%Y年%m月%d日')_" >> combined-resume.md
-        echo "" >> combined-resume.md
+        # output ディレクトリ作成
+        mkdir -p output
         
-        # README.mdの内容を追加（docs/へのリンク部分は除外）
-        tail -n +2 README.md | sed '/\*\*詳細情報\*\*:/d' >> combined-resume.md
-        echo "" >> combined-resume.md
+        # 最初の行を保持して生成日を追加（ローカルスクリプトと同じ）
+        head -1 README.md > output/resume-complete.md
+        echo "" >> output/resume-complete.md
+        echo "_**生成日**: $(date '+%Y年%m月%d日')_" >> output/resume-complete.md
+        echo "" >> output/resume-complete.md
+        tail -n +2 README.md | sed '/\*\*詳細情報\*\*:/d' >> output/resume-complete.md
+        echo "" >> output/resume-complete.md
         
-        # 各詳細ファイルの内容を追加
-        if [ -f "docs/S社_AI連携企業材料データベース検索システム.md" ]; then
-          echo "---" >> combined-resume.md
-          echo "" >> combined-resume.md
-          echo "# S社 詳細情報" >> combined-resume.md
-          echo "" >> combined-resume.md
-          cat "docs/S社_AI連携企業材料データベース検索システム.md" >> combined-resume.md
-          echo "" >> combined-resume.md
-        fi
+        # 各詳細ファイルの内容を追加（ローカルスクリプトと同じ方式）
+        docs_files=(
+          "docs/S社_AI連携企業材料データベース検索システム.md"
+          "docs/C社_AI音声プラットフォーム開発.md"
+          "docs/I社_統合ログ管理システム.md"
+          "docs/U社_BtoB営業支援SaaS.md"
+          "docs/H社_オフィス家具受発注システム.md"
+        )
         
-        if [ -f "docs/C社_AI音声プラットフォーム開発.md" ]; then
-          echo "---" >> combined-resume.md
-          echo "" >> combined-resume.md
-          echo "# C社 詳細情報" >> combined-resume.md
-          echo "" >> combined-resume.md
-          cat "docs/C社_AI音声プラットフォーム開発.md" >> combined-resume.md
-          echo "" >> combined-resume.md
-        fi
-        
-        if [ -f "docs/I社_統合ログ管理システム.md" ]; then
-          echo "---" >> combined-resume.md
-          echo "" >> combined-resume.md
-          echo "# I社 詳細情報" >> combined-resume.md
-          echo "" >> combined-resume.md
-          cat "docs/I社_統合ログ管理システム.md" >> combined-resume.md
-          echo "" >> combined-resume.md
-        fi
-        
-        if [ -f "docs/U社_BtoB営業支援SaaS.md" ]; then
-          echo "---" >> combined-resume.md
-          echo "" >> combined-resume.md
-          echo "# U社 詳細情報" >> combined-resume.md
-          echo "" >> combined-resume.md
-          cat "docs/U社_BtoB営業支援SaaS.md" >> combined-resume.md
-          echo "" >> combined-resume.md
-        fi
-        
-        if [ -f "docs/H社_オフィス家具受発注システム.md" ]; then
-          echo "---" >> combined-resume.md
-          echo "" >> combined-resume.md
-          echo "# H社 詳細情報" >> combined-resume.md
-          echo "" >> combined-resume.md
-          cat "docs/H社_オフィス家具受発注システム.md" >> combined-resume.md
-          echo "" >> combined-resume.md
-        fi
+        for file in "${docs_files[@]}"; do
+          if [ -f "$file" ]; then
+            echo "---" >> output/resume-complete.md
+            echo "" >> output/resume-complete.md
+            company=$(basename "$file" | cut -d'_' -f1)
+            echo "# $company 詳細情報" >> output/resume-complete.md
+            echo "" >> output/resume-complete.md
+            cat "$file" >> output/resume-complete.md
+            echo "" >> output/resume-complete.md
+          fi
+        done
+    
+    - name: Create HTML template
+      run: |
+        cat > template.html << 'EOF'
+        <!DOCTYPE html>
+        <html lang="$lang$">
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+          <title>$title$</title>
+          <style>
+            body {
+              font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+              line-height: 1.8;
+              color: #333;
+              max-width: 900px;
+              margin: 0 auto;
+              padding: 2rem;
+              background: #fff;
+            }
+            div[data-align="center"] {
+              text-align: center;
+            }
+            ul li {
+              margin-bottom: 0.5em;
+            }
+            /* 特定セクションの中央揃え */
+            h2#黄-丞涓ファン-スンヨン,
+            h2#黄-丞涓ファン-スンヨン + p,
+            h2#黄-丞涓ファン-スンヨン + p + p,
+            h3#お問い合わせ,
+            h3#お問い合わせ + p,
+            h3#お問い合わせ + p + p {
+              text-align: center;
+            }
+            h1, h2, h3, h4 {
+              color: #2c3e50;
+              margin-top: 1.5em;
+            }
+            h1 {
+              border-bottom: 3px solid #3498db;
+              padding-bottom: 0.5em;
+            }
+            h2 {
+              border-left: 4px solid #3498db;
+              padding-left: 0.5em;
+            }
+            table {
+              border-collapse: collapse;
+              width: 100%;
+              margin: 1em 0;
+            }
+            th, td {
+              border: 1px solid #ddd;
+              padding: 8px;
+              text-align: left;
+            }
+            th {
+              background-color: #f8f9fa;
+            }
+            code {
+              background: #f4f4f4;
+              padding: 2px 4px;
+              border-radius: 3px;
+            }
+            pre {
+              background: #f4f4f4;
+              padding: 1em;
+              border-radius: 5px;
+              overflow-x: auto;
+            }
+            blockquote {
+              border-left: 4px solid #3498db;
+              padding-left: 1em;
+              margin-left: 0;
+              color: #666;
+            }
+            @media print {
+              body {
+                font-size: 12pt;
+              }
+              h1 {
+                page-break-after: avoid;
+              }
+              h2, h3, h4 {
+                page-break-after: avoid;
+              }
+              table {
+                page-break-inside: avoid;
+              }
+            }
+          </style>
+        </head>
+        <body>
+        $if(toc)$
+        <nav id="$idprefix$TOC" role="doc-toc">
+        <h2>目次</h2>
+        $table-of-contents$
+        </nav>
+        $endif$
+        $body$
+        </body>
+        </html>
+        EOF
     
     - name: Generate HTML
       run: |
-        # HTML 생성 (기본 스타일 사용)
-        pandoc combined-resume.md -o resume-complete.html \
+        # HTML生成（日本式ビジネス文書スタイル）
+        pandoc output/resume-complete.md -o output/resume-complete.html \
           --standalone \
           --metadata title="職務経歴書 - 黄 丞涓（ファン スンヨン）" \
           --metadata lang=ja \
           --toc \
           --toc-depth=2 \
-          --from=markdown+raw_html
+          --from=markdown+raw_html \
+          --template=template.html
     
     - name: Generate PDF
       run: |
-        # PDF 생성 (XeLaTeX 사용, 일본어 폰트 지원)
-        pandoc combined-resume.md -o resume-complete.pdf \
+        # PDF生成（XeLaTeX使用、日本語フォント対応）
+        pandoc output/resume-complete.md -o output/resume-complete.pdf \
           --pdf-engine=xelatex \
           --variable mainfont="Noto Sans CJK JP" \
           --variable papersize=a4 \
@@ -106,17 +188,17 @@ jobs:
       with:
         name: resume-files
         path: |
-          combined-resume.md
-          resume-complete.html
-          resume-complete.pdf
+          output/resume-complete.md
+          output/resume-complete.html
+          output/resume-complete.pdf
     
     - name: Create Release (if tagged)
       if: github.event_name == 'release'
       uses: softprops/action-gh-release@v1
       with:
         files: |
-          combined-resume.md
-          resume-complete.html
-          resume-complete.pdf
+          output/resume-complete.md
+          output/resume-complete.html
+          output/resume-complete.pdf
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
