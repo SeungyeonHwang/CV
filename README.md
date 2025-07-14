@@ -195,7 +195,7 @@
 <div align="center">
 
 ### 📥 ダウンロードリンク
-[最新職務経歴書ダウンロード (PDF)](https://github.com/SeungyeonHwang/CV/releases/latest/download/resume-complete.pdf)
+[職務経歴書.pdf](https://github.com/SeungyeonHwang/CV/releases/latest/download/resume-complete.pdf)
 
 ### 📬 連絡先
 syhwang.web@gmail.com
