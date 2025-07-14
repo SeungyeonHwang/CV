@@ -17,25 +17,20 @@ jobs:
       with:
         fetch-depth: 0
     
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
-    
     - name: Install dependencies
       run: |
-        npm install -g markdown-pdf
-        npm install -g concat-md
+        sudo apt-get update
+        sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-lang-japanese fonts-noto-cjk
         
     - name: Generate combined markdown
       run: |
-        echo "# 職務経歴書 - 黄 丞涓（ファン スンヨン）" > combined-resume.md
+        echo "# 職務経歴書" > combined-resume.md
         echo "" >> combined-resume.md
-        echo "**生成日**: $(date '+%Y年%m月%d日')" >> combined-resume.md
+        echo "_**生成日**: $(date '+%Y年%m月%d日')_" >> combined-resume.md
         echo "" >> combined-resume.md
         
         # README.mdの内容を追加（docs/へのリンク部分は除外）
-        sed '/\*\*詳細情報\*\*:/d' README.md >> combined-resume.md
+        tail -n +2 README.md | sed '/\*\*詳細情報\*\*:/d' >> combined-resume.md
         echo "" >> combined-resume.md
         
         # 各詳細ファイルの内容を追加
@@ -84,14 +79,27 @@ jobs:
           echo "" >> combined-resume.md
         fi
     
+    - name: Generate HTML
+      run: |
+        # HTML 생성 (기본 스타일 사용)
+        pandoc combined-resume.md -o resume-complete.html \
+          --standalone \
+          --metadata title="職務経歴書 - 黄 丞涓（ファン スンヨン）" \
+          --metadata lang=ja \
+          --toc \
+          --toc-depth=2 \
+          --from=markdown+raw_html
+    
     - name: Generate PDF
       run: |
-        # PDF 生成 (日本語フォント対応)
-        markdown-pdf combined-resume.md -o resume-complete.pdf \
-          --paper-format A4 \
-          --paper-margin "20mm" \
-          --css-path "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" \
-          --remarkable-options '{"html": true, "breaks": true}'
+        # PDF 생성 (XeLaTeX 사용, 일본어 폰트 지원)
+        pandoc combined-resume.md -o resume-complete.pdf \
+          --pdf-engine=xelatex \
+          --variable mainfont="Noto Sans CJK JP" \
+          --variable papersize=a4 \
+          --variable geometry:margin=2cm \
+          --toc \
+          --toc-depth=2
     
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
@@ -99,6 +107,7 @@ jobs:
         name: resume-files
         path: |
           combined-resume.md
+          resume-complete.html
           resume-complete.pdf
     
     - name: Create Release (if tagged)
@@ -107,6 +116,7 @@ jobs:
       with:
         files: |
           combined-resume.md
+          resume-complete.html
           resume-complete.pdf
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
