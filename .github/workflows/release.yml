@@ -1,0 +1,83 @@
+name: Create Release
+
+on:
+  push:
+    paths:
+      - 'output/resume-complete.pdf'
+    branches:
+      - master
+      - main
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Get current date
+      id: date
+      run: echo "date=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
+    
+    - name: Generate release name
+      id: release_name
+      run: |
+        echo "name=履歴書 v${{ steps.date.outputs.date }}" >> $GITHUB_OUTPUT
+        echo "tag=v${{ steps.date.outputs.date }}-$(date +'%H%M%S')" >> $GITHUB_OUTPUT
+    
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.release_name.outputs.tag }}
+        release_name: ${{ steps.release_name.outputs.name }}
+        body: |
+          ## 📄 職務経歴書
+          
+          **作成日**: ${{ steps.date.outputs.date }}
+          
+          ### 📥 ダウンロード
+          最新の履歴書PDFは以下からダウンロードできます。
+          
+          ---
+          *このリリースは自動的に生成されました。*
+        draft: false
+        prerelease: false
+    
+    - name: Upload PDF to Release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./output/resume-complete.pdf
+        asset_name: resume-complete.pdf
+        asset_content_type: application/pdf
+    
+    - name: Update README with download link
+      run: |
+        # Get the download URL from the release
+        DOWNLOAD_URL="${{ steps.create_release.outputs.html_url }}"
+        ASSET_URL="https://github.com/${{ github.repository }}/releases/download/${{ steps.release_name.outputs.tag }}/resume-complete.pdf"
+        
+        # Update README.md download links
+        sed -i "s|\[resume-complete.pdf\](output/resume-complete.pdf)|[resume-complete.pdf]($ASSET_URL)|g" README.md
+        
+        # Update output/resume-complete.md download links if exists
+        if [ -f "output/resume-complete.md" ]; then
+          sed -i "s|\[resume-complete.pdf\](output/resume-complete.pdf)|[resume-complete.pdf]($ASSET_URL)|g" output/resume-complete.md
+        fi
+        
+        # Commit the changes
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add README.md output/resume-complete.md
+        git diff --staged --quiet || git commit -m "Update download links to release v${{ steps.release_name.outputs.tag }}"
+        git push
