@@ -28,7 +28,8 @@ head -1 README.md > "$COMBINED_FILE"
 echo "" >> "$COMBINED_FILE"
 echo "_**作成日**: $(date '+%Y年%m月%d日')_" >> "$COMBINED_FILE"
 echo "" >> "$COMBINED_FILE"
-tail -n +2 README.md | sed '/\*\*詳細情報\*\*:/d' >> "$COMBINED_FILE"
+# 改行を保持しながらREADMEを追加
+tail -n +2 README.md | sed '/\*\*詳細情報\*\*:/d' | sed 's/^$/\n/' >> "$COMBINED_FILE"
 echo "" >> "$COMBINED_FILE"
 
 # 各ドキュメントファイル内容追加
@@ -43,12 +44,6 @@ docs_files=(
 for file in "${docs_files[@]}"; do
     if [ -f "$file" ]; then
         echo "📄 $file 追加中..."
-        echo "---" >> "$COMBINED_FILE"
-        echo "" >> "$COMBINED_FILE"
-        
-        # ファイル名から会社名抽出
-        company=$(basename "$file" | cut -d'_' -f1)
-        echo "# $company 詳細情報" >> "$COMBINED_FILE"
         echo "" >> "$COMBINED_FILE"
         
         cat "$file" >> "$COMBINED_FILE"
@@ -69,7 +64,7 @@ if command -v pandoc &> /dev/null; then
         --metadata lang=ja \
         --toc \
         --toc-depth=2 \
-        --from=markdown+raw_html \
+        --from=markdown+raw_html+lists_without_preceding_blankline \
         --template=<(cat <<'EOF'
 <!DOCTYPE html>
 <html lang="$lang$">
@@ -88,11 +83,70 @@ if command -v pandoc &> /dev/null; then
       padding: 15mm 20mm;
       background: #fff;
     }
+    /* 目次スタイル */
+    #TOC {
+      page-break-after: always;
+      min-height: 80vh;
+    }
+    #TOC h2 {
+      font-size: 18pt;
+      text-align: center;
+      margin-bottom: 2em;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 0.5em;
+    }
+    #TOC ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    #TOC > ul > li {
+      margin-bottom: 1.2em;
+      font-weight: bold;
+      font-size: 11pt;
+    }
+    #TOC > ul > li > a {
+      color: #2c3e50;
+      text-decoration: none;
+    }
+    #TOC ul ul {
+      padding-left: 2em;
+      margin-top: 0.5em;
+    }
+    #TOC ul ul li {
+      margin-bottom: 0.3em;
+      font-weight: normal;
+      font-size: 9pt;
+    }
+    #TOC ul ul li a {
+      color: #555;
+    }
+    #TOC a:hover {
+      color: #3498db;
+      text-decoration: underline;
+    }
+    /* 会社経歴部分を2列表示 */
+    #TOC > ul > li:nth-child(2),
+    #TOC > ul > li:nth-child(3),
+    #TOC > ul > li:nth-child(4),
+    #TOC > ul > li:nth-child(5),
+    #TOC > ul > li:nth-child(6) {
+      width: 48%;
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 1em;
+    }
+    #TOC > ul > li:nth-child(2),
+    #TOC > ul > li:nth-child(4),
+    #TOC > ul > li:nth-child(6) {
+      margin-right: 2%;
+    }
     div[data-align="center"] {
       text-align: center;
     }
     ul li {
       margin-bottom: 0.5em;
+      display: list-item;
+      list-style-position: outside;
     }
     /* 特定セクションの中央揃え */
     h2#黄-丞涓ファン-スンヨン,
@@ -112,6 +166,7 @@ if command -v pandoc &> /dev/null; then
     p {
       font-size: 11pt;
       margin: 0.8em 0;
+      white-space: normal;
     }
     h1, h2, h3, h4 {
       color: #2c3e50;
@@ -161,6 +216,18 @@ if command -v pandoc &> /dev/null; then
       margin-left: 0;
       color: #666;
     }
+    /* 保有スキル・知識セクションの改ページ */
+    h2#保有スキル知識 {
+      page-break-before: always;
+    }
+    /* 会社詳細情報（H1タイトル）の改ページ */
+    h1#s社---ai連携企業材料データベース検索システム開発,
+    h1#c社---ai音声プラットフォーム開発プロジェクト,
+    h1#i社---統合ログ管理システム-クラウド連携モジュール開発,
+    h1#u社---btob営業支援saasプロダクト開発,
+    h1#h社---オフィス家具メーカー向け受発注システム開発 {
+      page-break-before: always;
+    }
     @media print {
       body {
         font-size: 10pt;
@@ -181,7 +248,7 @@ if command -v pandoc &> /dev/null; then
 <body>
 $if(toc)$
 <nav id="$idprefix$TOC" role="doc-toc">
-<h2>目次</h2>
+<h2>📑 目次</h2>
 $table-of-contents$
 </nav>
 $endif$

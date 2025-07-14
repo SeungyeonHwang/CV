@@ -15,11 +15,70 @@
       padding: 15mm 20mm;
       background: #fff;
     }
+    /* 目次スタイル */
+    #TOC {
+      page-break-after: always;
+      min-height: 80vh;
+    }
+    #TOC h2 {
+      font-size: 18pt;
+      text-align: center;
+      margin-bottom: 2em;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 0.5em;
+    }
+    #TOC ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    #TOC > ul > li {
+      margin-bottom: 1.2em;
+      font-weight: bold;
+      font-size: 11pt;
+    }
+    #TOC > ul > li > a {
+      color: #2c3e50;
+      text-decoration: none;
+    }
+    #TOC ul ul {
+      padding-left: 2em;
+      margin-top: 0.5em;
+    }
+    #TOC ul ul li {
+      margin-bottom: 0.3em;
+      font-weight: normal;
+      font-size: 9pt;
+    }
+    #TOC ul ul li a {
+      color: #555;
+    }
+    #TOC a:hover {
+      color: #3498db;
+      text-decoration: underline;
+    }
+    /* 会社経歴部分を2列表示 */
+    #TOC > ul > li:nth-child(2),
+    #TOC > ul > li:nth-child(3),
+    #TOC > ul > li:nth-child(4),
+    #TOC > ul > li:nth-child(5),
+    #TOC > ul > li:nth-child(6) {
+      width: 48%;
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 1em;
+    }
+    #TOC > ul > li:nth-child(2),
+    #TOC > ul > li:nth-child(4),
+    #TOC > ul > li:nth-child(6) {
+      margin-right: 2%;
+    }
     div[data-align="center"] {
       text-align: center;
     }
     ul li {
       margin-bottom: 0.5em;
+      display: list-item;
+      list-style-position: outside;
     }
     /* 特定セクションの中央揃え */
     h2#黄-丞涓ファン-スンヨン,
@@ -39,6 +98,7 @@
     p {
       font-size: 11pt;
       margin: 0.8em 0;
+      white-space: normal;
     }
     h1, h2, h3, h4 {
       color: #2c3e50;
@@ -88,6 +148,18 @@
       margin-left: 0;
       color: #666;
     }
+    /* 保有スキル・知識セクションの改ページ */
+    h2#保有スキル知識 {
+      page-break-before: always;
+    }
+    /* 会社詳細情報（H1タイトル）の改ページ */
+    h1#s社---ai連携企業材料データベース検索システム開発,
+    h1#c社---ai音声プラットフォーム開発プロジェクト,
+    h1#i社---統合ログ管理システム-クラウド連携モジュール開発,
+    h1#u社---btob営業支援saasプロダクト開発,
+    h1#h社---オフィス家具メーカー向け受発注システム開発 {
+      page-break-before: always;
+    }
     @media print {
       body {
         font-size: 10pt;
@@ -107,7 +179,7 @@
 </head>
 <body>
 <nav id="TOC" role="doc-toc">
-<h2>目次</h2>
+<h2>📑 目次</h2>
 <ul>
 <li><a href="#職務経歴書" id="toc-職務経歴書">職務経歴書</a>
 <ul>
@@ -123,7 +195,6 @@
 <li><a href="#今後のキャリアビジョン" id="toc-今後のキャリアビジョン">🚀
 今後のキャリアビジョン</a></li>
 </ul></li>
-<li><a href="#s社-詳細情報" id="toc-s社-詳細情報">S社 詳細情報</a></li>
 <li><a href="#s社---ai連携企業材料データベース検索システム開発"
 id="toc-s社---ai連携企業材料データベース検索システム開発">🤖 S社 -
 AI連携企業・材料データベース検索システム開発</a>
@@ -136,7 +207,6 @@ id="toc-プロジェクト概要">プロジェクト概要</a></li>
 主な成果・実装内容</a></li>
 <li><a href="#数値成果" id="toc-数値成果">📊 数値成果</a></li>
 </ul></li>
-<li><a href="#c社-詳細情報" id="toc-c社-詳細情報">C社 詳細情報</a></li>
 <li><a href="#c社---ai音声プラットフォーム開発プロジェクト"
 id="toc-c社---ai音声プラットフォーム開発プロジェクト">🎵 C社 -
 AI音声プラットフォーム開発プロジェクト</a>
@@ -152,7 +222,6 @@ id="toc-アーキテクチャ設計と実装">🏗️ アーキテクチャ設�
 フルスタック技術実装</a></li>
 <li><a href="#数値成果-1" id="toc-数値成果-1">📊 数値成果</a></li>
 </ul></li>
-<li><a href="#i社-詳細情報" id="toc-i社-詳細情報">I社 詳細情報</a></li>
 <li><a href="#i社---統合ログ管理システム-クラウド連携モジュール開発"
 id="toc-i社---統合ログ管理システム-クラウド連携モジュール開発">🔐 I社 -
 統合ログ管理システム クラウド連携モジュール開発</a>
@@ -165,7 +234,6 @@ id="toc-技術スタック-2">技術スタック</a></li>
 <li><a href="#技術的工夫" id="toc-技術的工夫">🔧 技術的工夫</a></li>
 <li><a href="#主な成果" id="toc-主な成果">📊 主な成果</a></li>
 </ul></li>
-<li><a href="#u社-詳細情報" id="toc-u社-詳細情報">U社 詳細情報</a></li>
 <li><a href="#u社---btob営業支援saasプロダクト開発"
 id="toc-u社---btob営業支援saasプロダクト開発">🏢 U社 -
 BtoB営業支援SaaSプロダクト開発</a>
@@ -179,7 +247,6 @@ id="toc-技術スタック-3">技術スタック</a></li>
 技術的取り組み</a></li>
 <li><a href="#主な成果-1" id="toc-主な成果-1">📊 主な成果</a></li>
 </ul></li>
-<li><a href="#h社-詳細情報" id="toc-h社-詳細情報">H社 詳細情報</a></li>
 <li><a href="#h社---オフィス家具メーカー向け受発注システム開発"
 id="toc-h社---オフィス家具メーカー向け受発注システム開発">💻 H社 -
 オフィス家具メーカー向け受発注システム開発</a>
@@ -209,19 +276,21 @@ alt="Location" /></a></p>
 <hr />
 <h2 id="職務要約">📋 職務要約</h2>
 <p><strong>6年間のフルスタック開発経験</strong>を持ち、Go・Kotlin・TypeScriptを核とした<strong>サーバーサイドからフロントエンドまで一貫開発</strong>が可能なエンジニア。特に<strong>AI/LLM連携システム分野</strong>でLangChain・プロンプトエンジニアリングを活用したインテリジェントなWebサービス開発と<strong>マイクロサービスアーキテクチャ設計</strong>に強みを持っています。<strong>企画段階から運用保守まで一気通貫</strong>で担当し、<strong>ユーザーファースト</strong>の視点から技術的意思決定をリード。<strong>決済システム設計・実装</strong>や<strong>認証基盤構築</strong>の豊富な経験を保有します。</p>
-<p>🎯 <strong>代表的な技術成果</strong> - 🤖
-<strong>AI連携Webサービス開発</strong> - LangChain + ChatGPT
-API統合による知的文書解析機能を実装 - 🧠
-<strong>プロンプトエンジニアリング</strong> - Chain of
-Thought・役割指定・Few-shot学習技法適用 - 💳
-<strong>決済システム設計・実装</strong> -
-Stripe連携によるサブスク・従量課金フロー構築 - 🚀
-<strong>マイクロサービス化</strong> -
-モノリス分離で配布頻度<strong>週1回→日複数回</strong>に向上 - 📊
-<strong>システム性能改善</strong> -
-DB最適化で処理時間<strong>3時間→40分に短縮</strong> - 🔄
-<strong>フルスタック開発体制</strong> -
-企画・設計・実装・運用まで一貫して担当</p>
+<p>🎯 <strong>代表的な技術成果</strong></p>
+<ul>
+<li>🤖 <strong>AI連携Webサービス開発</strong> - LangChain + ChatGPT
+API統合による知的文書解析機能を実装</li>
+<li>🧠 <strong>プロンプトエンジニアリング</strong> - Chain of
+Thought・役割指定・Few-shot学習技法適用</li>
+<li>💳 <strong>決済システム設計・実装</strong> -
+Stripe連携によるサブスク・従量課金フロー構築</li>
+<li>🚀 <strong>マイクロサービス化</strong> -
+モノリス分離で配布頻度<strong>週1回→日複数回</strong>に向上</li>
+<li>📊 <strong>システム性能改善</strong> -
+DB最適化で処理時間<strong>3時間→40分に短縮</strong></li>
+<li>🔄 <strong>フルスタック開発体制</strong> -
+企画・設計・実装・運用まで一貫して担当</li>
+</ul>
 <hr />
 <h2 id="スキルセット">💼 スキルセット</h2>
 <table>
@@ -429,11 +498,8 @@ href="output/resume-complete.pdf">resume-complete.pdf</a></p>
 <p><br></p>
 <p><em>最後までご覧いただき、ありがとうございました。</em></p>
 </div>
-<hr />
-<h1 id="s社-詳細情報">S社 詳細情報</h1>
 <h1 id="s社---ai連携企業材料データベース検索システム開発">🤖 S社 -
 AI連携企業・材料データベース検索システム開発</h1>
-<hr />
 <h2 id="基本情報">基本情報</h2>
 <table>
 <thead>
@@ -627,11 +693,8 @@ class="sourceCode diff"><code class="sourceCode diff"><span id="cb1-1"><a href="
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="va">+ 📄 ヒューリスティック・ゼロショット分類による文書処理DX機能を実現</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🚀 フルスタック開発体制を確立（企画から運用まで一貫して担当）</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="va">+ 📈 AI検索機能により検索精度向上とユーザー滞在時間150%増加</span></span></code></pre></div>
-<hr />
-<h1 id="c社-詳細情報">C社 詳細情報</h1>
 <h1 id="c社---ai音声プラットフォーム開発プロジェクト">🎵 C社 -
 AI音声プラットフォーム開発プロジェクト</h1>
-<hr />
 <h2 id="基本情報-1">基本情報</h2>
 <table>
 <colgroup>
@@ -809,11 +872,8 @@ class="sourceCode diff"><code class="sourceCode diff"><span id="cb2-1"><a href="
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🔄 企画→開発→リリースまで一人で完結する開発体制を確立</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="va">+ 💰 サーバーレス化によりインフラコストを30%削減</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🧪 テストカバレッジ90%以上を維持</span></span></code></pre></div>
-<hr />
-<h1 id="i社-詳細情報">I社 詳細情報</h1>
 <h1 id="i社---統合ログ管理システム-クラウド連携モジュール開発">🔐 I社 -
 統合ログ管理システム クラウド連携モジュール開発</h1>
-<hr />
 <h2 id="基本情報-2">基本情報</h2>
 <table>
 <thead>
@@ -877,9 +937,13 @@ class="sourceCode diff"><code class="sourceCode diff"><span id="cb2-1"><a href="
 <h4 id="大量ログ処理のパフォーマンス問題">📊
 大量ログ処理のパフォーマンス問題</h4>
 <p><strong>課題</strong>: 大量ログ処理のパフォーマンス問題</p>
-<p><strong>解決策</strong>: - バッチ処理アルゴリズム最適化 - Visual VM +
-IntelliJ連携プロファイリング環境構築<br />
-- マルチスレッドプログラミングによる並行処理最適化</p>
+<p><strong>解決策</strong>:</p>
+<ul>
+<li>バッチ処理アルゴリズム最適化</li>
+<li>Visual VM + IntelliJ連携プロファイリング環境構築<br />
+</li>
+<li>マルチスレッドプログラミングによる並行処理最適化</li>
+</ul>
 <p><strong>結果</strong>:
 <strong>処理時間を3時間→40分に短縮（82%改善）</strong></p>
 <hr />
@@ -913,11 +977,8 @@ class="sourceCode diff"><code class="sourceCode diff"><span id="cb4-1"><a href="
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="va">+ 📚 共通ライブラリ化により開発工数50%削減</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🔄 順次アップグレードフレームワークで検証工数を67%削減</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🔨 カスタムツール開発により運用自動化を実現</span></span></code></pre></div>
-<hr />
-<h1 id="u社-詳細情報">U社 詳細情報</h1>
 <h1 id="u社---btob営業支援saasプロダクト開発">🏢 U社 -
 BtoB営業支援SaaSプロダクト開発</h1>
-<hr />
 <h2 id="基本情報-3">基本情報</h2>
 <table>
 <thead>
@@ -954,20 +1015,27 @@ BtoB営業支援SaaSプロダクト開発</h1>
 <h4 id="大容量バッチ処理の最適化">📊 大容量バッチ処理の最適化</h4>
 <p><strong>課題</strong><br />
 大容量データのバッチ処理によるDBへの負荷集中</p>
-<p><strong>解決策</strong> - <strong>Redis SDIFF活用</strong>:
-差分比較処理による効率的なデータ処理 -
-<strong>優先度別バッチ分割</strong>: 負荷分散による処理性能向上 -
-<strong>フォールバック実装</strong>: メモリ障害時の安全な処理継続</p>
+<p><strong>解決策</strong></p>
+<ul>
+<li><strong>Redis SDIFF活用</strong>:
+差分比較処理による効率的なデータ処理</li>
+<li><strong>優先度別バッチ分割</strong>: 負荷分散による処理性能向上</li>
+<li><strong>フォールバック実装</strong>:
+メモリ障害時の安全な処理継続</li>
+</ul>
 <p><strong>結果</strong><br />
 <strong>DBストレージ使用率 70% → 30% に削減（57%改善）</strong></p>
 <h3 id="検索apiのパフォーマンス改善">2️⃣ 検索APIのパフォーマンス改善</h3>
 <h4 id="大規模データ検索の高速化">🔍 大規模データ検索の高速化</h4>
 <p><strong>課題</strong><br />
 大企業ユーザーの大量データで検索が遅延</p>
-<p><strong>解決策</strong> - <strong>Elasticsearch導入</strong>:
-全文検索による高速化 - <strong>自動同期パイプライン</strong>: RDB →
-Logstash → ES - <strong>クエリ最適化</strong>: must, should, term
-クエリの効率化</p>
+<p><strong>解決策</strong></p>
+<ul>
+<li><strong>Elasticsearch導入</strong>: 全文検索による高速化</li>
+<li><strong>自動同期パイプライン</strong>: RDB → Logstash → ES</li>
+<li><strong>クエリ最適化</strong>: must, should, term
+クエリの効率化</li>
+</ul>
 <p><strong>結果</strong><br />
 <strong>レスポンスタイム 5秒 → 1秒以下（80%改善）</strong></p>
 <hr />
@@ -999,11 +1067,8 @@ class="sourceCode diff"><code class="sourceCode diff"><span id="cb6-1"><a href="
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="va">+ 📊 データベースストレージ使用率57%削減（70%→30%）</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🔴 Redis SDIFF活用による効率的な差分処理システム構築</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🔍 Elasticsearch導入による高速全文検索システム実現</span></span></code></pre></div>
-<hr />
-<h1 id="h社-詳細情報">H社 詳細情報</h1>
 <h1 id="h社---オフィス家具メーカー向け受発注システム開発">💻 H社 -
 オフィス家具メーカー向け受発注システム開発</h1>
-<hr />
 <h2 id="基本情報-4">基本情報</h2>
 <table>
 <thead>
@@ -1071,13 +1136,18 @@ class="sourceCode diff"><code class="sourceCode diff"><span id="cb6-1"><a href="
 </table>
 <h3 id="チーム開発プロセス改善">🔄 チーム開発プロセス改善</h3>
 <h4 id="継続的改善プロセス構築">🔄 継続的改善プロセス構築</h4>
-<p><strong>技術共有文化の構築</strong> -
-<strong>Slackチャンネル提案・運用</strong>: 技術情報の積極的な共有 -
-<strong>知識の属人化防止</strong>: チーム全体のスキル底上げ</p>
-<p><strong>品質管理プロセス導入</strong> -
-<strong>なぜなぜ分析</strong>: 根本原因の特定と改善策立案 -
-<strong>手戻り率大幅削減</strong>: <strong>20% →
-5%（75%改善）</strong></p>
+<p><strong>技術共有文化の構築</strong></p>
+<ul>
+<li><strong>Slackチャンネル提案・運用</strong>:
+技術情報の積極的な共有</li>
+<li><strong>知識の属人化防止</strong>: チーム全体のスキル底上げ</li>
+</ul>
+<p><strong>品質管理プロセス導入</strong></p>
+<ul>
+<li><strong>なぜなぜ分析</strong>: 根本原因の特定と改善策立案</li>
+<li><strong>手戻り率大幅削減</strong>: <strong>20% →
+5%（75%改善）</strong></li>
+</ul>
 <h3 id="api開発実装">🔌 API開発・実装</h3>
 <table>
 <tr>
