@@ -60,19 +60,3 @@ jobs:
         asset_path: ./output/resume-complete.pdf
         asset_name: resume-complete.pdf
         asset_content_type: application/pdf
-    
-    - name: Update README with latest release link
-      run: |
-        # Always point to the latest release
-        LATEST_URL="https://github.com/${{ github.repository }}/releases/latest/download/resume-complete.pdf"
-        
-        # Update README.md to use latest release link
-        sed -i "s|\[resume-complete.pdf\](output/resume-complete.pdf)|[resume-complete.pdf]($LATEST_URL)|g" README.md
-        sed -i "s|\[resume-complete.pdf\](https://github.com/.*/releases/download/.*/resume-complete.pdf)|[resume-complete.pdf]($LATEST_URL)|g" README.md
-        
-        # Commit the changes
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add README.md
-        git diff --staged --quiet || git commit -m "Update download links to latest release"
-        git push
