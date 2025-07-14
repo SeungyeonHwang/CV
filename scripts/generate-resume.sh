@@ -75,12 +75,12 @@ if command -v pandoc &> /dev/null; then
   <style>
     body {
       font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", "Noto Sans CJK JP", sans-serif;
-      font-size: 11pt;
-      line-height: 1.6;
+      font-size: 10.5pt;
+      line-height: 1.5;
       color: #333;
       max-width: 210mm;
       margin: 0 auto;
-      padding: 15mm 20mm;
+      padding: 8mm 12mm;
       background: #fff;
     }
     /* 目次スタイル */
@@ -100,7 +100,7 @@ if command -v pandoc &> /dev/null; then
       padding-left: 0;
     }
     #TOC > ul > li {
-      margin-bottom: 1.2em;
+      margin-bottom: 1em;
       font-weight: bold;
       font-size: 11pt;
     }
@@ -115,7 +115,7 @@ if command -v pandoc &> /dev/null; then
     #TOC ul ul li {
       margin-bottom: 0.3em;
       font-weight: normal;
-      font-size: 9pt;
+      font-size: 10pt;
     }
     #TOC ul ul li a {
       color: #555;
@@ -158,30 +158,30 @@ if command -v pandoc &> /dev/null; then
       text-align: center;
     }
     h3 {
-      font-size: 14pt;
+      font-size: 13pt;
     }
     h4 {
-      font-size: 12pt;
+      font-size: 11pt;
     }
     p {
-      font-size: 11pt;
-      margin: 0.8em 0;
+      font-size: 10.5pt;
+      margin: 0.7em 0;
       white-space: normal;
     }
     h1, h2, h3, h4 {
       color: #2c3e50;
-      margin-top: 1.2em;
-      margin-bottom: 0.8em;
+      margin-top: 1em;
+      margin-bottom: 0.6em;
       font-weight: 600;
     }
     h1 {
-      font-size: 20pt;
+      font-size: 18pt;
       border-bottom: 3px solid #3498db;
       padding-bottom: 0.5em;
       margin-top: 0;
     }
     h2 {
-      font-size: 16pt;
+      font-size: 15pt;
       border-left: 4px solid #3498db;
       padding-left: 0.5em;
     }
@@ -194,7 +194,7 @@ if command -v pandoc &> /dev/null; then
       border: 1px solid #ddd;
       padding: 6px 8px;
       text-align: left;
-      font-size: 10pt;
+      font-size: 8.5pt;
     }
     th {
       background-color: #f8f9fa;
@@ -216,9 +216,55 @@ if command -v pandoc &> /dev/null; then
       margin-left: 0;
       color: #666;
     }
-    /* 保有スキル・知識セクションの改ページ */
-    h2#保有スキル知識 {
+    /* 保有スキル・知識セクションの改ページを削除 */
+    /* h2#保有スキル知識 {
       page-break-before: always;
+    } */
+    /* 職務経歴書ページのみスペーシング調整 */
+    h2#職務要約 {
+      margin-top: 2.5em;
+      margin-bottom: 1.8em;
+    }
+    h2#職務要約 + p {
+      margin: 2em 0;
+      line-height: 2.2;
+    }
+    /* 代表的な技術成果セクション */
+    h2#職務要約 + p + p {
+      margin-top: 2.5em;
+      margin-bottom: 1.5em;
+      font-weight: bold;
+    }
+    h2#職務要約 + p + p + ul {
+      margin: 2em 0;
+    }
+    h2#職務要約 + p + p + ul li {
+      margin-bottom: 1.5em;
+      line-height: 2;
+    }
+    /* スキルセットテーブルの前に余白追加 */
+    h2#スキルセット {
+      margin-top: 2.5em;
+      margin-bottom: 0.8em;
+    }
+    /* スキルセットテーブルのスタイル調整 */
+    h2#スキルセット + table {
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+    }
+    h2#スキルセット + table td {
+      vertical-align: top;
+      padding: 10px 12px;
+    }
+    h2#スキルセット + table h3 {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+      font-size: 11pt;
+    }
+    /* スキルセットテーブル内のリスト項目フォントサイズ */
+    h2#スキルセット + table ul li {
+      font-size: 8pt;
+      margin-bottom: 0.3em;
     }
     /* 会社詳細情報（H1タイトル）の改ページ */
     h1#s社---ai連携企業材料データベース検索システム開発,
@@ -231,7 +277,7 @@ if command -v pandoc &> /dev/null; then
     @media print {
       body {
         font-size: 10pt;
-        padding: 10mm 15mm;
+        padding: 8mm 12mm;
       }
       h1 {
         page-break-after: avoid;
