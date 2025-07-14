@@ -1,0 +1,112 @@
+name: Generate Resume
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  release:
+    types: [published]
+
+jobs:
+  generate-resume:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    
+    - name: Install dependencies
+      run: |
+        npm install -g markdown-pdf
+        npm install -g concat-md
+        
+    - name: Generate combined markdown
+      run: |
+        echo "# 職務経歴書 - 黄 丞涓（ファン スンヨン）" > combined-resume.md
+        echo "" >> combined-resume.md
+        echo "**生成日**: $(date '+%Y年%m月%d日')" >> combined-resume.md
+        echo "" >> combined-resume.md
+        
+        # README.mdの内容を追加（docs/へのリンク部分は除外）
+        sed '/\*\*詳細情報\*\*:/d' README.md >> combined-resume.md
+        echo "" >> combined-resume.md
+        
+        # 各詳細ファイルの内容を追加
+        if [ -f "docs/S社_AI連携企業材料データベース検索システム.md" ]; then
+          echo "---" >> combined-resume.md
+          echo "" >> combined-resume.md
+          echo "# S社 詳細情報" >> combined-resume.md
+          echo "" >> combined-resume.md
+          cat "docs/S社_AI連携企業材料データベース検索システム.md" >> combined-resume.md
+          echo "" >> combined-resume.md
+        fi
+        
+        if [ -f "docs/C社_AI音声プラットフォーム開発.md" ]; then
+          echo "---" >> combined-resume.md
+          echo "" >> combined-resume.md
+          echo "# C社 詳細情報" >> combined-resume.md
+          echo "" >> combined-resume.md
+          cat "docs/C社_AI音声プラットフォーム開発.md" >> combined-resume.md
+          echo "" >> combined-resume.md
+        fi
+        
+        if [ -f "docs/I社_統合ログ管理システム.md" ]; then
+          echo "---" >> combined-resume.md
+          echo "" >> combined-resume.md
+          echo "# I社 詳細情報" >> combined-resume.md
+          echo "" >> combined-resume.md
+          cat "docs/I社_統合ログ管理システム.md" >> combined-resume.md
+          echo "" >> combined-resume.md
+        fi
+        
+        if [ -f "docs/U社_BtoB営業支援SaaS.md" ]; then
+          echo "---" >> combined-resume.md
+          echo "" >> combined-resume.md
+          echo "# U社 詳細情報" >> combined-resume.md
+          echo "" >> combined-resume.md
+          cat "docs/U社_BtoB営業支援SaaS.md" >> combined-resume.md
+          echo "" >> combined-resume.md
+        fi
+        
+        if [ -f "docs/H社_オフィス家具受発注システム.md" ]; then
+          echo "---" >> combined-resume.md
+          echo "" >> combined-resume.md
+          echo "# H社 詳細情報" >> combined-resume.md
+          echo "" >> combined-resume.md
+          cat "docs/H社_オフィス家具受発注システム.md" >> combined-resume.md
+          echo "" >> combined-resume.md
+        fi
+    
+    - name: Generate PDF
+      run: |
+        # PDF 生成 (日本語フォント対応)
+        markdown-pdf combined-resume.md -o resume-complete.pdf \
+          --paper-format A4 \
+          --paper-margin "20mm" \
+          --css-path "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" \
+          --remarkable-options '{"html": true, "breaks": true}'
+    
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: resume-files
+        path: |
+          combined-resume.md
+          resume-complete.pdf
+    
+    - name: Create Release (if tagged)
+      if: github.event_name == 'release'
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          combined-resume.md
+          resume-complete.pdf
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
