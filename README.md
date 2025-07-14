@@ -198,7 +198,7 @@
 [最新職務経歴書ダウンロード (PDF)](https://github.com/SeungyeonHwang/CV/releases/latest/download/resume-complete.pdf)
 
 ### 📬 連絡先
-**メール**: syhwang.web@gmail.com
+syhwang.web@gmail.com
 
 <br>
 
