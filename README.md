@@ -37,7 +37,7 @@
 ![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
-- **Go (1.21)** - 2年/◎ / Echo, Gin, Wire
+- **Go (1.21)** - 2年/◎ / Echo, Wire
 - **Kotlin** - 3年/◎ / Ktor, Exposed ORM
 - **Java (17)** - 5年/◎ / Spring Boot, Micronaut
 - **Python (3.11)** - 2年/◯
@@ -108,7 +108,7 @@
 
 #### 🔍 **企業・材料データベース検索システム＋AI連携開発**
 
-**詳細情報**: [S社_AI連携企業材料データベース検索システム.md](docs/S社_AI連携企業材料データベース検索システム.md)
+**詳細情報**: [S社_AI連携企業材料データベース検索システム](docs/S社_AI連携企業材料データベース検索システム.md)
 
 **🎯 主要成果:**
 
@@ -122,7 +122,7 @@
 
 #### 📱 **AI音声プラットフォーム開発プロジェクト**
 
-**詳細情報**: [C社_AI音声プラットフォーム開発.md](docs/C社_AI音声プラットフォーム開発.md)
+**詳細情報**: [C社_AI音声プラットフォーム開発](docs/C社_AI音声プラットフォーム開発.md)
 
 **🎯 主要成果:**
 
@@ -136,7 +136,7 @@
 
 #### 📊 **統合ログ管理システム - クラウド連携モジュール開発**
 
-**詳細情報**: [I社_統合ログ管理システム.md](docs/I社_統合ログ管理システム.md)
+**詳細情報**: [I社_統合ログ管理システム](docs/I社_統合ログ管理システム.md)
 
 **🎯 主要成果:**
 
@@ -150,7 +150,7 @@
 
 #### 🗺️ **BtoB営業支援SaaSプロダクト開発**
 
-**詳細情報**: [U社_BtoB営業支援SaaS.md](docs/U社_BtoB営業支援SaaS.md)
+**詳細情報**: [U社_BtoB営業支援SaaS](docs/U社_BtoB営業支援SaaS.md)
 
 **🎯 主要成果:**
 
@@ -164,7 +164,7 @@
 
 #### 🏪 **オフィス家具メーカー向け受発注システム開発**
 
-**詳細情報**: [H社_オフィス家具受発注システム.md](docs/H社_オフィス家具受発注システム.md)
+**詳細情報**: [H社_オフィス家具受発注システム](docs/H社_オフィス家具受発注システム.md)
 
 **🎯 主要成果:**
 
