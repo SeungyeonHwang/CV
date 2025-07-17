@@ -86,6 +86,8 @@ Go・Kotlin・TypeScriptで**サーバーサイドからフロントエンドま
 </tr>
 </table>
 
+<div style="page-break-before: always;"></div>
+
 ## 💡 保有スキル・知識
 
 ### フルスタック・独立開発
@@ -180,7 +182,7 @@ Go・Kotlin・TypeScriptで**サーバーサイドからフロントエンドま
 - 🧪 テストカバレッジ112%向上（40%→85%）
 - 🔄 手戻り率75%削減（20%→5%）
 
----
+<div style="page-break-before: always;"></div>
 
 ## 🎓 学歴・資格
 
@@ -188,8 +190,6 @@ Go・Kotlin・TypeScriptで**サーバーサイドからフロントエンドま
 |------|------|
 | **学歴** | 大学卒業 |
 | **語学** | TOEIC 845点、アメリカ留学経験 |
-
----
 
 ## 🚀 今後のキャリアビジョン
 
