@@ -15,6 +15,7 @@
 
 ```
 Kotlin • Spring Boot • PostgreSQL • Redis • Elasticsearch • Azure • GraphQL
+MS Dynamics 365 • Salesforce • CRM連携
 ```
 
 ---
@@ -51,6 +52,21 @@ Kotlin • Spring Boot • PostgreSQL • Redis • Elasticsearch • Azure • 
 **結果**  
 **レスポンスタイム 5秒 → 1秒以下（80%改善）**
 
+### 3️⃣ CRMプラットフォーム連携
+
+#### 🔗 MS Dynamics 365・Salesforce統合
+
+**課題**  
+営業チームが複数のCRMプラットフォームを利用しており、データの一元管理が必要
+
+**解決策**
+- **MS Dynamics 365連携**: Web APIによるリアルタイムデータ同期
+- **Salesforce連携**: Sales Cloud APIによる営業データ統合
+- **双方向同期**: 両プラットフォーム間のデータ整合性確保
+
+**結果**  
+**営業プロセスの自動化により、データ入力工数60%削減**
+
 ---
 
 ## 🔧 技術的取り組み
@@ -74,6 +90,24 @@ Kotlin • Spring Boot • PostgreSQL • Redis • Elasticsearch • Azure • 
 
 </td>
 </tr>
+<tr>
+<td valign="top" width="50%">
+
+### 🔗 CRM統合開発
+- **MS Dynamics 365**: Web API連携実装
+- **Salesforce**: Sales Cloud統合
+- **データ整合性**: 双方向同期システム
+
+</td>
+<td valign="top" width="50%">
+
+### ☁️ クラウドプラットフォーム
+- **Azure連携**: エンタープライズ認証統合
+- **API Gateway**: 統一的なAPI管理
+- **自動化**: CI/CD パイプライン構築
+
+</td>
+</tr>
 </table>
 
 ---
@@ -85,4 +119,6 @@ Kotlin • Spring Boot • PostgreSQL • Redis • Elasticsearch • Azure • 
 + 📊 データベースストレージ使用率57%削減（70%→30%）
 + 🔴 Redis SDIFF活用による効率的な差分処理システム構築
 + 🔍 Elasticsearch導入による高速全文検索システム実現
++ 🔗 MS Dynamics 365・Salesforce統合によるCRM連携基盤構築
++ ☁️ 営業プロセス自動化により、データ入力工数60%削減
 ```

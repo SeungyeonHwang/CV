@@ -12,7 +12,7 @@
 
 ## 📋 職務要約
 
-**6年間のフルスタック開発経験**を持ち、Go・Kotlin・TypeScriptを核とした**サーバーサイドからフロントエンドまで一貫開発**が可能なエンジニア。特に**AI/LLM連携システム分野**でLangChain・プロンプトエンジニアリングを活用したインテリジェントなWebサービス開発と**マイクロサービスアーキテクチャ設計**に強みを持っています。**企画段階から運用保守まで一気通貫**で担当し、**ユーザーファースト**の視点から技術的意思決定をリード。**決済システム設計・実装**や**認証基盤構築**の豊富な経験を保有します。
+Go・Kotlin・TypeScriptで**サーバーサイドからフロントエンドまで一貫開発**を実践するエンジニア。特に**AI/LLM連携システム分野**でLangChain・プロンプトエンジニアリングを活用したインテリジェントなWebサービス開発と**マイクロサービスアーキテクチャ設計**に強みを持っています。**企画段階から運用保守まで一気通貫**で担当し、**ユーザーファースト**の視点から技術的意思決定をリード。**決済システム設計・実装**や**認証基盤構築**の豊富な経験を保有します。
 
 🎯 **代表的な技術成果**
 - 🤖 **AI連携Webサービス開発** - LangChain + ChatGPT API統合による知的文書解析機能を実装
@@ -37,18 +37,18 @@
 ![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
-- **Go (1.21)** - 2年/◎ / Echo, Wire
-- **Kotlin** - 3年/◎ / Ktor, Exposed ORM
-- **Java (17)** - 5年/◎ / Spring Boot, Micronaut
-- **Python (3.11)** - 2年/◯
+- **Go (1.21)** - 2年/◎ / Echo, Wire - マイクロサービスAPI開発で活用
+- **Kotlin** - 3年/◎ / Ktor, Exposed ORM - RESTful API・GraphQLサーバー構築
+- **Java (17)** - 4年/◎ / Spring Boot, Micronaut - 企業向けWebアプリケーション開発
+- **Python (3.11)** - 2年/◯ - データ分析・自動化ツール作成
 
 ### 🌐 フロントエンド
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Vue.js](https://img.shields.io/badge/-Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white)
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white)
 
-- **TypeScript (5.2)** - 2年/◎ / 型安全性重視
-- **Vue.js/Nuxt.js** - 2年/◯ / SPA開発
+- **TypeScript (5.2)** - 3年/◎ / 型安全性重視 - 大規模SPA開発で保守性向上
+- **Vue.js/Nuxt.js** - 2年/◯ / SPA開発 - 管理画面・UIコンポーネント設計
 - **React.js/Next.js** - 1年/◯ / SSR/SSG
 
 </td>
@@ -58,20 +58,29 @@
 ![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
 ![Azure](https://img.shields.io/badge/-Azure-0089D0?style=flat-square&logo=microsoft-azure&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Slack](https://img.shields.io/badge/-Slack-4A154B?style=flat-square&logo=slack&logoColor=white)
 
-- **AWS** - 3年/◎ / Lambda, Aurora, S3, DynamoDB
-- **Azure** - 2年/◯ / App Service, Functions
-- **Docker** - 3年/◯ / コンテナ化, IaC
+- **AWS** - 3年/◎ / Lambda, Aurora, S3, DynamoDB - サーバーレスアーキテクチャ構築
+- **Azure** - 2年/◯ / App Service, Functions - エンタープライズ系システム連携
+- **Docker** - 3年/◯ / コンテナ化, IaC - 開発環境統一・デプロイ自動化
+- **Slack自動化** - 2年/◎ / Webhook, API - リリース通知・監視アラート・デプロイフロー改善
 
 ### 🗄️ データベース・ミドルウェア
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![Elasticsearch](https://img.shields.io/badge/-Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white)
 
-- **PostgreSQL/MySQL** - 5年/◎ / クエリ最適化, インデックス設計
-- **Redis** - 3年/◎ / キャッシュ戦略, 差分処理(SDIFF)
-- **ElasticSearch** - 2年/◎ / 全文検索, 検索エンジン最適化
-- **DynamoDB** - 1年/◯ / NoSQL設計, パフォーマンス調整
+- **PostgreSQL/MySQL** - 5年/◎ / クエリ最適化, インデックス設計 - 大量データ処理の高速化
+- **Redis** - 1年/◯ / キャッシュ戦略, 差分処理(SDIFF) - セッション管理・リアルタイムデータ処理
+- **ElasticSearch** - 1年/◯ / 全文検索, 検索エンジン最適化 - 企業情報検索システム構築
+- **DynamoDB** - 1.5年/◯ / NoSQL設計, パフォーマンス調整 - スケーラブルなユーザーデータ管理
+
+### 🔗 CRM・SaaSプラットフォーム
+![Salesforce](https://img.shields.io/badge/-Salesforce-00A1E0?style=flat-square&logo=salesforce&logoColor=white)
+![Microsoft](https://img.shields.io/badge/-Dynamics_365-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+
+- **MS Dynamics 365** - 1年/◯ / CRM連携, Web API - 営業支援システムとの統合開発
+- **Salesforce** - 1年/◯ / Sales Cloud, API連携 - BtoB営業プロセス自動化
 
 </td>
 </tr>
@@ -112,7 +121,7 @@
 
 **🎯 主要成果:**
 
-- 🤖 ChatGPT API統合による各種PDF文書解析・自社DB化機能を独力で設計・実装
+- 🤖 ChatGPT API統合による各種PDF文書解析・自社DB化機能を設計・実装
 - 📈 AI検索機能により検索精度向上とユーザー滞在時間150%増加
 
 ---
@@ -127,7 +136,7 @@
 **🎯 主要成果:**
 
 - 💳 決済システムの設計・実装を主導（Stripe連携、サブスク・従量課金対応）
-- 🔄 企画→開発→リリースまで一人で完結する開発体制を確立
+- 🔄 企画→開発→リリースまで主体的に推進し、迅速な開発体制を確立
 
 ---
 
@@ -184,11 +193,47 @@
 
 ## 🚀 今後のキャリアビジョン
 
+> 自分が開発したサービスが世の中に広がり、人々の生活に価値を提供すること
+
+### 🎯 今後の目標：開発リーダーとして事業成長をリード
+
+#### リーダーシップと事業貢献
+
+- 開発リーダーとして新規サービスをゼロから立ち上げ、グロースさせるスキルをさらに磨きたいです
+- ビジネスに貢献できるエンジニアとして、技術的観点からサービスの成長戦略を提案し、実行したいと思います
+- 幅広い開発工程での経験を活かし、プロダクト全体のアーキテクチャ設計から運用まで一貫してリードしたいです
+
+#### チーム・組織への貢献
+
+- 開発者が快適に働ける基盤作りをさらに進化させ、スケーラブルな開発組織の構築に貢献したいです
+- 技術的負債の解決とインシデント発生率の最小化を通じて、持続可能な開発体制を確立したいと思います
+
+#### グローバル展開への貢献
+
+- アメリカでの経験と韓国人である背景を活かし、事業のグローバル化に積極的に貢献したいです
+- 日本人とは異なる視点でのUI提案や多様性に富んだサービス設計により、より包括的なプロダクト開発を実現したいです
+- B to C・B to B両方のドメインでの豊富な経験を活かし、国際的なサービス展開における戦略立案に参画したいと思います
+
+### 💡 理念・価値観
+
+#### 持続可能なサービス創造
+
+- 「自分が使いたいサービス」を作ることを基本理念とし、ユーザーファーストの開発を実践し続けたいです
+- 「数年後に検索したときに生き残っているサービス」を作り、長期的に愛されるプロダクトを目指したいです
+
+#### 主体的なイノベーション
+
+- 常に「自分が主体として考える」姿勢を保ち、技術革新とビジネス成長を両立させたいです
+- フルスタック開発経験とAI・機械学習への知見を組み合わせ、次世代のWebサービスを創造したいと思います
+
+### 🔧 技術的な目標
+
 1. **AI/検索システム専門性の深化**: 大規模検索エンジンとAI技術を融合した次世代プラットフォーム開発
-2. **フルスタック技術リーダー**: Go・Kotlin・TypeScriptを軸としたクラウドネイティブアーキテクチャの設計・実装
-3. **フルスタック開発体制の確立**: 企画から運用まで一気通貫で担当できる総合力を活かした価値創造
+2. **フルスタック技術リーダー**: Go・Kotlin・TypeScriptを軸としたクラウドネイティブアーキテクチャの設計・実装を通じてチームに貢献
+3. **フルスタック開発体制の確立**: 企画から運用まで一気通貫で担当できる総合力を活かし、製品価値向上に尽力
 4. **チーム技術力向上への貢献**: 積極的なコミュニケーションと知識共有でチーム全体の開発効率化をリード
 5. **継続的学習と技術革新**: 日々スキルを伸ばす努力を続け、最新技術動向をキャッチアップして実務に活用
+
 
 ---
 
