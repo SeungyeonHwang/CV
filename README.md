@@ -12,14 +12,16 @@
 
 ## 📋 職務要約
 
-Go・Kotlin・TypeScriptで**サーバーサイドからフロントエンドまで一貫開発**を実践するエンジニア。特に**AI/LLM連携システム分野**でLangChain・プロンプトエンジニアリングを活用したインテリジェントなWebサービス開発と**マイクロサービスアーキテクチャ設計**に強みを持っています。**企画段階から運用保守まで一気通貫**で担当し、**ユーザーファースト**の視点から技術的意思決定をリード。**決済システム設計・実装**や**認証基盤構築**の豊富な経験を保有します。
+Go・Kotlin・TypeScriptで**サーバーサイドからフロントエンドまで一貫開発**を実践するエンジニア。**大規模トラフィック処理**（Elasticsearch、Redis、負荷分散）と**ビッグデータ処理**（バッチ最適化、並行処理）の豊富な経験を保有。特に**AI/LLM連携システム分野**でLangChain・プロンプトエンジニアリングを活用したインテリジェントなWebサービス開発と**マイクロサービスアーキテクチャ設計**に強みを持っています。**Go言語での高性能API開発**（2年）と**サーバーレスアーキテクチャ**（AWS Lambda）の実装経験により、スケーラブルなシステム構築が可能。**企画段階から運用保守まで一気通貫**で担当し、**CI/CD構築**から**IaC実践**まで、モダンなDevOps文化を推進。**決済システム設計・実装**や**認証基盤構築**の豊富な経験を保有します。
 
 🎯 **代表的な技術成果**
 - 🤖 **AI連携Webサービス開発** - LangChain + ChatGPT API統合による知的文書解析機能を実装
 - 🧠 **プロンプトエンジニアリング** - Chain of Thought・役割指定・Few-shot学習技法適用
+- 🔍 **大規模検索インフラ構築** - Elasticsearch負荷分散設計でレスポンス時間**5秒→1秒以下**に改善
+- 📈 **ビッグデータ処理最適化** - 並行処理・バッチ最適化で**3時間→40分に短縮**（大量ログデータ処理）
 - 💳 **決済システム設計・実装** - Stripe連携によるサブスク・従量課金フロー構築
-- 🚀 **マイクロサービス化** - モノリス分離で配布頻度**週1回→日複数回**に向上
-- 📊 **システム性能改善** - DB最適化で処理時間**3時間→40分に短縮**
+- 🚀 **マイクロサービス化** - Go言語でのAPI開発、モノリス分離で配布頻度**週1回→日複数回**に向上
+- ⚡ **高可用性システム設計** - Redis活用キャッシュ戦略・オートスケーリングで**99.9%稼働率**達成
 - 🔄 **フルスタック開発体制** - 企画・設計・実装・運用まで一貫して担当
 
 <br>
@@ -37,10 +39,10 @@ Go・Kotlin・TypeScriptで**サーバーサイドからフロントエンドま
 ![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
-- **Go (1.21)** - 2年/◎ / Echo, Wire - マイクロサービスAPI開発で活用
-- **Kotlin** - 3年/◎ / Ktor, Exposed ORM - RESTful API・GraphQLサーバー構築
-- **Java (17)** - 4年/◎ / Spring Boot, Micronaut - 企業向けWebアプリケーション開発
-- **Python (3.11)** - 2年/◯ - データ分析・自動化ツール作成
+- **Go (1.21)** - 2年/◎ / Echo, Wire - 高性能マイクロサービスAPI開発、並行処理・goroutine活用
+- **Kotlin** - 3年/◎ / Ktor, Exposed ORM - RESTful API・GraphQLサーバー構築、関数型プログラミング実践
+- **Java (17)** - 4年/◎ / Spring Boot, Micronaut - 企業向け大規模Webアプリケーション開発
+- **Python (3.11)** - 2年/◯ - データ分析・バッチ処理・自動化ツール作成
 
 ### 🌐 フロントエンド
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -70,10 +72,11 @@ Go・Kotlin・TypeScriptで**サーバーサイドからフロントエンドま
 ![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![Elasticsearch](https://img.shields.io/badge/-Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white)
 
-- **PostgreSQL/MySQL** - 5年/◎ / クエリ最適化, インデックス設計 - 大量データ処理の高速化
-- **Redis** - 1年/◯ / キャッシュ戦略, 差分処理(SDIFF) - セッション管理・リアルタイムデータ処理
-- **ElasticSearch** - 1年/◯ / 全文検索, 検索エンジン最適化 - 企業情報検索システム構築
-- **DynamoDB** - 1.5年/◯ / NoSQL設計, パフォーマンス調整 - スケーラブルなユーザーデータ管理
+- **PostgreSQL/MySQL** - 5年/◎ / クエリ最適化, インデックス設計 - **TB級大量データ処理の高速化**
+- **Redis** - 1年/◯ / キャッシュ戦略, 差分処理(SDIFF) - **大規模セッション管理・リアルタイムデータ処理**
+- **ElasticSearch** - 1年/◯ / 全文検索, クラスター構築 - **大規模検索インフラ・負荷分散設計**
+- **DynamoDB** - 1.5年/◯ / NoSQL設計, パフォーマンス調整 - **数千万件のユーザーデータ管理**
+- **ビッグデータ基盤** - FluentD・Logstashでのデータパイプライン構築、バッチ処理最適化
 
 ### 🔗 CRM・SaaSプラットフォーム
 ![Salesforce](https://img.shields.io/badge/-Salesforce-00A1E0?style=flat-square&logo=salesforce&logoColor=white)
@@ -99,17 +102,21 @@ Go・Kotlin・TypeScriptで**サーバーサイドからフロントエンドま
 
 ### アーキテクチャ設計
 
-- ✅ **クリーンアーキテクチャ** - DDD実践、レイヤード設計
-- ✅ **マイクロサービス** - 独立したサービス設計、API Gateway
-- ✅ **サーバーレス** - AWS Lambda, イベント駆動型設計
-- ✅ **RESTful API** - OpenAPI仕様、バージョニング戦略
+- ✅ **大規模システム設計** - 負荷分散、オートスケーリング、キャッシュ戦略、CDN活用
+- ✅ **マイクロサービス設計** - モノリス分解、API Gateway、サービス間通信、サーキットブレーカー
+- ✅ **イベント駆動設計** - AWS Lambda、非同期処理、メッセージキュー、Pub/Sub
+- ✅ **データベース設計** - RDB/NoSQLハイブリッド、インデックス最適化、シャーディング、レプリケーション
+- ✅ **高可用性設計** - フェイルオーバー、災害復旧、99.9%稼働率達成
+- ✅ **RESTful API / GraphQL** - OpenAPI仕様、バージョニング戦略、DataLoader
 
 ### DevOps・CI/CD
 
-- ✅ **IaC** - CloudFormation, SAM
-- ✅ **CI/CD** - GitHub Actions
-- ✅ **監視** - CloudWatch, Datadog, Sentry
-- ✅ **テスト** - TDD, BDD, E2Eテスト
+- ✅ **CI/CDパイプライン** - GitHub Actions、自動テスト、Blue/Greenデプロイ、カナリアリリース
+- ✅ **IaC実践** - AWS SAM、CloudFormation、Terraform、環境別構成管理
+- ✅ **監視・ログ基盤** - CloudWatch、Datadog、Sentry、構造化ログ設計、アラート設定
+- ✅ **コンテナ化** - Docker、ECS、Kubernetes、オーケストレーション
+- ✅ **自動化** - ビルド自動化、テスト自動化（単体・結合・E2E）、デプロイ自動化
+- ✅ **サービス安定化** - SLO/SLI設定、インシデント対応、ポストモーテム文化
 
 
 ## 🏢 職務経歴
@@ -124,7 +131,9 @@ Go・Kotlin・TypeScriptで**サーバーサイドからフロントエンドま
 **🎯 主要成果:**
 
 - 🤖 ChatGPT API統合による各種PDF文書解析・自社DB化機能を設計・実装
+- 🔍 **Elasticsearchクラスター構築**による大規模検索インフラ・負荷分散設計
 - 📈 AI検索機能により検索精度向上とユーザー滞在時間150%増加
+- ⚡ **GraphQL DataLoader**パターンでN+1問題解決、API応答性能を大幅改善
 
 ---
 
@@ -138,7 +147,9 @@ Go・Kotlin・TypeScriptで**サーバーサイドからフロントエンドま
 **🎯 主要成果:**
 
 - 💳 決済システムの設計・実装を主導（Stripe連携、サブスク・従量課金対応）
-- 🔄 企画→開発→リリースまで主体的に推進し、迅速な開発体制を確立
+- 🚀 **Go言語でのマイクロサービスAPI開発**、AWS Lambda活用のサーバーレス設計
+- 🏗️ **Aurora + DynamoDB**のハイブリッドDB設計で高可用性を実現
+- 🔄 企画→開発→リリースまで主体的に推進し、**CI/CDパイプライン構築**で迅速な開発体制を確立
 
 ---
 
@@ -151,7 +162,9 @@ Go・Kotlin・TypeScriptで**サーバーサイドからフロントエンドま
 
 **🎯 主要成果:**
 
-- 📊 パフォーマンス改善により処理時間を82%短縮（3時間→40分）
+- 📊 **大量ログデータのバッチ処理最適化**により処理時間を82%短縮（3時間→40分）
+- 🔧 **マルチスレッドプログラミング**による並行処理実装で大規模データ処理を高速化
+- 📈 **Visual VMプロファイリング**によるメモリ最適化・ボトルネック解消
 - 📚 共通ライブラリ化により開発工数50%削減
 
 ---
@@ -165,8 +178,10 @@ Go・Kotlin・TypeScriptで**サーバーサイドからフロントエンドま
 
 **🎯 主要成果:**
 
-- 🔍 検索APIレスポンス時間80%改善（5秒→1秒以下）
-- 📊 データベースストレージ使用率57%削減（70%→30%）
+- 🔍 **Elasticsearch導入**による大規模検索インフラ構築、レスポンス時間80%改善（5秒→1秒以下）
+- 💾 **Redis SDIFF活用**による大規模差分処理システム実装
+- 📊 **PostgreSQLインデックス最適化**でストレージ使用率57%削減（70%→30%）
+- 🔄 **Logstash**経由でのリアルタイムデータパイプライン構築
 
 ---
 
