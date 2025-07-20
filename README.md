@@ -2,7 +2,7 @@
 
 ## 👨‍💻 黄 丞涓（ファン スンヨン）
 
-**フルスタックエンジニア | 6年経験 | Go・Kotlin・Java・TypeScript**
+**フルスタックエンジニア | Go・Kotlin・Java・TypeScript**
 
 [![Email](https://img.shields.io/badge/Email-syhwang.web%40gmail.com-blue?style=flat-square&logo=gmail)](mailto:syhwang.web@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-SeungyeonHwang-181717?style=flat-square&logo=github)](https://github.com/SeungyeonHwang)
@@ -12,17 +12,19 @@
 
 ## 📋 職務要約
 
-Go・Kotlin・TypeScriptで**サーバーサイドからフロントエンドまで一貫開発**を実践するエンジニア。**大規模トラフィック処理**（Elasticsearch、Redis、負荷分散）と**ビッグデータ処理**（バッチ最適化、並行処理）の豊富な経験を保有。特に**AI/LLM連携システム分野**でLangChain・プロンプトエンジニアリングを活用したインテリジェントなWebサービス開発と**マイクロサービスアーキテクチャ設計**に強みを持っています。**Go言語での高性能API開発**（2年）と**サーバーレスアーキテクチャ**（AWS Lambda）の実装経験により、スケーラブルなシステム構築が可能。**企画段階から運用保守まで一気通貫**で担当し、**CI/CD構築**から**IaC実践**まで、モダンなDevOps文化を推進。**決済システム設計・実装**や**認証基盤構築**の豊富な経験を保有します。
+**AI連携・検索システム開発のスペシャリスト**。これまで培った技術力により、大規模クエリ最適化（5秒→1秒以下）、AI文書解析システム構築、データ処理パイプライン実装（3時間→40分）など、**ユーザー体験を向上させる機能開発**を継続的に実現。
 
-🎯 **代表的な技術成果**
-- 🤖 **AI連携Webサービス開発** - LangChain + ChatGPT API統合による知的文書解析機能を実装
-- 🧠 **プロンプトエンジニアリング** - Chain of Thought・役割指定・Few-shot学習技法適用
-- 🔍 **大規模検索インフラ構築** - Elasticsearch負荷分散設計でレスポンス時間**5秒→1秒以下**に改善
-- 📈 **ビッグデータ処理最適化** - 並行処理・バッチ最適化で**3時間→40分に短縮**（大量ログデータ処理）
-- 💳 **決済システム設計・実装** - Stripe連携によるサブスク・従量課金フロー構築
-- 🚀 **マイクロサービス化** - Go言語でのAPI開発、モノリス分離で配布頻度**週1回→日複数回**に向上
-- ⚡ **高可用性システム設計** - Redis活用キャッシュ戦略・オートスケーリングで**99.9%稼働率**達成
-- 🔄 **フルスタック開発体制** - 企画・設計・実装・運用まで一貫して担当
+**フルスタック開発力**（Go・Kotlin・TypeScript）で、サーバーサイドからフロントエンドまで一貫した実装が可能。**大規模クエリ最適化・データベース設計**と**分散システム**（Elasticsearch・Redis）を活用したスケーラブルなシステム構築が強み。特に**AI/LLM技術（LangChain）**と**決済システム実装**で、ビジネスクリティカルな領域での豊富な実績を保有。
+
+技術選定からアーキテクチャ設計、実装まで**一貫してリード**。**フルスタック機能開発**を中心に、DevOps経験も活かしながら開発生産性向上に貢献。ビジネス要求を技術で解決する**機能開発エンジニア**として価値を提供。
+
+🎯 **代表的な成果とビジネスインパクト**
+- 🤖 **AI文書解析システム** - LangChain実装により手動作業を自動化、**企業のDX要求を実現**
+- 🔍 **検索システム高速化** - レスポンス時間を5秒→1秒に改善、**大企業ユーザーの業務効率化を実現**
+- 📈 **データ処理最適化** - 処理時間を3時間→40分に短縮、**日次運用コスト70%削減**
+- 💳 **決済基盤構築** - Stripe連携でサブスク・従量課金を実現、**新規収益モデル確立**
+- 🚀 **開発生産性向上** - マイクロサービス化でリリース頻度を週1→日複数回、**機能追加速度3倍**
+- 👥 **技術的リーダーシップ** - アーキテクチャ設計主導、技術選定、チーム内技術共有の推進
 
 <br>
 <br>
@@ -39,19 +41,31 @@ Go・Kotlin・TypeScriptで**サーバーサイドからフロントエンドま
 ![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
-- **Go (1.21)** - 2年/◎ / Echo, Wire - 高性能マイクロサービスAPI開発、並行処理・goroutine活用
-- **Kotlin** - 3年/◎ / Ktor, Exposed ORM - RESTful API・GraphQLサーバー構築、関数型プログラミング実践
-- **Java (17)** - 4年/◎ / Spring Boot, Micronaut - 企業向け大規模Webアプリケーション開発
-- **Python (3.11)** - 2年/◯ - データ分析・バッチ処理・自動化ツール作成
+- **Go (1.21)** - 2年/◎  
+  <small>Echo, Wire / 高性能マイクロサービスAPI開発、並行処理・goroutine活用</small>
+  
+- **Kotlin** - 3年/◎  
+  <small>Ktor, Exposed ORM / RESTful API・GraphQLサーバー構築、関数型プログラミング実践</small>
+  
+- **Java (17)** - 4年/◎  
+  <small>Spring Boot, Micronaut / 企業向け大規模Webアプリケーション開発</small>
+  
+- **Python (3.11)** - 2年/◯  
+  <small>データ分析・バッチ処理・自動化ツール作成</small>
 
 ### 🌐 フロントエンド
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Vue.js](https://img.shields.io/badge/-Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white)
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white)
 
-- **TypeScript (5.2)** - 3年/◎ / 型安全性重視 - 大規模SPA開発で保守性向上
-- **Vue.js/Nuxt.js** - 2年/◯ / SPA開発 - 管理画面・UIコンポーネント設計
-- **React.js/Next.js** - 1年/◯ / SSR/SSG
+- **TypeScript (5.2)** - 3年/◎  
+  <small>型安全性重視 / 大規模SPA開発で保守性向上</small>
+  
+- **Vue.js/Nuxt.js** - 2年/◯  
+  <small>SPA開発 / 管理画面・UIコンポーネント設計</small>
+  
+- **React.js/Next.js** - 1年/◯  
+  <small>SSR/SSG</small>
 
 </td>
 <td valign="top" width="50%">
@@ -62,28 +76,47 @@ Go・Kotlin・TypeScriptで**サーバーサイドからフロントエンドま
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Slack](https://img.shields.io/badge/-Slack-4A154B?style=flat-square&logo=slack&logoColor=white)
 
-- **AWS** - 3年/◎ / Lambda, Aurora, S3, DynamoDB - サーバーレスアーキテクチャ構築
-- **Azure** - 2年/◯ / App Service, Functions - エンタープライズ系システム連携
-- **Docker** - 3年/◯ / コンテナ化, IaC - 開発環境統一・デプロイ自動化
-- **Slack自動化** - 2年/◎ / Webhook, API - リリース通知・監視アラート・デプロイフロー改善
+- **AWS** - 3年/◎  
+  Lambda, Aurora, S3, DynamoDB / サーバーレスアーキテクチャ構築
+  
+- **Azure** - 2年/◯  
+  App Service, Functions / エンタープライズ系システム連携
+  
+- **Docker** - 3年/◯  
+  コンテナ化, IaC / 開発環境統一・デプロイ自動化
+  
+- **Slack自動化** - 2年/◎  
+  Webhook, API / リリース通知・監視アラート・デプロイフロー改善
 
 ### 🗄️ データベース・ミドルウェア
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![Elasticsearch](https://img.shields.io/badge/-Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white)
 
-- **PostgreSQL/MySQL** - 5年/◎ / クエリ最適化, インデックス設計 - **TB級大量データ処理の高速化**
-- **Redis** - 1年/◯ / キャッシュ戦略, 差分処理(SDIFF) - **大規模セッション管理・リアルタイムデータ処理**
-- **ElasticSearch** - 1年/◯ / 全文検索, クラスター構築 - **大規模検索インフラ・負荷分散設計**
-- **DynamoDB** - 1.5年/◯ / NoSQL設計, パフォーマンス調整 - **数千万件のユーザーデータ管理**
-- **ビッグデータ基盤** - FluentD・Logstashでのデータパイプライン構築、バッチ処理最適化
+- **PostgreSQL/MySQL** - 5年/◎  
+  クエリ最適化, インデックス設計 / TB級大量データ処理の高速化
+  
+- **Redis** - 1年/◯  
+  キャッシュ戦略, 差分処理(SDIFF) / 大規模セッション管理・リアルタイムデータ処理
+  
+- **ElasticSearch** - 1年/◯  
+  全文検索, クラスター構築 / 大規模検索インフラ・負荷分散設計
+  
+- **DynamoDB** - 1.5年/◯  
+  NoSQL設計, パフォーマンス調整 / 数千万件のユーザーデータ管理
+  
+- **ビッグデータ基盤**  
+  FluentD・Logstashでのデータパイプライン構築、バッチ処理最適化
 
 ### 🔗 CRM・SaaSプラットフォーム
 ![Salesforce](https://img.shields.io/badge/-Salesforce-00A1E0?style=flat-square&logo=salesforce&logoColor=white)
 ![Microsoft](https://img.shields.io/badge/-Dynamics_365-0078D4?style=flat-square&logo=microsoft&logoColor=white)
 
-- **MS Dynamics 365** - 1年/◯ / CRM連携, Web API - 営業支援システムとの統合開発
-- **Salesforce** - 1年/◯ / Sales Cloud, API連携 - BtoB営業プロセス自動化
+- **MS Dynamics 365** - 1年/◯  
+  CRM連携, Web API / 営業支援システムとの統合開発
+  
+- **Salesforce** - 1年/◯  
+  Sales Cloud, API連携 / BtoB営業プロセス自動化
 
 </td>
 </tr>
@@ -92,6 +125,14 @@ Go・Kotlin・TypeScriptで**サーバーサイドからフロントエンドま
 <div style="page-break-before: always;"></div>
 
 ## 💡 保有スキル・知識
+
+### 技術的リーダーシップ
+
+- ✅ **アーキテクチャ設計主導** - マイクロサービス、サーバーレス、分散システムの設計
+- ✅ **技術選定・導入** - Elasticsearch、Go言語、LangChain等の新技術導入をリード
+- ✅ **パフォーマンス改善主導** - プロファイリングから最適化まで、チーム全体の改善活動
+- ✅ **技術共有文化構築** - 勉強会実施、ドキュメント整備、コードレビュー文化の確立
+- ✅ **メンタリング** - ジュニアエンジニアの技術指導、3ヶ月で実戦投入レベルまで育成
 
 ### フルスタック・独立開発
 
@@ -106,7 +147,7 @@ Go・Kotlin・TypeScriptで**サーバーサイドからフロントエンドま
 - ✅ **マイクロサービス設計** - モノリス分解、API Gateway、サービス間通信、サーキットブレーカー
 - ✅ **イベント駆動設計** - AWS Lambda、非同期処理、メッセージキュー、Pub/Sub
 - ✅ **データベース設計** - RDB/NoSQLハイブリッド、インデックス最適化、シャーディング、レプリケーション
-- ✅ **高可用性設計** - フェイルオーバー、災害復旧、99.9%稼働率達成
+- ✅ **分散システム対応** - クラスター環境でのエラーハンドリング、リトライ処理実装
 - ✅ **RESTful API / GraphQL** - OpenAPI仕様、バージョニング戦略、DataLoader
 
 ### DevOps・CI/CD

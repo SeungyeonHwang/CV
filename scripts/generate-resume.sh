@@ -76,7 +76,7 @@ if command -v pandoc &> /dev/null; then
     body {
       font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", "Noto Sans CJK JP", sans-serif;
       font-size: 10.5pt;
-      line-height: 1.5;
+      line-height: 1.4;
       color: #333;
       max-width: 210mm;
       margin: 0 auto;
@@ -144,7 +144,7 @@ if command -v pandoc &> /dev/null; then
       text-align: center;
     }
     ul li {
-      margin-bottom: 0.5em;
+      margin-bottom: 0.3em;
       display: list-item;
       list-style-position: outside;
     }
@@ -165,7 +165,7 @@ if command -v pandoc &> /dev/null; then
     }
     p {
       font-size: 10.5pt;
-      margin: 0.7em 0;
+      margin: 0.5em 0;
       white-space: normal;
     }
     h1, h2, h3, h4 {
@@ -222,29 +222,34 @@ if command -v pandoc &> /dev/null; then
     } */
     /* 職務経歴書ページのみスペーシング調整 */
     h2#職務要約 {
-      margin-top: 2.5em;
-      margin-bottom: 1.8em;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    /* 職務要約の各段落を균등하게 */
+    h2#職務要約 ~ p {
+      margin: 1em 0;
+      line-height: 1.6;
     }
     h2#職務要約 + p {
-      margin: 2em 0;
-      line-height: 2.2;
+      margin-top: 0.8em;  /* 첫 단락은 제목과 가까이 */
     }
-    /* 代表的な技術成果セクション */
-    h2#職務要約 + p + p {
-      margin-top: 2.5em;
-      margin-bottom: 1.5em;
+    /* 代表的な成果 섹션 */
+    p:has(strong:contains("代表的な成果")) {
+      margin-top: 1.5em;
+      margin-bottom: 0.8em;
       font-weight: bold;
     }
-    h2#職務要約 + p + p + ul {
-      margin: 2em 0;
+    /* 成果リスト */
+    p:has(strong:contains("代表的な成果")) + ul {
+      margin: 0.8em 0 1.5em 0;  /* 하단 여백 추가 */
     }
-    h2#職務要約 + p + p + ul li {
-      margin-bottom: 1.5em;
-      line-height: 2;
+    p:has(strong:contains("代表的な成果")) + ul li {
+      margin-bottom: 0.5em;  /* 각 항목 간격 약간 축소 */
+      line-height: 1.5;
     }
-    /* スキルセットテーブルの前に余白追加 */
+    /* スキルセットテーブルの前に余白追加 - 축소 */
     h2#スキルセット {
-      margin-top: 2.5em;
+      margin-top: 1.8em;  /* 2.5em에서 축소 */
       margin-bottom: 0.8em;
     }
     /* スキルセットテーブルのスタイル調整 */
@@ -263,8 +268,28 @@ if command -v pandoc &> /dev/null; then
     }
     /* スキルセットテーブル内のリスト項目フォントサイズ */
     h2#スキルセット + table ul li {
-      font-size: 8pt;
-      margin-bottom: 0.3em;
+      font-size: 8.5pt;  /* 메인 크기 유지 */
+      margin-bottom: 0.4em;
+      line-height: 1.3;
+    }
+    /* リスト内の強調部分（言語名）は通常サイズ */
+    h2#スキルセット + table ul li strong {
+      font-size: 8.5pt;
+    }
+    /* 言語説明部分（インデントされた2行目）を小さく */
+    h2#スキルセット + table ul li {
+      white-space: pre-line;
+    }
+    h2#スキルセット + table ul li::first-line {
+      font-size: 8.5pt;
+    }
+    /* Markdownの인덴트된 부분을 작게 표시 */
+    h2#スキルセット + table ul ul li,
+    h2#スキルセット + table ul li > br + *,
+    h2#スキルセット + table ul li > p {
+      font-size: 7pt !important;
+      color: #555;
+      margin-left: 1em;
     }
     /* 会社詳細情報（H1タイトル）の改ページ */
     h1#s社---ai連携企業材料データベース検索システム開発,
