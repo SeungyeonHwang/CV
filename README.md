@@ -136,38 +136,46 @@
 
 ## 💡 保有スキル・知識
 
-### 技術的リーダーシップ
+### 🎯 アーキテクチャ設計・実装
 
-- ✅ **アーキテクチャ設計主導** - マイクロサービス、サーバーレス、分散システムの設計
-- ✅ **技術選定・導入** - Elasticsearch、Go言語、LangChain等の新技術導入をリード
-- ✅ **パフォーマンス改善主導** - プロファイリングから最適化まで、チーム全体の改善活動
-- ✅ **技術共有文化構築** - 勉強会実施、ドキュメント整備、コードレビュー文化の確立
-- ✅ **メンタリング** - ジュニアエンジニアの技術指導、3ヶ月で実戦投入レベルまで育成
+**マイクロサービス設計**  
+<small>Go/Kotlin での実装経験 • RESTful API • Datadog エラー監視 • API Gateway設計</small>
 
-### フルスタック・独立開発
+**大規模システム設計**  
+<small>Elasticsearch クラスター構築（自動スケーリング実装） • Redis による処理最適化 • 負荷分散設計</small>
 
-- ✅ **フルスタック開発** - 企画・設計・実装・運用まで一貫して担当
-- ✅ **プロダクト思考** - ユーザーファーストでのMVP設計・検証
-- ✅ **決済システム** - Stripe連携、サブスク・従量課金実装
-- ✅ **フロント+バック** - Vue.js/TypeScript + Go/Kotlin での同時開発
+**データベース設計**  
+<small>Aurora + DynamoDB ハイブリッド設計 • PostgreSQL インデックス最適化 • TB級データ処理</small>
 
-### アーキテクチャ設計
+**イベント駆動アーキテクチャ**  
+<small>AWS Lambda (Echoルーティングプロキシパターン) • SQS/SNS • 非同期処理パイプライン • SendGrid メール配信システム</small>
 
-- ✅ **大規模システム設計** - 負荷分散、オートスケーリング、キャッシュ戦略、CDN活用
-- ✅ **マイクロサービス設計** - モノリス分解、API Gateway、サービス間通信、サーキットブレーカー
-- ✅ **イベント駆動設計** - AWS Lambda、非同期処理、メッセージキュー、Pub/Sub
-- ✅ **データベース設計** - RDB/NoSQLハイブリッド、インデックス最適化、シャーディング、レプリケーション
-- ✅ **分散システム対応** - クラスター環境でのエラーハンドリング、リトライ処理実装
-- ✅ **RESTful API / GraphQL** - OpenAPI仕様、バージョニング戦略、DataLoader
+### 🚀 フルスタック開発能力
 
-### DevOps・CI/CD
+**バックエンド開発**  
+<small>Go (goroutine並行処理) • Kotlin (Ktor/Exposed) • Java (Spring Boot) • GraphQL/REST API</small>
 
-- ✅ **CI/CDパイプライン** - GitHub Actions、自動テスト、Blue/Greenデプロイ、カナリアリリース
-- ✅ **IaC実践** - AWS SAM、CloudFormation、Terraform、環境別構成管理
-- ✅ **監視・ログ基盤** - CloudWatch、Datadog、Sentry、構造化ログ設計、アラート設定
-- ✅ **コンテナ化** - Docker、ECS、Kubernetes、オーケストレーション
-- ✅ **自動化** - ビルド自動化、テスト自動化（単体・結合・E2E）、デプロイ自動化
-- ✅ **サービス安定化** - SLO/SLI設定、インシデント対応、ポストモーテム文化
+**フロントエンド開発**  
+<small>TypeScript • Vue.js/Nuxt.js • React/Next.js • SPA開発</small>
+
+**AI/機械学習実装**  
+<small>LangChain パイプライン構築 • ChatGPT API 統合 • プロンプトエンジニアリング</small>
+
+### 📊 DevOps・運用
+
+**CI/CD・自動化**  
+<small>GitHub Actions • 自動デプロイ構築 • IaC (AWS SAM) • Docker コンテナ化</small>
+
+**監視・パフォーマンス改善**  
+<small>CloudWatch/Datadog • プロファイリング最適化 • 処理時間82%削減実績</small>
+
+### 💼 ビジネス貢献
+
+**技術的リーダーシップ**  
+<small>アーキテクチャ設計主導 • 新技術導入提案（Devin AI等） • 新人エンジニアオンボーディング • ドメイン知識共有会実施</small>
+
+**プロダクト開発**  
+<small>MVP設計・検証 • Stripe決済システム実装 • BigQuery KPIダッシュボード構築</small>
 
 
 ## 🏢 職務経歴
