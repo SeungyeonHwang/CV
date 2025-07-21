@@ -98,7 +98,7 @@ Microsoft Graph API • SalesForce API • Maven
 
 ---
 
-## 数値成果・インパクト
+## 技術的な成果・貢献
 
 ```diff
 + マルチクラウド対応により、Azure/AWS/GCP環境からの統合ログ収集を実現

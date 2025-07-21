@@ -73,7 +73,7 @@ MS Dynamics 365 • Salesforce • CRM連携
 
 ---
 
-## 数値成果・インパクト
+## 技術的な成果・貢献
 
 ```diff
 + 🚀 GraphQL APIによる柔軟なデータ取得で、クライアント側の体験が大幅に向上

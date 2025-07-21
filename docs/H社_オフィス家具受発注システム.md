@@ -79,7 +79,7 @@ Java • Groovy • Micronaut • Spock • H2 Database • PostgreSQL • Docke
 
 ---
 
-## 数値成果・インパクト
+## 技術的な成果・貢献
 
 ```diff
 + 🧪 担当機能のテストカバレッジ向上に貢献し、品質改善に寄与
