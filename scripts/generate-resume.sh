@@ -290,12 +290,19 @@ if command -v pandoc &> /dev/null; then
       display: block;
       margin-left: 0.5em;
     }
-    /* 会社詳細情報（H1タイトル）の改ページ */
-    h1#s社---ai連携企業材料データベース検索システム開発,
-    h1#c社---ai音声プラットフォーム開発プロジェクト,
-    h1#i社---統合ログ管理システム-クラウド連携モジュール開発,
-    h1#u社---btob営業支援saasプロダクト開発,
-    h1#h社---オフィス家具メーカー向け受発注システム開発 {
+    /* 職務経歴セクション後に改ページ */
+    h2#職務経歴 + h3 + p + h4 + p + p + ul + hr + h3 + p + h4 + p + p + ul + hr + h3 + p + h4 + p + p + ul + hr + h3 + p + h4 + p + p + ul + hr + h3 + p + h4 + p + p + ul + hr + h2 {
+      page-break-before: always;
+    }
+    /* または、最初の会社詳細（S社）の前で改ページ */
+    h1#s社---ai連携企業材料データベース検索システム {
+      page-break-before: always;
+    }
+    /* 残りの会社詳細情報（H1タイトル）の改ページ */
+    h1#c社---ai音声プラットフォーム開発,
+    h1#i社---統合ログ管理システム,
+    h1#u社---btob営業支援saas,
+    h1#h社---オフィス家具受発注システム {
       page-break-before: always;
     }
     @media print {
