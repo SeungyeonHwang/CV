@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>職務経歴書 - 黄 丞涓（ファン スンヨン）</title>
+  <style>
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "メイリオ", "Noto Sans CJK JP", sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.4;
+      color: #333;
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 8mm 12mm;
+      background: #fff;
+    }
+    /* 目次スタイル */
+    #TOC {
+      page-break-after: always;
+      min-height: 80vh;
+    }
+    #TOC h2 {
+      font-size: 18pt;
+      text-align: center;
+      margin-bottom: 2em;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 0.5em;
+    }
+    #TOC ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    #TOC > ul > li {
+      margin-bottom: 1em;
+      font-weight: bold;
+      font-size: 11pt;
+    }
+    #TOC > ul > li > a {
+      color: #2c3e50;
+      text-decoration: none;
+    }
+    #TOC ul ul {
+      padding-left: 2em;
+      margin-top: 0.5em;
+    }
+    #TOC ul ul li {
+      margin-bottom: 0.3em;
+      font-weight: normal;
+      font-size: 10pt;
+    }
+    #TOC ul ul li a {
+      color: #555;
+    }
+    #TOC a:hover {
+      color: #3498db;
+      text-decoration: underline;
+    }
+    /* 会社経歴部分を2列表示 */
+    #TOC > ul > li:nth-child(2),
+    #TOC > ul > li:nth-child(3),
+    #TOC > ul > li:nth-child(4),
+    #TOC > ul > li:nth-child(5),
+    #TOC > ul > li:nth-child(6) {
+      width: 48%;
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 1em;
+    }
+    #TOC > ul > li:nth-child(2),
+    #TOC > ul > li:nth-child(4),
+    #TOC > ul > li:nth-child(6) {
+      margin-right: 2%;
+    }
+    div[data-align="center"] {
+      text-align: center;
+    }
+    ul li {
+      margin-bottom: 0.3em;
+      display: list-item;
+      list-style-position: outside;
+    }
+    /* 特定セクションの中央揃え */
+    h2#黄-丞涓ファン-スンヨン,
+    h2#黄-丞涓ファン-スンヨン + p,
+    h2#黄-丞涓ファン-スンヨン + p + p,
+    h3#連絡先,
+    h3#連絡先 + p,
+    h3#連絡先 + p + p {
+      text-align: center;
+    }
+    h3 {
+      font-size: 13pt;
+    }
+    h4 {
+      font-size: 11pt;
+    }
+    p {
+      font-size: 10.5pt;
+      margin: 0.5em 0;
+      white-space: normal;
+    }
+    h1, h2, h3, h4 {
+      color: #2c3e50;
+      margin-top: 1em;
+      margin-bottom: 0.6em;
+      font-weight: 600;
+    }
+    h1 {
+      font-size: 18pt;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 0.5em;
+      margin-top: 0;
+    }
+    h2 {
+      font-size: 15pt;
+      border-left: 4px solid #3498db;
+      padding-left: 0.5em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1em 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 6px 8px;
+      text-align: left;
+      font-size: 8.5pt;
+    }
+    th {
+      background-color: #f8f9fa;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 1em;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    blockquote {
+      border-left: 4px solid #3498db;
+      padding-left: 1em;
+      margin-left: 0;
+      color: #666;
+    }
+    /* 保有スキル・知識セクションの改ページを削除 */
+    /* h2#保有スキル知識 {
+      page-break-before: always;
+    } */
+    /* 職務経歴書ページのみスペーシング調整 */
+    h2#職務要約 {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    /* 職務要約の各段落を균등하게 */
+    h2#職務要約 ~ p {
+      margin: 1em 0;
+      line-height: 1.6;
+    }
+    h2#職務要約 + p {
+      margin-top: 0.8em;  /* 첫 단락은 제목과 가까이 */
+    }
+    /* 代表的な成果 섹션 */
+    p:has(strong:contains("代表的な成果")) {
+      margin-top: 1.5em;
+      margin-bottom: 0.8em;
+      font-weight: bold;
+    }
+    /* 成果リスト */
+    p:has(strong:contains("代表的な成果")) + ul {
+      margin: 0.8em 0 1.5em 0;  /* 하단 여백 추가 */
+    }
+    p:has(strong:contains("代表的な成果")) + ul li {
+      margin-bottom: 0.5em;  /* 각 항목 간격 약간 축소 */
+      line-height: 1.5;
+    }
+    /* スキルセットテーブルの前に余白追加 - 축소 */
+    h2#スキルセット {
+      margin-top: 1.8em;  /* 2.5em에서 축소 */
+      margin-bottom: 0.8em;
+    }
+    /* スキルセットテーブルのスタイル調整 */
+    h2#スキルセット + table {
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+    }
+    h2#スキルセット + table td {
+      vertical-align: top;
+      padding: 10px 12px;
+    }
+    h2#スキルセット + table h3 {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+      font-size: 11pt;
+    }
+    /* スキルセットテーブル内のリスト項目フォントサイズ */
+    h2#スキルセット + table ul li {
+      font-size: 8.5pt;  /* 메인 크기 유지 */
+      margin-bottom: 0.4em;
+      line-height: 1.3;
+    }
+    /* リスト内の強調部分（言語名）は通常サイズ */
+    h2#スキルセット + table ul li strong {
+      font-size: 8.5pt;
+    }
+    /* 言語説明部分（インデントされた2行目）を小さく */
+    h2#スキルセット + table ul li {
+      white-space: pre-line;
+    }
+    h2#スキルセット + table ul li::first-line {
+      font-size: 8.5pt;
+    }
+    /* small 태그 스타일 커스터마이즈 */
+    h2#スキルセット + table small {
+      font-size: 7.5pt;
+      color: #444;  /* 더 진한 회색 */
+      display: block;
+      margin-left: 0.5em;
+    }
+    /* 職務経歴セクション後に改ページ */
+    h2#職務経歴 + h3 + p + h4 + p + p + ul + hr + h3 + p + h4 + p + p + ul + hr + h3 + p + h4 + p + p + ul + hr + h3 + p + h4 + p + p + ul + hr + h3 + p + h4 + p + p + ul + hr + h2 {
+      page-break-before: always;
+    }
+    /* または、最初の会社詳細（S社）の前で改ページ */
+    h1#s社---ai連携企業材料データベース検索システム {
+      page-break-before: always;
+    }
+    /* 残りの会社詳細情報（H1タイトル）の改ページ */
+    h1#c社---ai音声プラットフォーム開発,
+    h1#i社---統合ログ管理システム,
+    h1#u社---btob営業支援saas,
+    h1#h社---オフィス家具受発注システム {
+      page-break-before: always;
+    }
+    @media print {
+      body {
+        font-size: 10pt;
+        padding: 8mm 12mm;
+      }
+      h1 {
+        page-break-after: avoid;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+      table {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<h2>📑 目次</h2>
+<ul>
+<li><a href="#職務経歴書" id="toc-職務経歴書">職務経歴書</a>
+<ul>
+<li><a href="#黄-丞涓ファン-スンヨン" id="toc-黄-丞涓ファン-スンヨン">👨‍💻
+黄 丞涓（ファン スンヨン）</a></li>
+<li><a href="#職務要約" id="toc-職務要約">📋 職務要約</a></li>
+<li><a href="#スキルセット" id="toc-スキルセット">💼
+スキルセット</a></li>
+<li><a href="#保有スキル知識" id="toc-保有スキル知識">💡
+保有スキル・知識</a></li>
+<li><a href="#職務経歴" id="toc-職務経歴">🏢 職務経歴</a></li>
+<li><a href="#学歴資格" id="toc-学歴資格">🎓 学歴・資格</a></li>
+<li><a href="#今後のキャリアビジョン" id="toc-今後のキャリアビジョン">🚀
+今後のキャリアビジョン</a></li>
+</ul></li>
+<li><a href="#s社---ai連携企業材料データベース検索システム"
+id="toc-s社---ai連携企業材料データベース検索システム">🤖 S社 -
+AI連携企業・材料データベース検索システム</a>
+<ul>
+<li><a href="#基本情報" id="toc-基本情報">基本情報</a></li>
+<li><a href="#技術スタック" id="toc-技術スタック">技術スタック</a></li>
+<li><a href="#プロジェクト概要"
+id="toc-プロジェクト概要">プロジェクト概要</a></li>
+<li><a href="#主な実装と成果"
+id="toc-主な実装と成果">主な実装と成果</a></li>
+<li><a href="#技術的な工夫改善"
+id="toc-技術的な工夫改善">技術的な工夫・改善</a></li>
+<li><a href="#数値成果インパクト"
+id="toc-数値成果インパクト">数値成果・インパクト</a></li>
+</ul></li>
+<li><a href="#c社---ai音声プラットフォーム開発"
+id="toc-c社---ai音声プラットフォーム開発">🎵 C社 -
+AI音声プラットフォーム開発</a>
+<ul>
+<li><a href="#基本情報-1" id="toc-基本情報-1">基本情報</a></li>
+<li><a href="#技術スタック-1"
+id="toc-技術スタック-1">技術スタック</a></li>
+<li><a href="#プロジェクト概要-1"
+id="toc-プロジェクト概要-1">プロジェクト概要</a></li>
+<li><a href="#主な実装と成果-1"
+id="toc-主な実装と成果-1">主な実装と成果</a></li>
+<li><a href="#技術的な工夫改善-1"
+id="toc-技術的な工夫改善-1">技術的な工夫・改善</a></li>
+<li><a href="#数値成果インパクト-1"
+id="toc-数値成果インパクト-1">数値成果・インパクト</a></li>
+</ul></li>
+<li><a href="#i社---統合ログ管理システム"
+id="toc-i社---統合ログ管理システム">🔐 I社 - 統合ログ管理システム</a>
+<ul>
+<li><a href="#基本情報-2" id="toc-基本情報-2">基本情報</a></li>
+<li><a href="#技術スタック-2"
+id="toc-技術スタック-2">技術スタック</a></li>
+<li><a href="#プロジェクト概要-2"
+id="toc-プロジェクト概要-2">プロジェクト概要</a></li>
+<li><a href="#主な実装と成果-2"
+id="toc-主な実装と成果-2">主な実装と成果</a></li>
+<li><a href="#技術的な工夫改善-2"
+id="toc-技術的な工夫改善-2">技術的な工夫・改善</a></li>
+<li><a href="#数値成果インパクト-2"
+id="toc-数値成果インパクト-2">数値成果・インパクト</a></li>
+</ul></li>
+<li><a href="#u社---btob営業支援saas" id="toc-u社---btob営業支援saas">🏢
+U社 - BtoB営業支援SaaS</a>
+<ul>
+<li><a href="#基本情報-3" id="toc-基本情報-3">基本情報</a></li>
+<li><a href="#技術スタック-3"
+id="toc-技術スタック-3">技術スタック</a></li>
+<li><a href="#プロジェクト概要-3"
+id="toc-プロジェクト概要-3">プロジェクト概要</a></li>
+<li><a href="#主な実装と成果-3"
+id="toc-主な実装と成果-3">主な実装と成果</a></li>
+<li><a href="#技術的な工夫改善-3"
+id="toc-技術的な工夫改善-3">技術的な工夫・改善</a></li>
+<li><a href="#数値成果インパクト-3"
+id="toc-数値成果インパクト-3">数値成果・インパクト</a></li>
+</ul></li>
+<li><a href="#h社---オフィス家具受発注システム"
+id="toc-h社---オフィス家具受発注システム">💻 H社 -
+オフィス家具受発注システム</a>
+<ul>
+<li><a href="#基本情報-4" id="toc-基本情報-4">基本情報</a></li>
+<li><a href="#技術スタック-4"
+id="toc-技術スタック-4">技術スタック</a></li>
+<li><a href="#プロジェクト概要-4"
+id="toc-プロジェクト概要-4">プロジェクト概要</a></li>
+<li><a href="#主な実装と成果-4"
+id="toc-主な実装と成果-4">主な実装と成果</a></li>
+<li><a href="#技術的な工夫改善-4"
+id="toc-技術的な工夫改善-4">技術的な工夫・改善</a></li>
+<li><a href="#数値成果インパクト-4"
+id="toc-数値成果インパクト-4">数値成果・インパクト</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="職務経歴書">職務経歴書</h1>
+<p><em><strong>作成日</strong>: 2025年07月21日</em></p>
+<h2 id="黄-丞涓ファン-スンヨン">👨‍💻 黄 丞涓（ファン スンヨン）</h2>
+<p><strong>フルスタックエンジニア |
+Go・Kotlin・Java・TypeScript</strong></p>
+<p><a href="mailto:syhwang.web@gmail.com"><img
+src="https://img.shields.io/badge/Email-syhwang.web%40gmail.com-blue?style=flat-square&amp;logo=gmail"
+alt="Email" /></a> <a href="https://github.com/SeungyeonHwang"><img
+src="https://img.shields.io/badge/GitHub-SeungyeonHwang-181717?style=flat-square&amp;logo=github"
+alt="GitHub" /></a> <a href="https://maps.google.com"><img
+src="https://img.shields.io/badge/Location-福岡県_福岡市-green?style=flat-square&amp;logo=googlemaps"
+alt="Location" /></a></p>
+<hr />
+<h2 id="職務要約">📋 職務要約</h2>
+<p><strong>AI連携・検索システム開発のスペシャリスト</strong>。これまで培った技術力により、大規模クエリ最適化（5秒→1秒以下）、AI文書解析システム構築、データ処理パイプライン実装（3時間→40分）など、<strong>ユーザー体験を向上させる機能開発</strong>を継続的に実現。</p>
+<p><strong>フルスタック開発力</strong>（Go・Kotlin・TypeScript）で、サーバーサイドからフロントエンドまで一貫した実装が可能。<strong>大規模クエリ最適化・データベース設計</strong>と<strong>分散システム</strong>（Elasticsearch・Redis）を活用したスケーラブルなシステム構築が強み。特に<strong>AI/LLM技術（LangChain）</strong>と<strong>決済システム実装</strong>で、ビジネスクリティカルな領域での豊富な実績を保有。</p>
+<p>技術選定からアーキテクチャ設計、実装まで<strong>一貫してリード</strong>。<strong>フルスタック機能開発</strong>を中心に、DevOps経験も活かしながら開発生産性向上に貢献。ビジネス要求を技術で解決する<strong>機能開発エンジニア</strong>として価値を提供。</p>
+<p>🎯 <strong>代表的な成果とビジネスインパクト</strong></p>
+<ul>
+<li>🤖 <strong>AI文書解析システム</strong> -
+LangChain実装により手動作業を自動化、<strong>企業のDX要求を実現</strong></li>
+<li>🔍 <strong>検索システム高速化</strong> -
+レスポンス時間を5秒→1秒に改善、<strong>大企業ユーザーの業務効率化を実現</strong></li>
+<li>📈 <strong>データ処理最適化</strong> -
+大規模環境での処理時間を大幅に短縮、<strong>運用効率の向上</strong></li>
+<li>💳 <strong>決済基盤構築</strong> -
+Stripe連携でサブスク・従量課金を実現、<strong>新規収益モデル確立</strong></li>
+<li>🚀 <strong>開発生産性向上</strong> -
+マイクロサービス化でリリース頻度を週1→日複数回、<strong>機能追加速度3倍</strong></li>
+<li>👥 <strong>技術的リーダーシップ</strong> -
+アーキテクチャ設計主導、技術選定、チーム内技術共有の推進</li>
+</ul>
+<p><br> <br></p>
+<h2 id="スキルセット">💼 スキルセット</h2>
+<table>
+<tr>
+<td valign="top" width="50%">
+<h3 id="バックエンド">🔧 バックエンド</h3>
+<p><img
+src="https://img.shields.io/badge/-Go-00ADD8?style=flat-square&amp;logo=go&amp;logoColor=white"
+alt="Go" /> <img
+src="https://img.shields.io/badge/-Java-007396?style=flat-square&amp;logo=java&amp;logoColor=white"
+alt="Java" /> <img
+src="https://img.shields.io/badge/-Kotlin-7F52FF?style=flat-square&amp;logo=kotlin&amp;logoColor=white"
+alt="Kotlin" /> <img
+src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white"
+alt="Python" /></p>
+<ul>
+<li><p><strong>Go (1.21)</strong> - 2年/◎<br />
+<small>Echo, Wire /
+高性能マイクロサービスAPI開発、goroutineによる大規模メール配信システム（SendGrid連携）</small></p></li>
+<li><p><strong>Kotlin</strong> - 4年/◎<br />
+<small>Ktor, Exposed ORM / RESTful
+API・GraphQLサーバー構築、関数型プログラミング実践</small></p></li>
+<li><p><strong>Java (17)</strong> - 3年/◎<br />
+<small>Spring Boot, Micronaut /
+企業向け大規模Webアプリケーション開発</small></p></li>
+<li><p><strong>Python (3.11)</strong> - 2年/◯<br />
+<small>データ分析・バッチ処理・自動化ツール作成、LangChain活用</small></p></li>
+</ul>
+<h3 id="フロントエンド">🌐 フロントエンド</h3>
+<p><img
+src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white"
+alt="TypeScript" /> <img
+src="https://img.shields.io/badge/-Vue.js-4FC08D?style=flat-square&amp;logo=vue.js&amp;logoColor=white"
+alt="Vue.js" /> <img
+src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&amp;logo=react&amp;logoColor=white"
+alt="React" /></p>
+<ul>
+<li><p><strong>TypeScript (5.2)</strong> - 3年/◎<br />
+<small>型安全性重視 / 大規模SPA開発で保守性向上</small></p></li>
+<li><p><strong>Vue.js/Nuxt.js</strong> - 2年/◯<br />
+<small>SPA開発 / 管理画面・UIコンポーネント設計</small></p></li>
+<li><p><strong>React.js/Next.js</strong> - 3年/◎<br />
+<small>SSR/SSG</small></p></li>
+</ul>
+</td>
+<td valign="top" width="50%">
+<h3 id="クラウドインフラ">☁️ クラウド・インフラ</h3>
+<p><img
+src="https://img.shields.io/badge/-AWS-232F3E?style=flat-square&amp;logo=amazon-aws&amp;logoColor=white"
+alt="AWS" /> <img
+src="https://img.shields.io/badge/-Azure-0089D0?style=flat-square&amp;logo=microsoft-azure&amp;logoColor=white"
+alt="Azure" /> <img
+src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white"
+alt="Docker" /> <img
+src="https://img.shields.io/badge/-Slack-4A154B?style=flat-square&amp;logo=slack&amp;logoColor=white"
+alt="Slack" /></p>
+<ul>
+<li><p><strong>AWS</strong> - 4年/◎<br />
+<small>Lambda, Aurora, S3, DynamoDB /
+サーバーレスアーキテクチャ構築</small></p></li>
+<li><p><strong>Azure</strong> - 2年/◯<br />
+<small>App Service, Functions /
+エンタープライズ系システム連携</small></p></li>
+<li><p><strong>Docker</strong> - 3年/◯<br />
+<small>コンテナ化, IaC / 開発環境統一・デプロイ自動化</small></p></li>
+<li><p><strong>Slack自動化</strong> - 2年/◎<br />
+<small>Webhook, API /
+リリース通知・監視アラート・デプロイフロー改善</small></p></li>
+</ul>
+<h3 id="データベースミドルウェア">🗄️ データベース・ミドルウェア</h3>
+<p><img
+src="https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&amp;logo=postgresql&amp;logoColor=white"
+alt="PostgreSQL" /> <img
+src="https://img.shields.io/badge/-Redis-DC382D?style=flat-square&amp;logo=redis&amp;logoColor=white"
+alt="Redis" /> <img
+src="https://img.shields.io/badge/-Elasticsearch-005571?style=flat-square&amp;logo=elasticsearch&amp;logoColor=white"
+alt="Elasticsearch" /></p>
+<ul>
+<li><p><strong>PostgreSQL/MySQL</strong> - 5年/◎<br />
+<small>クエリ最適化, インデックス設計 /
+TB級大量データ処理の高速化</small></p></li>
+<li><p><strong>Redis</strong> - 1年/◯<br />
+<small>キャッシュ戦略, 差分処理(SDIFF) /
+大規模セッション管理・リアルタイムデータ処理</small></p></li>
+<li><p><strong>ElasticSearch</strong> - 1年/◯<br />
+<small>全文検索, クラスター構築 /
+大規模検索インフラ・負荷分散設計</small></p></li>
+<li><p><strong>DynamoDB</strong> - 2年/◯<br />
+<small>NoSQL設計, パフォーマンス調整 /
+数千万件のユーザーデータ管理</small></p></li>
+<li><p><strong>ビッグデータ基盤</strong><br />
+<small>Logstashでの検索データパイプライン構築、BigQueryによるKPIダッシュボード作成</small></p></li>
+</ul>
+<h3 id="ai機械学習">🤖 AI・機械学習</h3>
+<p><img
+src="https://img.shields.io/badge/-LangChain-FF6600?style=flat-square&amp;logo=chain&amp;logoColor=white"
+alt="LangChain" /> <img
+src="https://img.shields.io/badge/-OpenAI-412991?style=flat-square&amp;logo=openai&amp;logoColor=white"
+alt="OpenAI" /></p>
+<ul>
+<li><p><strong>LangChain</strong> - 2年/◎<br />
+<small>AI処理パイプライン構築、プロンプトエンジニアリング、文書解析システム実装</small></p></li>
+<li><p><strong>OpenAI API</strong> - 2年/◎<br />
+<small>GPT-4統合、ChatGPT
+API活用、各種PDF文書の構造化データ抽出</small></p></li>
+</ul>
+<h3 id="crmsaasプラットフォーム">🔗 CRM・SaaSプラットフォーム</h3>
+<p><img
+src="https://img.shields.io/badge/-Salesforce-00A1E0?style=flat-square&amp;logo=salesforce&amp;logoColor=white"
+alt="Salesforce" /> <img
+src="https://img.shields.io/badge/-Dynamics_365-0078D4?style=flat-square&amp;logo=microsoft&amp;logoColor=white"
+alt="Microsoft" /></p>
+<ul>
+<li><p><strong>MS Dynamics 365</strong> - 1年/◯<br />
+<small>CRM連携, Web API / 営業支援システムとの統合開発</small></p></li>
+<li><p><strong>Salesforce</strong> - 1年/◯<br />
+<small>Sales Cloud, API連携 / BtoB営業プロセス自動化</small></p></li>
+</ul>
+</td>
+</tr>
+</table>
+<div style="page-break-before: always;">
+
+</div>
+<h2 id="保有スキル知識">💡 保有スキル・知識</h2>
+<h3 id="アーキテクチャ設計実装">🎯 アーキテクチャ設計・実装</h3>
+<p><strong>マイクロサービス設計</strong><br />
+<small>Go/Kotlin での実装経験 • RESTful API • Datadog エラー監視 • API
+Gateway設計</small></p>
+<p><strong>大規模システム設計</strong><br />
+<small>Elasticsearch クラスター構築（自動スケーリング実装） • Redis
+による処理最適化 • 負荷分散設計</small></p>
+<p><strong>データベース設計</strong><br />
+<small>Aurora + DynamoDB ハイブリッド設計 • PostgreSQL
+インデックス最適化 • TB級データ処理</small></p>
+<p><strong>イベント駆動アーキテクチャ</strong><br />
+<small>AWS Lambda (Echoルーティングプロキシパターン) • SQS/SNS •
+非同期処理パイプライン • SendGrid メール配信システム</small></p>
+<h3 id="フルスタック開発能力">🚀 フルスタック開発能力</h3>
+<p><strong>バックエンド開発</strong><br />
+<small>Go (goroutine並行処理) • Kotlin (Ktor/Exposed) • Java (Spring
+Boot) • GraphQL/REST API</small></p>
+<p><strong>フロントエンド開発</strong><br />
+<small>TypeScript • Vue.js/Nuxt.js • React/Next.js • SPA開発</small></p>
+<p><strong>AI/機械学習実装</strong><br />
+<small>LangChain パイプライン構築 • ChatGPT API 統合 •
+プロンプトエンジニアリング</small></p>
+<h3 id="devops運用">📊 DevOps・運用</h3>
+<p><strong>CI/CD・自動化</strong><br />
+<small>GitHub Actions • 自動デプロイ構築 • IaC (AWS SAM) • Docker
+コンテナ化</small></p>
+<p><strong>監視・パフォーマンス改善</strong><br />
+<small>CloudWatch/Datadog • プロファイリング最適化 •
+大規模データ処理の最適化</small></p>
+<h3 id="ビジネス貢献">💼 ビジネス貢献</h3>
+<p><strong>技術的リーダーシップ</strong><br />
+<small>アーキテクチャ設計主導 • 新技術導入提案（Devin AI等） •
+新人エンジニアオンボーディング • ドメイン知識共有会実施</small></p>
+<p><strong>プロダクト開発</strong><br />
+<small>MVP設計・検証 • Stripe決済システム実装 • BigQuery
+KPIダッシュボード構築</small></p>
+<h2 id="職務経歴">🏢 職務経歴</h2>
+<h3 id="s社-フルスタックエンジニア">🤖 <strong>S社</strong> ｜
+フルスタックエンジニア</h3>
+<p><code>2023年8月 - 現在</code></p>
+<h4 id="企業材料データベース検索システムai連携開発">🔍
+<strong>企業・材料データベース検索システム＋AI連携開発</strong></h4>
+<p><strong>🎯 主要成果:</strong></p>
+<ul>
+<li>🤖 <strong>LangChain + ChatGPT
+API</strong>統合による各種PDF文書解析・自社DB化機能を設計・実装</li>
+<li>🔍
+<strong>約30万件の企業・材料データ</strong>を扱う検索システムをフリーランスとして開発</li>
+<li>🌐
+<strong>マルチランゲージ対応</strong>（日本語・英語）の実装と翻訳作業を担当</li>
+<li>⚡ <strong>GraphQL
+DataLoader</strong>パターンでN+1問題解決、API応答性能を大幅改善</li>
+</ul>
+<hr />
+<h3 id="c社-フルスタックエンジニア">🎵 <strong>C社</strong> ｜
+フルスタックエンジニア</h3>
+<p><code>2023年8月 - 2025年5月</code></p>
+<h4 id="ai音声プラットフォーム開発プロジェクト">📱
+<strong>AI音声プラットフォーム開発プロジェクト</strong></h4>
+<p><strong>🎯 主要成果:</strong></p>
+<ul>
+<li>💳
+<strong>決済システムの設計・実装</strong>を主導（Stripe連携、サブスク・従量課金対応）</li>
+<li>🚀
+<strong>Go言語でのマイクロサービスAPI開発</strong>、高い同時接続性能を実現</li>
+<li>📧
+<strong>SendGrid連携の大規模メール配信システム</strong>をgoroutineで実装（100万通/時間のスループット）</li>
+<li>🏗️ <strong>サーバーレス化</strong>によるインフラコスト削減</li>
+<li>🔄
+<strong>Slack自動化</strong>含むCI/CDパイプライン構築で迅速な開発体制を確立</li>
+</ul>
+<hr />
+<h3 id="i社-バックエンドエンジニア">🔐 <strong>I社</strong> ｜
+バックエンドエンジニア</h3>
+<p><code>2022年3月 - 2023年7月</code></p>
+<h4 id="統合ログ管理システム---クラウド連携モジュール開発">📊
+<strong>統合ログ管理システム - クラウド連携モジュール開発</strong></h4>
+<p><strong>🎯 主要成果:</strong></p>
+<ul>
+<li>📊
+<strong>エンタープライズ環境</strong>での大規模ログ処理システムを最適化、処理性能を大幅に改善</li>
+<li>🔧
+<strong>マルチクラウド対応</strong>（Azure/AWS/GCP）のログ収集・分析機能を実装</li>
+<li>💰
+<strong>バッチ処理最適化とプロファイリング</strong>により、システム効率を向上</li>
+<li>📚 <strong>共通ライブラリ化</strong>により開発効率化を実現</li>
+</ul>
+<hr />
+<h3 id="u社-バックエンドエンジニア">🏢 <strong>U社</strong> ｜
+バックエンドエンジニア</h3>
+<p><code>2021年2月 - 2022年2月</code></p>
+<h4 id="btob営業支援saasプロダクト開発">🗺️
+<strong>BtoB営業支援SaaSプロダクト開発</strong></h4>
+<p><strong>🎯 主要成果:</strong></p>
+<ul>
+<li>🔍
+<strong>Elasticsearch導入</strong>により、大規模営業データの高速検索を実現</li>
+<li>💾 <strong>Redis
+SDIFF</strong>を活用した効率的な差分処理で、システム性能を向上</li>
+<li>🔗 <strong>CRM連携機能</strong>（Salesforce、Dynamics
+365）のMVP開発とサービス拡張に貢献</li>
+<li>🏢
+<strong>Multi-tenant対応</strong>によるスケーラブルなアーキテクチャ構築</li>
+</ul>
+<hr />
+<h3 id="h社-バックエンドエンジニア">💻 <strong>H社</strong> ｜
+バックエンドエンジニア</h3>
+<p><code>2020年2月 - 2021年2月</code></p>
+<h4 id="オフィス家具メーカー向け受発注システム開発">🏪
+<strong>オフィス家具メーカー向け受発注システム開発</strong></h4>
+<p><strong>🎯 主要成果:</strong></p>
+<ul>
+<li>🧪
+<strong>Spockフレームワーク</strong>を活用したテスト設計で、品質向上に貢献</li>
+<li>🔄
+<strong>Docker環境</strong>の標準化により、開発効率の改善を実現</li>
+</ul>
+<div style="page-break-before: always;">
+
+</div>
+<h2 id="学歴資格">🎓 学歴・資格</h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>学歴</strong></td>
+<td>大学卒業</td>
+</tr>
+<tr>
+<td><strong>語学</strong></td>
+<td>TOEIC 845点、アメリカ留学経験</td>
+</tr>
+</tbody>
+</table>
+<h2 id="今後のキャリアビジョン">🚀 今後のキャリアビジョン</h2>
+<blockquote>
+<p>自分が開発したサービスが世の中に広がり、人々の生活に価値を提供すること</p>
+</blockquote>
+<h3 id="今後の目標専門性を活かした価値提供">🎯
+今後の目標：専門性を活かした価値提供</h3>
+<h4 id="技術的専門性の追求">技術的専門性の追求</h4>
+<ul>
+<li>AI連携・検索システム・フルスタック開発の専門家として、クライアント企業の技術課題を解決したいです</li>
+<li>最新技術動向をキャッチアップし続け、常に最適なソリューションを提供できるエンジニアでありたいです</li>
+<li>これまでの豊富なプロジェクト経験を活かし、各企業のニーズに合わせた柔軟な開発を実現したいです</li>
+</ul>
+<h4
+id="独立した開発者としての価値創造">独立した開発者としての価値創造</h4>
+<ul>
+<li>企画から実装、運用まで一貫して担当できる総合力を活かし、スピーディーな価値提供を実現したいです</li>
+<li>複数のプロジェクトでの経験を相互に活かし、より効率的で質の高い開発を追求したいです</li>
+<li>技術的な深い知見と実装力で、クライアント企業の競争力向上に直接貢献したいです</li>
+</ul>
+<h4 id="グローバルな視点での開発">グローバルな視点での開発</h4>
+<ul>
+<li>アメリカでの経験と韓国人である背景を活かし、国際的なプロジェクトに積極的に参画したいです</li>
+<li>多様な文化的視点を持つ開発者として、より包括的なサービス設計を提案したいです</li>
+<li>B to C・B to
+B両方のドメインでの経験を活かし、幅広い業界の課題解決に貢献したいです</li>
+</ul>
+<h3 id="理念価値観">💡 理念・価値観</h3>
+<h4 id="持続可能なサービス創造">持続可能なサービス創造</h4>
+<ul>
+<li>「自分が使いたいサービス」を作ることを基本理念とし、ユーザーファーストの開発を実践し続けたいです</li>
+<li>「数年後に検索したときに生き残っているサービス」を作り、長期的に愛されるプロダクトを目指したいです</li>
+</ul>
+<h4 id="主体的なイノベーション">主体的なイノベーション</h4>
+<ul>
+<li>常に「自分が主体として考える」姿勢を保ち、技術革新とビジネス成長を両立させたいです</li>
+<li>フルスタック開発経験とAI・機械学習への知見を組み合わせ、次世代のWebサービスを創造したいと思います</li>
+</ul>
+<h3 id="技術的な目標">🔧 技術的な目標</h3>
+<ol type="1">
+<li><strong>AI/検索システム専門性の深化</strong>:
+大規模検索エンジンとAI技術を融合した次世代プラットフォーム開発</li>
+<li><strong>フルスタック技術の専門家</strong>:
+Go・Kotlin・TypeScriptを軸としたクラウドネイティブアーキテクチャの設計・実装</li>
+<li><strong>独立開発者としての総合力</strong>:
+企画から運用まで一気通貫で担当できる能力を活かした高品質な納品</li>
+<li><strong>技術的付加価値の提供</strong>:
+プロジェクトごとに最適な技術選定と実装で、クライアントの期待を超える成果物を提供</li>
+<li><strong>継続的学習と技術革新</strong>:
+日々スキルを伸ばす努力を続け、最新技術動向をキャッチアップして実務に活用</li>
+</ol>
+<div data-align="center">
+<h3 id="ダウンロード">📥 ダウンロード</h3>
+<p><a
+href="https://github.com/SeungyeonHwang/CV/releases/latest/download/resume-complete.pdf">職務経歴書.pdf</a></p>
+<h3 id="連絡先">📬 連絡先</h3>
+<p>syhwang.web@gmail.com</p>
+<p><br></p>
+<p><em>最後までご覧いただき、ありがとうございました。</em></p>
+</div>
+<h1 id="s社---ai連携企業材料データベース検索システム">🤖 S社 -
+AI連携企業・材料データベース検索システム</h1>
+<h2 id="基本情報">基本情報</h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>詳細</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>期間</strong></td>
+<td>2023年8月 - 現在</td>
+</tr>
+<tr>
+<td><strong>職種</strong></td>
+<td>フルスタックエンジニア</td>
+</tr>
+<tr>
+<td><strong>チーム規模</strong></td>
+<td>5名（エンジニア3名、デザイナー1名、PM1名）</td>
+</tr>
+<tr>
+<td><strong>役割</strong></td>
+<td>フルスタックエンジニア（フリーランス）- 独立した開発担当</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="技術スタック">技術スタック</h2>
+<table>
+<tr>
+<td valign="top" width="33%">
+<h3 id="backend">Backend</h3>
+<ul>
+<li><strong>Kotlin</strong> - メイン開発言語</li>
+<li><strong>Ktor</strong> - Webフレームワーク</li>
+<li><strong>Exposed ORM</strong> - DB操作</li>
+<li><strong>PostgreSQL</strong> - メインDB</li>
+<li><strong>GraphQL</strong> - API設計</li>
+<li><strong>Firebase Auth</strong> - 認証基盤</li>
+<li><strong>Koin DI</strong> - 依存性注入</li>
+</ul>
+</td>
+<td valign="top" width="33%">
+<h3 id="frontend">Frontend</h3>
+<ul>
+<li><strong>Next.js</strong> - Reactフレームワーク</li>
+<li><strong>TypeScript</strong> - 型安全開発</li>
+<li><strong>React Hook Form</strong> - フォーム管理</li>
+<li><strong>Zod</strong> - バリデーション</li>
+<li><strong>Recoil</strong> - 状態管理</li>
+<li><strong>Apollo Client</strong> - GraphQLクライアント</li>
+<li><strong>Shadcn/ui</strong> - UIコンポーネント</li>
+</ul>
+</td>
+<td valign="top" width="33%">
+<h3 id="infrastructure-ai">Infrastructure &amp; AI</h3>
+<ul>
+<li><strong>AWS</strong> - クラウドインフラ</li>
+<li><strong>Docker</strong> - コンテナ化</li>
+<li><strong>OpenAI GPT-4</strong> - AI文書解析</li>
+<li><strong>LangChain</strong> - AI処理パイプライン</li>
+<li><strong>Document AI OCR</strong> - OCR処理</li>
+<li><strong>PDF解析AI</strong> - 文書処理</li>
+</ul>
+</td>
+</tr>
+</table>
+<hr />
+<h2 id="プロジェクト概要">プロジェクト概要</h2>
+<p>企業・材料データベース検索システムに<strong>AI機能を統合</strong>し、ユーザーの検索体験を大幅に向上させました。<strong>ChatGPT
+API</strong>を活用したPDF文書解析機能や、<strong>Document AI
+OCR</strong>による画像文書の自動読み取り、<strong>文書自動分類システム</strong>の開発を担当。フルスタックエンジニアとして、企画から実装、運用まで一貫して担当しました。</p>
+<h2 id="主な実装と成果">主な実装と成果</h2>
+<h3 id="ai機械学習システム実装">AI・機械学習システム実装</h3>
+<h4 id="ai連携文書解析機能">🤖 AI連携文書解析機能</h4>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 72%" />
+</colgroup>
+<thead>
+<tr>
+<th>機能</th>
+<th>技術・実装内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ChatGPT API統合</strong></td>
+<td>各種PDF文書の構造化データ抽出・自社DB化機能</td>
+</tr>
+<tr>
+<td><strong>LangChain活用</strong></td>
+<td>AI処理パイプライン構築・チェーン処理最適化</td>
+</tr>
+<tr>
+<td><strong>プロンプトエンジニアリング</strong></td>
+<td>Chain of Thought, 役割指定, Few-shot学習技法適用</td>
+</tr>
+<tr>
+<td><strong>Document AI OCR</strong></td>
+<td>PDF・画像文書の自動読み取り・テキスト化処理</td>
+</tr>
+<tr>
+<td><strong>文書管理システム</strong></td>
+<td>技術資料の読み取り・データベース統合管理</td>
+</tr>
+<tr>
+<td><strong>ヒューリスティック分類</strong></td>
+<td>ゼロショットプロンプティングによる文書自動分類システム</td>
+</tr>
+<tr>
+<td><strong>DX機能実装</strong></td>
+<td>文書処理自動化によるユーザー体験向上</td>
+</tr>
+</tbody>
+</table>
+<h4 id="検索システム実装">🔍 検索システム実装</h4>
+<table>
+<thead>
+<tr>
+<th>機能</th>
+<th>技術・実装内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>基本検索機能</strong></td>
+<td>PostgreSQL全文検索による企業・材料データの検索</td>
+</tr>
+<tr>
+<td><strong>リアルタイム候補表示</strong></td>
+<td>入力補完・検索提案システム</td>
+</tr>
+<tr>
+<td><strong>複合条件検索</strong></td>
+<td>企業属性・材料特性の多次元フィルタリング</td>
+</tr>
+</tbody>
+</table>
+<h4 id="高度検索システムの実装">🔍 高度検索システムの実装</h4>
+<table>
+<thead>
+<tr>
+<th>機能</th>
+<th>技術・実装内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>検索基盤</strong></td>
+<td>PostgreSQL全文検索機能を活用した検索システム</td>
+</tr>
+<tr>
+<td><strong>日本語対応</strong></td>
+<td>pg_bigmによる日本語全文検索を実装済み</td>
+</tr>
+<tr>
+<td><strong>検索最適化</strong></td>
+<td>インデックス設計とクエリチューニングによる高速化</td>
+</tr>
+<tr>
+<td><strong>将来的な拡張</strong></td>
+<td>トラフィック増加時にElasticsearch導入を検討中</td>
+</tr>
+</tbody>
+</table>
+<h3 id="フルスタックアーキテクチャ設計">🏗️
+フルスタックアーキテクチャ設計</h3>
+<h4 id="バックエンド設計kotlin">バックエンド設計（Kotlin）</h4>
+<ul>
+<li><strong>クリーンアーキテクチャ</strong>:
+DDD実装、レイヤード設計による保守性向上</li>
+<li><strong>GraphQL API</strong>: 型安全なスキーマ設計、DataLoader
+パターンでN+1解決</li>
+<li><strong>Exposed ORM</strong>:
+PostgreSQL連携、トランザクション管理</li>
+<li><strong>Firebase認証</strong>: JWT
+トークン検証、権限管理システム</li>
+</ul>
+<h4
+id="フロントエンド開発typescript">フロントエンド開発（TypeScript）</h4>
+<ul>
+<li><strong>Next.js 14</strong>: SSR/SSG最適化、パフォーマンス向上</li>
+<li><strong>状態管理</strong>: Recoil（グローバル）+ React Hook
+Form（フォーム）</li>
+<li><strong>UI/UX</strong>: Shadcn/ui + Tailwind
+CSS、アクセシビリティ対応</li>
+<li><strong>型安全性</strong>: 厳格なTypeScript、Zod バリデーション</li>
+</ul>
+<h4 id="マルチランゲージ対応">マルチランゲージ対応</h4>
+<ul>
+<li><strong>国際化（i18n）実装</strong>:
+日本語・英語の多言語対応システム構築</li>
+<li><strong>翻訳作業</strong>:
+UI/UXテキスト、技術文書の日英翻訳を担当</li>
+<li><strong>言語切替機能</strong>:
+ユーザー設定に基づく動的言語切替の実装</li>
+<li><strong>ローカライゼーション</strong>:
+日付・通貨・数値フォーマットの地域対応</li>
+</ul>
+<h3 id="独立した開発体制での貢献">独立した開発体制での貢献</h3>
+<ul>
+<li><strong>フルスタック開発</strong>:
+フリーランスとして、フロントエンドからバックエンド、AI機能まで幅広く担当</li>
+<li><strong>AI技術選定・実装</strong>: LangChain・ChatGPT
+APIを活用した最適なソリューションの提案と実装</li>
+<li><strong>システム統合</strong>:
+フロントエンド・バックエンド・AI処理のシームレスな連携を実現</li>
+</ul>
+<h2 id="技術的な工夫改善">技術的な工夫・改善</h2>
+<h3 id="プロダクト企画技術選定">プロダクト企画・技術選定</h3>
+<ul>
+<li><strong>要件定義</strong>:
+ユーザーインタビューからAI機能仕様策定</li>
+<li><strong>技術選定</strong>:
+パフォーマンス・保守性・拡張性を考慮した最適解選択</li>
+<li><strong>アーキテクチャ設計</strong>:
+マイクロサービス分離、API設計</li>
+</ul>
+<h3 id="開発プロセス改善">開発プロセス改善</h3>
+<ul>
+<li><strong>CI/CD構築</strong>: GitHub
+Actions、自動テスト・デプロイ</li>
+<li><strong>コード品質</strong>: ESLint、Prettier、detekt
+による品質担保</li>
+<li><strong>監視・ログ</strong>:
+構造化ログ、エラートラッキング、パフォーマンス監視</li>
+<li><strong>Slack自動化</strong>:
+GitHub連携による自動通知、リリース通知、監視アラート、ビルド結果通知</li>
+</ul>
+<hr />
+<h2 id="数値成果インパクト">数値成果・インパクト</h2>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode diff"><code class="sourceCode diff"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🤖 ChatGPT APIを活用したPDF文書解析機能を実装、月間500件の文書を自動処理</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="va">+ 📄 文書の手動登録作業を自動化、1件あたり15分→2分に短縮</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="va">+ 📈 PDF文書の自動解析により、検索可能なデータが継続的に増加</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🚀 一人でフロントエンドからバックエンド、AI機能まで開発を担当</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="va">+ 💡 スタートアップの限られたリソースで、競合他社にない独自機能を実現</span></span></code></pre></div>
+<h3 id="パフォーマンス指標">パフォーマンス指標</h3>
+<table>
+<thead>
+<tr>
+<th>指標</th>
+<th>実績値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>処理データ量</strong></td>
+<td>約30万件の企業・材料データを管理</td>
+</tr>
+<tr>
+<td><strong>検索レスポンス</strong></td>
+<td>平均200ms（PostgreSQL全文検索）</td>
+</tr>
+<tr>
+<td><strong>月間PDF処理数</strong></td>
+<td>約500件の文書を自動解析</td>
+</tr>
+<tr>
+<td><strong>手動作業削減</strong></td>
+<td>1文書あたり15分→2分（約87%削減）</td>
+</tr>
+<tr>
+<td><strong>月間アクティブユーザー</strong></td>
+<td>約200名（着実に増加中）</td>
+</tr>
+<tr>
+<td><strong>システム稼働率</strong></td>
+<td>99.5%以上を維持</td>
+</tr>
+</tbody>
+</table>
+<h1 id="c社---ai音声プラットフォーム開発">🎵 C社 -
+AI音声プラットフォーム開発</h1>
+<h2 id="基本情報-1">基本情報</h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>詳細</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>期間</strong></td>
+<td>2023年8月 - 2025年5月</td>
+</tr>
+<tr>
+<td><strong>職種</strong></td>
+<td>フルスタックエンジニア</td>
+</tr>
+<tr>
+<td><strong>チーム規模</strong></td>
+<td>6名（エンジニア4名、デザイナー1名、PM1名）</td>
+</tr>
+<tr>
+<td><strong>役割</strong></td>
+<td>バックエンド中心の開発担当、管理コンソール実装</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="技術スタック-1">技術スタック</h2>
+<table>
+<tr>
+<td valign="top" width="33%">
+<h3 id="backend-1">Backend</h3>
+<ul>
+<li><strong>Go</strong> - メイン開発言語</li>
+<li><strong>Echo</strong> - Webフレームワーク</li>
+<li><strong>AWS Lambda</strong> - サーバーレス</li>
+<li><strong>Aurora</strong> - RDBクラスター</li>
+<li><strong>DynamoDB</strong> - NoSQLデータベース</li>
+</ul>
+</td>
+<td valign="top" width="33%">
+<h3 id="frontend-1">Frontend</h3>
+<ul>
+<li><strong>Vue.js</strong> - プログレッシブフレームワーク</li>
+<li><strong>Nuxt.js</strong> - Vue.jsフレームワーク</li>
+<li><strong>TypeScript</strong> - 型安全開発</li>
+<li><strong>Pinia/Vuex</strong> - 状態管理</li>
+<li><strong>Tailwind CSS</strong> - ユーティリティCSS</li>
+</ul>
+</td>
+<td valign="top" width="33%">
+<h3 id="infrastructure-payment">Infrastructure &amp; Payment</h3>
+<ul>
+<li><strong>AWS SAM</strong> - Infrastructure as Code</li>
+<li><strong>Docker</strong> - コンテナ化</li>
+<li><strong>Stripe</strong> - 決済システム</li>
+<li><strong>Firebase</strong> - 認証・リアルタイムDB</li>
+<li><strong>CloudWatch</strong> - 監視・ログ</li>
+</ul>
+</td>
+</tr>
+</table>
+<hr />
+<h2 id="プロジェクト概要-1">プロジェクト概要</h2>
+<p>AI音声プラットフォームの開発で、バックエンドシステムの設計・実装を中心に担当しました。<strong>Go言語</strong>と<strong>AWS
+Lambda</strong>を活用したサーバーレスアーキテクチャを採用し、高いスケーラビリティとコスト効率を実現。また、<strong>Stripe</strong>を用いた決済システムの実装や、<strong>SendGrid</strong>と連携した大規模メール配信システムの開発も担当しました。</p>
+<hr />
+<h2 id="主な実装と成果-1">主な実装と成果</h2>
+<h3 id="アーキテクチャ設計と実装">アーキテクチャ設計と実装</h3>
+<h3 id="クリーンアーキテクチャの厳格な実装">🏢
+クリーンアーキテクチャの厳格な実装</h3>
+<ul>
+<li><strong>ドメイン駆動設計（DDD）</strong>:
+ビジネスロジックの責任分離</li>
+<li><strong>レイヤード構造</strong>: <code>domain</code> →
+<code>repository</code> → <code>service</code> →
+<code>handler</code></li>
+<li><strong>依存性逆転の原則</strong>: 疎結合による保守性向上</li>
+</ul>
+<h3 id="サーバーレスマイクロサービス">☁️
+サーバーレスマイクロサービス</h3>
+<ul>
+<li><strong>機能別Lambda関数</strong>: 独立したサービス設計</li>
+<li><strong>イベント駆動型</strong>:
+非同期処理による高いスケーラビリティ</li>
+<li><strong>AWS SAM</strong>: Infrastructure as Code
+による一貫した環境管理</li>
+</ul>
+<h3 id="マイクロサービスアーキテクチャ詳細">🏗️
+マイクロサービスアーキテクチャ詳細</h3>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr>
+<th>領域</th>
+<th>実装内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>サービス分割</strong></td>
+<td>認証、音声生成、課金、通知、メール配信の5つのサービスに分割</td>
+</tr>
+<tr>
+<td><strong>サービス間通信</strong></td>
+<td>RESTful API による通信、Echo ルーティングプロキシパターン</td>
+</tr>
+<tr>
+<td><strong>エラー監視</strong></td>
+<td>Datadog
+APMを用いたエラー検知と分析、DynamoDBのキャパシティエラー対応</td>
+</tr>
+<tr>
+<td><strong>API Gateway</strong></td>
+<td>レート制限、認証、ルーティングの統合管理</td>
+</tr>
+<tr>
+<td><strong>非同期処理</strong></td>
+<td>SQS/SNSによるイベント駆動アーキテクチャ</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="フルスタック技術実装">フルスタック技術実装</h3>
+<h3 id="バックエンド開発">🔍 バックエンド開発</h3>
+<table>
+<thead>
+<tr>
+<th>技術領域</th>
+<th>実装内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>依存性注入</strong></td>
+<td>Google Wireによるコンパイル時DI</td>
+</tr>
+<tr>
+<td><strong>コード生成</strong></td>
+<td>oapi-codegen, mockgen, sqlboiler</td>
+</tr>
+<tr>
+<td><strong>DB設計</strong></td>
+<td>Aurora（RDB）+ DynamoDB（NoSQL）のハイブリッド構成</td>
+</tr>
+<tr>
+<td><strong>認証基盤</strong></td>
+<td>Firebase Authentication + カスタムRBAC</td>
+</tr>
+</tbody>
+</table>
+<h3 id="go言語による高性能バックエンド実装">🚀
+Go言語による高性能バックエンド実装</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>技術領域</th>
+<th>実装内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>大規模メール配信</strong></td>
+<td>SendGrid
+API連携、goroutineによるバッチ処理（月間30-40万通の配信実績）</td>
+</tr>
+<tr>
+<td><strong>スケジューリング</strong></td>
+<td>cron風スケジューラー実装、配信時間最適化アルゴリズム</td>
+</tr>
+<tr>
+<td><strong>高速API実装</strong></td>
+<td>Echoフレームワークによる効率的なAPI開発</td>
+</tr>
+<tr>
+<td><strong>エラーハンドリング</strong></td>
+<td>コンテキスト伝播、構造化エラーロギング</td>
+</tr>
+<tr>
+<td><strong>テスト戦略</strong></td>
+<td>Table Driven Test、並行処理テスト、負荷テスト</td>
+</tr>
+</tbody>
+</table>
+<h3 id="管理コンソール開発">🌐 管理コンソール開発</h3>
+<table>
+<thead>
+<tr>
+<th>技術領域</th>
+<th>実装内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vue.js/Nuxt.js</strong></td>
+<td>管理者向けダッシュボード・設定画面の実装</td>
+</tr>
+<tr>
+<td><strong>状態管理</strong></td>
+<td>Pinia によるユーザー権限・設定情報の状態管理</td>
+</tr>
+<tr>
+<td><strong>UI実装</strong></td>
+<td>利用統計・ユーザー管理・課金状況の可視化画面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="決済システム設計実装">💳 決済システム設計・実装</h3>
+<h4 id="stripe連携システム">💳 Stripe連携システム</h4>
+<table>
+<thead>
+<tr>
+<th>機能</th>
+<th>実装内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>決済方式</strong></td>
+<td>サブスクリプション・従量課金・ワンタイム決済</td>
+</tr>
+<tr>
+<td><strong>Webhook処理</strong></td>
+<td>決済状態の同期とエラーハンドリング</td>
+</tr>
+<tr>
+<td><strong>課金ロジック</strong></td>
+<td>使用量ベース課金システムの設計</td>
+</tr>
+<tr>
+<td><strong>ユーザー体験</strong></td>
+<td>決済フローのシームレスな統合</td>
+</tr>
+</tbody>
+</table>
+<h3 id="devops実践">🔧 DevOps実践</h3>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr>
+<th>領域</th>
+<th>実装内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CI/CD</strong></td>
+<td>GitHub Actions + AWS CodeDeployによる自動デプロイ</td>
+</tr>
+<tr>
+<td><strong>IaC</strong></td>
+<td>AWS SAMによるインフラ完全コード化</td>
+</tr>
+<tr>
+<td><strong>監視</strong></td>
+<td>Datadog APMによるシステムメトリクス監視</td>
+</tr>
+<tr>
+<td><strong>ビジネスダッシュボード</strong></td>
+<td>Metabaseで売上・利用状況等のビジネスKPI可視化</td>
+</tr>
+<tr>
+<td><strong>ログ管理</strong></td>
+<td>構造化ログ + CloudWatch Logsによる集中管理</td>
+</tr>
+<tr>
+<td><strong>テスト自動化</strong></td>
+<td>単体・結合・E2Eテストの自動実行</td>
+</tr>
+<tr>
+<td><strong>Slack自動化</strong></td>
+<td>GitHub連携、デプロイ通知、監視アラート、エラー通知の自動化</td>
+</tr>
+</tbody>
+</table>
+<h2 id="技術的な工夫改善-1">技術的な工夫・改善</h2>
+<h3 id="システム設計実装の工夫">システム設計・実装の工夫</h3>
+<ul>
+<li><strong>クリーンアーキテクチャ</strong>:
+DDDによるビジネスロジックの明確な分離</li>
+<li><strong>マイクロサービス設計</strong>:
+機能ごとに独立したサービスで保守性向上</li>
+<li><strong>サーバーレス活用</strong>: AWS Lambda +
+SAMによるスケーラブルな構成</li>
+<li><strong>決済システム実装</strong>:
+Stripeによる柔軟な課金モデルの実現</li>
+<li><strong>大規模メール配信</strong>:
+SendGrid連携で月間30-40万通の安定配信</li>
+</ul>
+<hr />
+<h2 id="数値成果インパクト-1">数値成果・インパクト</h2>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode diff"><code class="sourceCode diff"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="va">+ 💳 決済システムの設計・実装を主導、新規収益モデル（サブスク・従量課金）を実現</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🚀 Go言語での高性能API開発により、安定したサービス提供を実現</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="va">+ 📊 Metabaseダッシュボード構築により、ビジネスKPIをリアルタイムで可視化</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🔄 効率的な開発プロセスで企画→リリースを2週間で実現、迅速な機能追加</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="va">+ 👥 技術選定・アーキテクチャ設計を主導し、スケーラブルな基盤を構築</span></span></code></pre></div>
+<h1 id="i社---統合ログ管理システム">🔐 I社 - 統合ログ管理システム</h1>
+<h2 id="基本情報-2">基本情報</h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>詳細</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>期間</strong></td>
+<td>2022年3月 - 2023年7月</td>
+</tr>
+<tr>
+<td><strong>職種</strong></td>
+<td>バックエンドエンジニア</td>
+</tr>
+<tr>
+<td><strong>チーム規模</strong></td>
+<td>4名（サーバーサイドチーム）</td>
+</tr>
+<tr>
+<td><strong>役割</strong></td>
+<td>クラウドAPI連携、パフォーマンス最適化、アーキテクチャ改善</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="技術スタック-2">技術スタック</h2>
+<pre><code>Java • Kotlin • Azure SDK • Azure Monitor • Log Analytics
+Microsoft Graph API • SalesForce API • Maven</code></pre>
+<hr />
+<h2 id="プロジェクト概要-2">プロジェクト概要</h2>
+<blockquote>
+<p>エンタープライズ向け統合ログ管理システムのクラウド連携機能開発を担当。Azure
+AD監査ログ、AWS
+CloudTrail等のマルチクラウド環境からのログ収集・分析機能を実装し、大規模環境での処理性能を最適化。</p>
+</blockquote>
+<hr />
+<h2 id="主な実装と成果-2">主な実装と成果</h2>
+<h3 id="課題と解決策">課題と解決策</h3>
+<h3 id="開発効率化">🚀 開発効率化</h3>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 40%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th>課題</th>
+<th>解決策</th>
+<th>結果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>コード重複による開発効率低下</strong></td>
+<td>共通ライブラリ化（Maven Repository）</td>
+<td><strong>開発工数30%削減</strong></td>
+</tr>
+<tr>
+<td><strong>バージョンアップ検証の工数増大</strong></td>
+<td>段階的マイグレーション検証ツールの開発</td>
+<td><strong>検証工数を1/3に削減</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="パフォーマンス最適化">📊 パフォーマンス最適化</h3>
+<h4 id="大量ログ処理のパフォーマンス問題">📊
+大量ログ処理のパフォーマンス問題</h4>
+<p><strong>課題</strong>: 大量ログ処理のパフォーマンス問題</p>
+<p><strong>解決策</strong>:</p>
+<ul>
+<li>バッチ処理アルゴリズム最適化</li>
+<li>Visual VM + IntelliJ連携プロファイリング環境構築<br />
+</li>
+<li>マルチスレッドプログラミングによる並行処理最適化</li>
+</ul>
+<p><strong>結果</strong>:
+<strong>処理時間を3時間→1時間20分に短縮（55%改善）</strong></p>
+<h3 id="クラウド連携機能の実装">🏗️ クラウド連携機能の実装</h3>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr>
+<th>領域</th>
+<th>実装内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>マルチクラウド対応</strong></td>
+<td>Azure/AWS/GCP等の主要クラウドサービスからのログ収集モジュール開発</td>
+</tr>
+<tr>
+<td><strong>リアルタイム収集</strong></td>
+<td>ストリーミングAPIを活用した準リアルタイムログ収集機能</td>
+</tr>
+<tr>
+<td><strong>バッチ処理最適化</strong></td>
+<td>大量ログの効率的な一括処理とスケジューリング機能</td>
+</tr>
+<tr>
+<td><strong>フォーマット正規化</strong></td>
+<td>各クラウドサービス固有のログ形式を統一フォーマットに変換</td>
+</tr>
+<tr>
+<td><strong>エラーハンドリング</strong></td>
+<td>API制限やネットワーク障害に対する堅牢な再試行機構</td>
+</tr>
+<tr>
+<td><strong>セキュリティ対応</strong></td>
+<td>OAuth2.0認証とAPI Key管理による安全な接続実装</td>
+</tr>
+</tbody>
+</table>
+<h3 id="エンタープライズ向け機能実装">🔷
+エンタープライズ向け機能実装</h3>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr>
+<th>領域</th>
+<th>実装内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>大規模対応</strong></td>
+<td>エンタープライズ環境の大量ログに対応する並列処理実装</td>
+</tr>
+<tr>
+<td><strong>長期保管対応</strong></td>
+<td>法令要件に準拠した圧縮保存とアーカイブ機能</td>
+</tr>
+<tr>
+<td><strong>検索最適化</strong></td>
+<td>インデックス設計による高速検索の実現</td>
+</tr>
+<tr>
+<td><strong>レポーティング</strong></td>
+<td>PDF/CSV形式での定期レポート自動生成機能</td>
+</tr>
+<tr>
+<td><strong>監査対応</strong></td>
+<td>監査ログの収集・保管による証跡管理機能の実装</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="技術的な工夫改善-2">技術的な工夫・改善</h2>
+<table>
+<tr>
+<td valign="top" width="50%">
+<h3 id="プロファイリング環境">🔍 プロファイリング環境</h3>
+<ul>
+<li><strong>Visual VM + IntelliJ</strong>:
+連携による詳細パフォーマンス分析</li>
+<li><strong>ボトルネック特定</strong>:
+メモリ使用量・CPU使用率の可視化</li>
+<li><strong>最適化指針</strong>: データ駆動な改善アプローチ</li>
+</ul>
+</td>
+<td valign="top" width="50%">
+<h3 id="api連携の最適化">🔨 API連携の最適化</h3>
+<ul>
+<li><strong>バルクAPI活用</strong>:
+単一リクエストでの大量データ取得実装</li>
+<li><strong>接続プーリング</strong>:
+コネクション再利用による通信効率化</li>
+<li><strong>非同期処理</strong>:
+CompletableFutureによる並列API呼び出し</li>
+</ul>
+</td>
+</tr>
+</table>
+<hr />
+<h2 id="数値成果インパクト-2">数値成果・インパクト</h2>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode diff"><code class="sourceCode diff"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🌐 マルチクラウド対応により、Azure/AWS/GCP環境からの統合ログ収集を実現</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="va">+ 📊 バッチ処理最適化により、大規模環境での処理時間を55%短縮</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🔐 OAuth2.0とAPIキー管理実装により、セキュアなクラウド連携を実現</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="va">+ 📚 共通ライブラリ化により開発工数を削減、新規クラウドサービス対応を迅速化</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="va">+ 📈 大規模環境での安定稼働を実現し、エンタープライズ要件に対応</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🔄 エラーハンドリング強化により、API制限下でも安定稼働を実現</span></span></code></pre></div>
+<h1 id="u社---btob営業支援saas">🏢 U社 - BtoB営業支援SaaS</h1>
+<h2 id="基本情報-3">基本情報</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>項目</th>
+<th>詳細</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>期間</strong></td>
+<td>2021年2月 - 2022年2月</td>
+</tr>
+<tr>
+<td><strong>職種</strong></td>
+<td>バックエンドエンジニア</td>
+</tr>
+<tr>
+<td><strong>チーム規模</strong></td>
+<td>4名（アジャイル開発）</td>
+</tr>
+<tr>
+<td><strong>役割</strong></td>
+<td>バックエンドエンジニア - API開発・パフォーマンス最適化担当</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="技術スタック-3">技術スタック</h2>
+<pre><code>Kotlin • Spring Boot • PostgreSQL • Redis • Elasticsearch • Azure • GraphQL
+MS Dynamics 365 • Salesforce • CRM連携</code></pre>
+<hr />
+<h2 id="プロジェクト概要-3">プロジェクト概要</h2>
+<blockquote>
+<p>営業支援SaaSプロダクトのバックエンドAPI開発を担当。Salesforce/MS
+Dynamics 365との双方向データ同期機能とGraphQL
+APIを実装し、営業データ管理の効率化を実現。</p>
+</blockquote>
+<hr />
+<h2 id="主な実装と成果-3">主な実装と成果</h2>
+<h3 id="課題と解決策-1">課題と解決策</h3>
+<h3 id="パフォーマンス最適化-1">🚀 パフォーマンス最適化</h3>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 40%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th>課題</th>
+<th>解決策</th>
+<th>結果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>APIレスポンスの遅延</strong></td>
+<td>Kotlin Coroutinesによる非同期並行処理</td>
+<td><strong>応答性能の大幅改善</strong></td>
+</tr>
+<tr>
+<td><strong>大量営業データの検索性能</strong></td>
+<td>Elasticsearch全文検索の導入・最適化</td>
+<td><strong>検索速度の向上</strong></td>
+</tr>
+<tr>
+<td><strong>CRM同期のボトルネック</strong></td>
+<td>Redis SDIFFによる差分同期処理</td>
+<td><strong>同期処理の効率化</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="crm連携api開発">🔗 CRM連携API開発</h3>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 40%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th>課題</th>
+<th>解決策</th>
+<th>結果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>複数CRMプラットフォーム対応</strong></td>
+<td>Salesforce/MS Dynamics 365統一APIの設計</td>
+<td><strong>開発効率の向上</strong></td>
+</tr>
+<tr>
+<td><strong>クライアントのCRMデータ更新</strong></td>
+<td>GraphQL APIによるリアルタイム同期</td>
+<td><strong>データ反映の高速化</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="技術的な工夫改善-3">技術的な工夫・改善</h2>
+<table>
+<tr>
+<td valign="top" width="50%">
+<h3 id="データ処理基盤構築">🔍 データ処理基盤構築</h3>
+<ul>
+<li><strong>ELKスタック</strong>:
+Logstashパイプラインによるデータ連携</li>
+<li><strong>Kotlin Coroutines</strong>: 非同期処理による並行API処理</li>
+<li><strong>Redis SDIFF</strong>: CRMデータの差分同期最適化</li>
+</ul>
+</td>
+<td valign="top" width="50%">
+<h3 id="crm統合実装">🔗 CRM統合実装</h3>
+<ul>
+<li><strong>双方向同期</strong>: Salesforce/MS Dynamics 365連携</li>
+<li><strong>API設計</strong>: GraphQLによる型安全な実装</li>
+<li><strong>データ整合性</strong>: リアルタイム同期機構</li>
+</ul>
+</td>
+</tr>
+</table>
+<hr />
+<h2 id="数値成果インパクト-3">数値成果・インパクト</h2>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode diff"><code class="sourceCode diff"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🚀 GraphQL APIによる柔軟なデータ取得で、クライアント側の体験が大幅に向上</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="va">+ ⚡ Kotlin Coroutinesによる非同期処理で、高負荷環境でも安定稼働を実現</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🔍 Elasticsearch導入により、大規模営業データの高速検索が可能に</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🔗 Salesforce/MS Dynamics 365の統一API実装により、マルチCRM対応を効率化</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="va">+ 📊 Logstashパイプライン構築により、リアルタイムデータ連携基盤を確立</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="va">+ 📈 負荷テストに基づくAPI仕様策定により、本番環境での安定稼働を実現</span></span></code></pre></div>
+<h1 id="h社---オフィス家具受発注システム">💻 H社 -
+オフィス家具受発注システム</h1>
+<h2 id="基本情報-4">基本情報</h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>詳細</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>期間</strong></td>
+<td>2020年2月 - 2021年2月</td>
+</tr>
+<tr>
+<td><strong>職種</strong></td>
+<td>バックエンドエンジニア</td>
+</tr>
+<tr>
+<td><strong>チーム規模</strong></td>
+<td>4名（スクラム開発）</td>
+</tr>
+<tr>
+<td><strong>役割</strong></td>
+<td>API実装、テスト作成、ドキュメント整備</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="技術スタック-4">技術スタック</h2>
+<pre><code>Java • Groovy • Micronaut • Spock • H2 Database • PostgreSQL • Docker</code></pre>
+<hr />
+<h2 id="プロジェクト概要-4">プロジェクト概要</h2>
+<blockquote>
+<p>オフィス家具受発注システムの新規開発において、バックエンドAPIの実装とテスト作成を担当。先輩エンジニアの指導のもと、Spockフレームワークを活用したテスト設計に取り組み、品質向上に貢献。</p>
+</blockquote>
+<hr />
+<h2 id="主な実装と成果-4">主な実装と成果</h2>
+<h3 id="課題と解決策-2">課題と解決策</h3>
+<h3 id="テスト環境構築">🧪 テスト環境構築</h3>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 40%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th>課題</th>
+<th>解決策</th>
+<th>結果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>テストコード不足</strong></td>
+<td>Spock BDDフレームワークでのテスト作成</td>
+<td><strong>カバレッジ向上に貢献</strong></td>
+</tr>
+<tr>
+<td><strong>テスト実行の遅さ</strong></td>
+<td>H2 インメモリDBの活用</td>
+<td><strong>テスト実行時間の短縮</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="開発業務への貢献">🚀 開発業務への貢献</h3>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 40%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th>課題</th>
+<th>解決策</th>
+<th>結果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>開発環境のばらつき</strong></td>
+<td>Docker環境の活用とドキュメント整備</td>
+<td><strong>環境構築時間の短縮</strong></td>
+</tr>
+<tr>
+<td><strong>API仕様の共有不足</strong></td>
+<td>APIドキュメントの作成協力</td>
+<td><strong>チーム内の認識統一</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="システム実装内容">🏗️ システム実装内容</h3>
+<table>
+<thead>
+<tr>
+<th>領域</th>
+<th>実装内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>API開発</strong></td>
+<td>Micronautフレームワークでの受発注API実装</td>
+</tr>
+<tr>
+<td><strong>データベース</strong></td>
+<td>PostgreSQLでの商品・注文データ管理</td>
+</tr>
+<tr>
+<td><strong>テスト作成</strong></td>
+<td>Spockでの単体テスト・統合テスト作成</td>
+</tr>
+<tr>
+<td><strong>環境構築</strong></td>
+<td>Docker環境での開発環境標準化</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="技術的な工夫改善-4">技術的な工夫・改善</h2>
+<table>
+<tr>
+<td valign="top" width="50%">
+<h3 id="テスト設計への取り組み">🔍 テスト設計への取り組み</h3>
+<ul>
+<li><strong>Spock BDD</strong>:
+Given-When-Thenでの分かりやすいテスト</li>
+<li><strong>H2 Database</strong>: テスト専用環境での高速実行</li>
+<li><strong>テストデータ</strong>: 実業務を想定したケース作成</li>
+</ul>
+</td>
+<td valign="top" width="50%">
+<h3 id="学習と成長">📚 学習と成長</h3>
+<ul>
+<li><strong>コードレビュー</strong>:
+先輩からのフィードバック積極的に反映</li>
+<li><strong>ペアプログラミング</strong>: 実装スキルの向上</li>
+<li><strong>技術勉強会</strong>: チーム内勉強会への参加と学習</li>
+</ul>
+</td>
+</tr>
+</table>
+<hr />
+<h2 id="数値成果インパクト-4">数値成果・インパクト</h2>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode diff"><code class="sourceCode diff"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🧪 担当機能のテストカバレッジ向上に貢献し、品質改善に寄与</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="va">+ 📝 APIドキュメント作成により、チーム内の仕様共有がスムーズに</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🐛 テスト作成を通じて、リリース前のバグ発見率が向上</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🏃 Docker環境の活用により、新規メンバーの環境構築時間を短縮</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="va">+ 📚 技術勉強会への積極的な参加により、実装スキルが向上</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="va">+ 🤝 ペアプログラミングを通じて、チーム開発の基礎を習得</span></span></code></pre></div>
+</body>
+</html>
