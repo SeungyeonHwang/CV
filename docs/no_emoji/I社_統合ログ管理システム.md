@@ -73,7 +73,7 @@ Microsoft Graph API • SalesForce API • Maven
 
 ---
 
-## 技術的な工夫・改善
+## 実装の工夫
 
 <table>
 <tr>
