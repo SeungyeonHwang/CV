@@ -55,7 +55,7 @@ Java • Groovy • Micronaut • Spock • H2 Database • PostgreSQL • Docke
 <tr>
 <td valign="top" width="50%">
 
-### 🔍 Backend Development
+### 🔍 バックエンド開発
 - **Micronaut**: 軽量フレームワークでの高速API開発
 - **RESTful API**: 設計原則に基づいた実装
 - **PostgreSQL**: 効率的なデータベース設計
