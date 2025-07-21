@@ -41,17 +41,17 @@
 ![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
-- **Go (1.21)** - 2年/◎  
-  <small>Echo, Wire / 高性能マイクロサービスAPI開発、並行処理・goroutine活用</small>
+- **Go (1.21)** - 1.5年/◎  
+  <small>Echo, Wire / 高性能マイクロサービスAPI開発、goroutineによる大規模メール配信システム（SendGrid連携）</small>
   
-- **Kotlin** - 3年/◎  
+- **Kotlin** - 4年/◎  
   <small>Ktor, Exposed ORM / RESTful API・GraphQLサーバー構築、関数型プログラミング実践</small>
   
-- **Java (17)** - 4年/◎  
+- **Java (17)** - 3年/◎  
   <small>Spring Boot, Micronaut / 企業向け大規模Webアプリケーション開発</small>
   
 - **Python (3.11)** - 2年/◯  
-  <small>データ分析・バッチ処理・自動化ツール作成</small>
+  <small>データ分析・バッチ処理・自動化ツール作成、LangChain活用</small>
 
 ### 🌐 フロントエンド
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -61,10 +61,10 @@
 - **TypeScript (5.2)** - 3年/◎  
   <small>型安全性重視 / 大規模SPA開発で保守性向上</small>
   
-- **Vue.js/Nuxt.js** - 2年/◯  
+- **Vue.js/Nuxt.js** - 1.5年/◯  
   <small>SPA開発 / 管理画面・UIコンポーネント設計</small>
   
-- **React.js/Next.js** - 1年/◯  
+- **React.js/Next.js** - 3年/◎  
   <small>SSR/SSG</small>
 
 </td>
@@ -76,17 +76,17 @@
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Slack](https://img.shields.io/badge/-Slack-4A154B?style=flat-square&logo=slack&logoColor=white)
 
-- **AWS** - 3年/◎  
-  Lambda, Aurora, S3, DynamoDB / サーバーレスアーキテクチャ構築
+- **AWS** - 4年/◎  
+  <small>Lambda, Aurora, S3, DynamoDB / サーバーレスアーキテクチャ構築</small>
   
 - **Azure** - 2年/◯  
-  App Service, Functions / エンタープライズ系システム連携
+  <small>App Service, Functions / エンタープライズ系システム連携</small>
   
 - **Docker** - 3年/◯  
-  コンテナ化, IaC / 開発環境統一・デプロイ自動化
+  <small>コンテナ化, IaC / 開発環境統一・デプロイ自動化</small>
   
 - **Slack自動化** - 2年/◎  
-  Webhook, API / リリース通知・監視アラート・デプロイフロー改善
+  <small>Webhook, API / リリース通知・監視アラート・デプロイフロー改善</small>
 
 ### 🗄️ データベース・ミドルウェア
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
@@ -94,29 +94,39 @@
 ![Elasticsearch](https://img.shields.io/badge/-Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white)
 
 - **PostgreSQL/MySQL** - 5年/◎  
-  クエリ最適化, インデックス設計 / TB級大量データ処理の高速化
+  <small>クエリ最適化, インデックス設計 / TB級大量データ処理の高速化</small>
   
 - **Redis** - 1年/◯  
-  キャッシュ戦略, 差分処理(SDIFF) / 大規模セッション管理・リアルタイムデータ処理
+  <small>キャッシュ戦略, 差分処理(SDIFF) / 大規模セッション管理・リアルタイムデータ処理</small>
   
 - **ElasticSearch** - 1年/◯  
-  全文検索, クラスター構築 / 大規模検索インフラ・負荷分散設計
+  <small>全文検索, クラスター構築 / 大規模検索インフラ・負荷分散設計</small>
   
 - **DynamoDB** - 1.5年/◯  
-  NoSQL設計, パフォーマンス調整 / 数千万件のユーザーデータ管理
+  <small>NoSQL設計, パフォーマンス調整 / 数千万件のユーザーデータ管理</small>
   
 - **ビッグデータ基盤**  
-  FluentD・Logstashでのデータパイプライン構築、バッチ処理最適化
+  <small>Logstashでの検索データパイプライン構築、BigQueryによるKPIダッシュボード作成</small>
+
+### 🤖 AI・機械学習
+![LangChain](https://img.shields.io/badge/-LangChain-FF6600?style=flat-square&logo=chain&logoColor=white)
+![OpenAI](https://img.shields.io/badge/-OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+
+- **LangChain** - 2年/◎  
+  <small>AI処理パイプライン構築、プロンプトエンジニアリング、文書解析システム実装</small>
+  
+- **OpenAI API** - 2年/◎  
+  <small>GPT-4統合、ChatGPT API活用、各種PDF文書の構造化データ抽出</small>
 
 ### 🔗 CRM・SaaSプラットフォーム
 ![Salesforce](https://img.shields.io/badge/-Salesforce-00A1E0?style=flat-square&logo=salesforce&logoColor=white)
 ![Microsoft](https://img.shields.io/badge/-Dynamics_365-0078D4?style=flat-square&logo=microsoft&logoColor=white)
 
 - **MS Dynamics 365** - 1年/◯  
-  CRM連携, Web API / 営業支援システムとの統合開発
+  <small>CRM連携, Web API / 営業支援システムとの統合開発</small>
   
 - **Salesforce** - 1年/◯  
-  Sales Cloud, API連携 / BtoB営業プロセス自動化
+  <small>Sales Cloud, API連携 / BtoB営業プロセス自動化</small>
 
 </td>
 </tr>
@@ -179,7 +189,7 @@
 ---
 
 ### 🎵 **C社** ｜ フルスタックエンジニア
-`2023年8月 - 2025年5月` 
+`2023年8月 - 2024年12月` 
 
 #### 📱 **AI音声プラットフォーム開発プロジェクト**
 

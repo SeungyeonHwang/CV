@@ -14,7 +14,8 @@
 ## 技術スタック
 
 ```
-Java • Kotlin • Azure SDK • Microsoft Graph API • SalesForce API • Maven
+Java • Kotlin • Azure SDK • Azure Monitor • Log Analytics
+Microsoft Graph API • SalesForce API • Maven
 ```
 
 ---
@@ -70,6 +71,16 @@ Java • Kotlin • Azure SDK • Microsoft Graph API • SalesForce API • Mav
 | **インデックス戦略** | Bloom Filterによる高速検索 |
 | **キューイング** | バックプレッシャー制御で安定稼働 |
 | **障害対応** | Dead Letter Queue実装でデータロスト防止 |
+
+### 🔷 Azure監査ログ管理
+
+| 領域 | 実装内容 |
+|------|----------|
+| **Azure Monitor連携** | Azure Activity LogsとDiagnostic Logsの統合収集 |
+| **Log Analytics** | KQLによる高度なログクエリと分析 |
+| **監査ログ処理** | Azure ADサインインログ、リソース変更ログの収集・解析 |
+| **コンプライアンス対応** | 監査証跡の長期保管とレポート生成 |
+| **アラート設定** | 異常検知と自動通知システムの構築 |
 
 ---
 

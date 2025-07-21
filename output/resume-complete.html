@@ -200,18 +200,27 @@
     }
     /* スキルセットテーブル内のリスト項目フォントサイズ */
     h2#スキルセット + table ul li {
-      font-size: 7.5pt;  /* 8pt에서 축소 */
-      margin-bottom: 0.3em;
-      line-height: 1.4;
+      font-size: 8.5pt;  /* 메인 크기 유지 */
+      margin-bottom: 0.4em;
+      line-height: 1.3;
     }
-    /* 言語名の下の説明文のサイズをさらに縮小 */
-    h2#スキルセット + table ul li br + text,
-    h2#スキルセット + table ul li::after {
-      font-size: 7pt;
-    }
-    /* リスト内の強調部分は少し大きく */
+    /* リスト内の強調部分（言語名）は通常サイズ */
     h2#スキルセット + table ul li strong {
-      font-size: 8pt;
+      font-size: 8.5pt;
+    }
+    /* 言語説明部分（インデントされた2行目）を小さく */
+    h2#スキルセット + table ul li {
+      white-space: pre-line;
+    }
+    h2#スキルセット + table ul li::first-line {
+      font-size: 8.5pt;
+    }
+    /* small 태그 스타일 커스터마이즈 */
+    h2#スキルセット + table small {
+      font-size: 7.5pt;
+      color: #444;  /* 더 진한 회색 */
+      display: block;
+      margin-left: 0.5em;
     }
     /* 会社詳細情報（H1タイトル）の改ページ */
     h1#s社---ai連携企業材料データベース検索システム開発,
@@ -336,7 +345,7 @@ id="toc-数値成果インパクト-4">数値成果・インパクト</a></li>
 </ul>
 </nav>
 <h1 id="職務経歴書">職務経歴書</h1>
-<p><em><strong>作成日</strong>: 2025年07月20日</em></p>
+<p><em><strong>作成日</strong>: 2025年07月21日</em></p>
 <h2 id="黄-丞涓ファン-スンヨン">👨‍💻 黄 丞涓（ファン スンヨン）</h2>
 <p><strong>フルスタックエンジニア |
 Go・Kotlin・Java・TypeScript</strong></p>
@@ -383,16 +392,17 @@ alt="Kotlin" /> <img
 src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white"
 alt="Python" /></p>
 <ul>
-<li><p><strong>Go (1.21)</strong> - 2年/◎<br />
-Echo, Wire /
-高性能マイクロサービスAPI開発、並行処理・goroutine活用</p></li>
-<li><p><strong>Kotlin</strong> - 3年/◎<br />
-Ktor, Exposed ORM / RESTful
-API・GraphQLサーバー構築、関数型プログラミング実践</p></li>
-<li><p><strong>Java (17)</strong> - 4年/◎<br />
-Spring Boot, Micronaut / 企業向け大規模Webアプリケーション開発</p></li>
+<li><p><strong>Go (1.21)</strong> - 1.5年/◎<br />
+<small>Echo, Wire /
+高性能マイクロサービスAPI開発、goroutineによる大規模メール配信システム（SendGrid連携）</small></p></li>
+<li><p><strong>Kotlin</strong> - 4年/◎<br />
+<small>Ktor, Exposed ORM / RESTful
+API・GraphQLサーバー構築、関数型プログラミング実践</small></p></li>
+<li><p><strong>Java (17)</strong> - 3年/◎<br />
+<small>Spring Boot, Micronaut /
+企業向け大規模Webアプリケーション開発</small></p></li>
 <li><p><strong>Python (3.11)</strong> - 2年/◯<br />
-データ分析・バッチ処理・自動化ツール作成</p></li>
+<small>データ分析・バッチ処理・自動化ツール作成、LangChain活用</small></p></li>
 </ul>
 <h3 id="フロントエンド">🌐 フロントエンド</h3>
 <p><img
@@ -404,11 +414,11 @@ src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&amp;logo=react
 alt="React" /></p>
 <ul>
 <li><p><strong>TypeScript (5.2)</strong> - 3年/◎<br />
-型安全性重視 / 大規模SPA開発で保守性向上</p></li>
-<li><p><strong>Vue.js/Nuxt.js</strong> - 2年/◯<br />
-SPA開発 / 管理画面・UIコンポーネント設計</p></li>
-<li><p><strong>React.js/Next.js</strong> - 1年/◯<br />
-SSR/SSG</p></li>
+<small>型安全性重視 / 大規模SPA開発で保守性向上</small></p></li>
+<li><p><strong>Vue.js/Nuxt.js</strong> - 1.5年/◯<br />
+<small>SPA開発 / 管理画面・UIコンポーネント設計</small></p></li>
+<li><p><strong>React.js/Next.js</strong> - 3年/◎<br />
+<small>SSR/SSG</small></p></li>
 </ul>
 </td>
 <td valign="top" width="50%">
@@ -423,14 +433,17 @@ alt="Docker" /> <img
 src="https://img.shields.io/badge/-Slack-4A154B?style=flat-square&amp;logo=slack&amp;logoColor=white"
 alt="Slack" /></p>
 <ul>
-<li><p><strong>AWS</strong> - 3年/◎<br />
-Lambda, Aurora, S3, DynamoDB / サーバーレスアーキテクチャ構築</p></li>
+<li><p><strong>AWS</strong> - 4年/◎<br />
+<small>Lambda, Aurora, S3, DynamoDB /
+サーバーレスアーキテクチャ構築</small></p></li>
 <li><p><strong>Azure</strong> - 2年/◯<br />
-App Service, Functions / エンタープライズ系システム連携</p></li>
+<small>App Service, Functions /
+エンタープライズ系システム連携</small></p></li>
 <li><p><strong>Docker</strong> - 3年/◯<br />
-コンテナ化, IaC / 開発環境統一・デプロイ自動化</p></li>
+<small>コンテナ化, IaC / 開発環境統一・デプロイ自動化</small></p></li>
 <li><p><strong>Slack自動化</strong> - 2年/◎<br />
-Webhook, API / リリース通知・監視アラート・デプロイフロー改善</p></li>
+<small>Webhook, API /
+リリース通知・監視アラート・デプロイフロー改善</small></p></li>
 </ul>
 <h3 id="データベースミドルウェア">🗄️ データベース・ミドルウェア</h3>
 <p><img
@@ -442,16 +455,32 @@ src="https://img.shields.io/badge/-Elasticsearch-005571?style=flat-square&amp;lo
 alt="Elasticsearch" /></p>
 <ul>
 <li><p><strong>PostgreSQL/MySQL</strong> - 5年/◎<br />
-クエリ最適化, インデックス設計 / TB級大量データ処理の高速化</p></li>
+<small>クエリ最適化, インデックス設計 /
+TB級大量データ処理の高速化</small></p></li>
 <li><p><strong>Redis</strong> - 1年/◯<br />
-キャッシュ戦略, 差分処理(SDIFF) /
-大規模セッション管理・リアルタイムデータ処理</p></li>
+<small>キャッシュ戦略, 差分処理(SDIFF) /
+大規模セッション管理・リアルタイムデータ処理</small></p></li>
 <li><p><strong>ElasticSearch</strong> - 1年/◯<br />
-全文検索, クラスター構築 / 大規模検索インフラ・負荷分散設計</p></li>
+<small>全文検索, クラスター構築 /
+大規模検索インフラ・負荷分散設計</small></p></li>
 <li><p><strong>DynamoDB</strong> - 1.5年/◯<br />
-NoSQL設計, パフォーマンス調整 / 数千万件のユーザーデータ管理</p></li>
+<small>NoSQL設計, パフォーマンス調整 /
+数千万件のユーザーデータ管理</small></p></li>
 <li><p><strong>ビッグデータ基盤</strong><br />
-FluentD・Logstashでのデータパイプライン構築、バッチ処理最適化</p></li>
+<small>Logstashでの検索データパイプライン構築、BigQueryによるKPIダッシュボード作成</small></p></li>
+</ul>
+<h3 id="ai機械学習">🤖 AI・機械学習</h3>
+<p><img
+src="https://img.shields.io/badge/-LangChain-FF6600?style=flat-square&amp;logo=chain&amp;logoColor=white"
+alt="LangChain" /> <img
+src="https://img.shields.io/badge/-OpenAI-412991?style=flat-square&amp;logo=openai&amp;logoColor=white"
+alt="OpenAI" /></p>
+<ul>
+<li><p><strong>LangChain</strong> - 2年/◎<br />
+<small>AI処理パイプライン構築、プロンプトエンジニアリング、文書解析システム実装</small></p></li>
+<li><p><strong>OpenAI API</strong> - 2年/◎<br />
+<small>GPT-4統合、ChatGPT
+API活用、各種PDF文書の構造化データ抽出</small></p></li>
 </ul>
 <h3 id="crmsaasプラットフォーム">🔗 CRM・SaaSプラットフォーム</h3>
 <p><img
@@ -461,9 +490,9 @@ src="https://img.shields.io/badge/-Dynamics_365-0078D4?style=flat-square&amp;log
 alt="Microsoft" /></p>
 <ul>
 <li><p><strong>MS Dynamics 365</strong> - 1年/◯<br />
-CRM連携, Web API / 営業支援システムとの統合開発</p></li>
+<small>CRM連携, Web API / 営業支援システムとの統合開発</small></p></li>
 <li><p><strong>Salesforce</strong> - 1年/◯<br />
-Sales Cloud, API連携 / BtoB営業プロセス自動化</p></li>
+<small>Sales Cloud, API連携 / BtoB営業プロセス自動化</small></p></li>
 </ul>
 </td>
 </tr>
@@ -545,7 +574,7 @@ DataLoader</strong>パターンでN+1問題解決、API応答性能を大幅改�
 <hr />
 <h3 id="c社-フルスタックエンジニア">🎵 <strong>C社</strong> ｜
 フルスタックエンジニア</h3>
-<p><code>2023年8月 - 2025年5月</code></p>
+<p><code>2023年8月 - 2024年12月</code></p>
 <h4 id="ai音声プラットフォーム開発プロジェクト">📱
 <strong>AI音声プラットフォーム開発プロジェクト</strong></h4>
 <p><strong>🎯 主要成果:</strong></p>
@@ -829,7 +858,7 @@ OCR</strong>、<strong>高度な検索システム</strong>、<strong>文書自�
 </tr>
 </tbody>
 </table>
-<h4 id="elasticsearch大規模検索基盤">🔍 Elasticsearch大規模検索基盤</h4>
+<h4 id="高度検索システムの実装計画">🔍 高度検索システムの実装計画</h4>
 <table>
 <colgroup>
 <col style="width: 27%" />
@@ -843,28 +872,20 @@ OCR</strong>、<strong>高度な検索システム</strong>、<strong>文書自�
 </thead>
 <tbody>
 <tr>
-<td><strong>インデックス設計</strong></td>
-<td>数千万件の企業・材料データの効率的なインデックス構造設計</td>
+<td><strong>検索基盤設計</strong></td>
+<td>PostgreSQL全文検索機能を活用した初期実装</td>
 </tr>
 <tr>
-<td><strong>クラスター活用</strong></td>
-<td>3ノード構成のElasticsearchを活用、シャード最適化で検索速度50%向上</td>
+<td><strong>将来的な拡張計画</strong></td>
+<td>トラフィック増加に応じてElasticsearch導入を検討</td>
 </tr>
 <tr>
-<td><strong>検索クエリ最適化</strong></td>
-<td>Bool Query、Aggregation活用による複雑な検索要件の実現</td>
+<td><strong>現在の最適化</strong></td>
+<td>PostgreSQLインデックス最適化、クエリチューニング</td>
 </tr>
 <tr>
-<td><strong>スケーラビリティ</strong></td>
-<td>水平スケーリング対応、月間1億クエリ処理を実現</td>
-</tr>
-<tr>
-<td><strong>日本語検索最適化</strong></td>
-<td>kuromoji形態素解析による高精度検索</td>
-</tr>
-<tr>
-<td><strong>パフォーマンスチューニング</strong></td>
-<td>クエリキャッシュ・フィルターキャッシュで応答速度改善</td>
+<td><strong>日本語対応</strong></td>
+<td>pg_bigmによる日本語全文検索対応</td>
 </tr>
 </tbody>
 </table>
@@ -918,6 +939,8 @@ Actions、自動テスト・デプロイ</li>
 による品質担保</li>
 <li><strong>監視・ログ</strong>:
 構造化ログ、エラートラッキング、パフォーマンス監視</li>
+<li><strong>Slack自動化</strong>:
+GitHub連携による自動通知、リリース通知、監視アラート、ビルド結果通知</li>
 </ul>
 <hr />
 <h2 id="数値成果インパクト">数値成果・インパクト</h2>
@@ -958,7 +981,7 @@ class="sourceCode diff"><code class="sourceCode diff"><span id="cb1-1"><a href="
 </tr>
 <tr>
 <td><strong>月間クエリ数</strong></td>
-<td>1億クエリ処理</td>
+<td>500万クエリ処理（現在）、拡張計画中</td>
 </tr>
 </tbody>
 </table>
@@ -979,7 +1002,7 @@ AI音声プラットフォーム開発</h1>
 <tbody>
 <tr>
 <td><strong>期間</strong></td>
-<td>2023年8月 - 2025年5月</td>
+<td>2023年8月 - 2024年12月</td>
 </tr>
 <tr>
 <td><strong>職種</strong></td>
@@ -1075,7 +1098,7 @@ AI音声プラットフォーム開発</h1>
 <tbody>
 <tr>
 <td><strong>サービス分割</strong></td>
-<td>認証、音声生成、課金、通知の4つの独立サービス</td>
+<td>認証、音声生成、課金、通知、メール配信の5つの独立サービス</td>
 </tr>
 <tr>
 <td><strong>サービス間通信</strong></td>
@@ -1146,6 +1169,15 @@ Go言語による高性能バックエンド実装</h3>
 <td><strong>並行処理最適化</strong></td>
 <td>Goroutines +
 Channelsによる音声処理パイプライン（10,000並行処理）</td>
+</tr>
+<tr>
+<td><strong>大規模メール配信</strong></td>
+<td>SendGrid
+API連携、goroutineによるバッチ処理（100万通/時間のスループット）</td>
+</tr>
+<tr>
+<td><strong>スケジューリング</strong></td>
+<td>cron風スケジューラー実装、配信時間最適化アルゴリズム</td>
 </tr>
 <tr>
 <td><strong>メモリ効率化</strong></td>
@@ -1257,6 +1289,10 @@ Channelsによる音声処理パイプライン（10,000並行処理）</td>
 <td><strong>Blue/Greenデプロイ</strong></td>
 <td>ダウンタイムゼロのリリース戦略</td>
 </tr>
+<tr>
+<td><strong>Slack自動化</strong></td>
+<td>GitHub連携、デプロイ通知、監視アラート、エラー通知の自動化</td>
+</tr>
 </tbody>
 </table>
 <h2 id="技術的な工夫改善-1">技術的な工夫・改善</h2>
@@ -1309,7 +1345,8 @@ class="sourceCode diff"><code class="sourceCode diff"><span id="cb2-1"><a href="
 </table>
 <hr />
 <h2 id="技術スタック-2">技術スタック</h2>
-<pre><code>Java • Kotlin • Azure SDK • Microsoft Graph API • SalesForce API • Maven</code></pre>
+<pre><code>Java • Kotlin • Azure SDK • Azure Monitor • Log Analytics
+Microsoft Graph API • SalesForce API • Maven</code></pre>
 <hr />
 <h2 id="プロジェクト概要-2">プロジェクト概要</h2>
 <blockquote>
@@ -1427,6 +1464,41 @@ class="sourceCode diff"><code class="sourceCode diff"><span id="cb2-1"><a href="
 <tr>
 <td><strong>障害対応</strong></td>
 <td>Dead Letter Queue実装でデータロスト防止</td>
+</tr>
+</tbody>
+</table>
+<h3 id="azure監査ログ管理">🔷 Azure監査ログ管理</h3>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr>
+<th>領域</th>
+<th>実装内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Azure Monitor連携</strong></td>
+<td>Azure Activity LogsとDiagnostic Logsの統合収集</td>
+</tr>
+<tr>
+<td><strong>Log Analytics</strong></td>
+<td>KQLによる高度なログクエリと分析</td>
+</tr>
+<tr>
+<td><strong>監査ログ処理</strong></td>
+<td>Azure ADサインインログ、リソース変更ログの収集・解析</td>
+</tr>
+<tr>
+<td><strong>コンプライアンス対応</strong></td>
+<td>監査証跡の長期保管とレポート生成</td>
+</tr>
+<tr>
+<td><strong>アラート設定</strong></td>
+<td>異常検知と自動通知システムの構築</td>
 </tr>
 </tbody>
 </table>
@@ -1603,7 +1675,8 @@ APIによる営業データ統合</li>
 </tr>
 </tbody>
 </table>
-<h3 id="redis大規模キャッシュ基盤">🔴 Redis大規模キャッシュ基盤</h3>
+<h3 id="redis活用による差分処理最適化">🔴
+Redis活用による差分処理最適化</h3>
 <table>
 <colgroup>
 <col style="width: 37%" />
@@ -1617,28 +1690,24 @@ APIによる営業データ統合</li>
 </thead>
 <tbody>
 <tr>
-<td><strong>クラスター活用</strong></td>
-<td>6ノード Redis Clusterを活用した大規模キャッシュ実装</td>
+<td><strong>SDIFF活用</strong></td>
+<td>キーの差分処理機能を使用してDB処理をメモリ上で実行</td>
+</tr>
+<tr>
+<td><strong>処理高速化</strong></td>
+<td>データベース負荷を大幅削減、処理の安定性向上</td>
+</tr>
+<tr>
+<td><strong>バッチ処理最適化</strong></td>
+<td>大容量データの差分比較を効率的に実装</td>
 </tr>
 <tr>
 <td><strong>メモリ管理</strong></td>
-<td>100GBメモリ、LRU eviction戦略</td>
+<td>適切なTTL設定による効率的なメモリ使用</td>
 </tr>
 <tr>
-<td><strong>パイプライニング</strong></td>
-<td>バッチ処理で10倍のスループット向上</td>
-</tr>
-<tr>
-<td><strong>Lua Script活用</strong></td>
-<td>アトミックな複雑処理の実現</td>
-</tr>
-<tr>
-<td><strong>パブサブ機能</strong></td>
-<td>リアルタイム通知システム構築</td>
-</tr>
-<tr>
-<td><strong>永続化戦略</strong></td>
-<td>AOF + RDB併用で高耐久性実現</td>
+<td><strong>エラーハンドリング</strong></td>
+<td>フォールバック処理により障害時も継続処理可能</td>
 </tr>
 </tbody>
 </table>

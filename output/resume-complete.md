@@ -1,6 +1,6 @@
 # 職務経歴書
 
-_**作成日**: 2025年07月20日_
+_**作成日**: 2025年07月21日_
 
 
 
@@ -58,17 +58,17 @@ _**作成日**: 2025年07月20日_
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
 
-- **Go (1.21)** - 2年/◎  
-  Echo, Wire / 高性能マイクロサービスAPI開発、並行処理・goroutine活用
+- **Go (1.21)** - 1.5年/◎  
+  <small>Echo, Wire / 高性能マイクロサービスAPI開発、goroutineによる大規模メール配信システム（SendGrid連携）</small>
   
-- **Kotlin** - 3年/◎  
-  Ktor, Exposed ORM / RESTful API・GraphQLサーバー構築、関数型プログラミング実践
+- **Kotlin** - 4年/◎  
+  <small>Ktor, Exposed ORM / RESTful API・GraphQLサーバー構築、関数型プログラミング実践</small>
   
-- **Java (17)** - 4年/◎  
-  Spring Boot, Micronaut / 企業向け大規模Webアプリケーション開発
+- **Java (17)** - 3年/◎  
+  <small>Spring Boot, Micronaut / 企業向け大規模Webアプリケーション開発</small>
   
 - **Python (3.11)** - 2年/◯  
-  データ分析・バッチ処理・自動化ツール作成
+  <small>データ分析・バッチ処理・自動化ツール作成、LangChain活用</small>
 
 
 ### 🌐 フロントエンド
@@ -78,13 +78,13 @@ _**作成日**: 2025年07月20日_
 
 
 - **TypeScript (5.2)** - 3年/◎  
-  型安全性重視 / 大規模SPA開発で保守性向上
+  <small>型安全性重視 / 大規模SPA開発で保守性向上</small>
   
-- **Vue.js/Nuxt.js** - 2年/◯  
-  SPA開発 / 管理画面・UIコンポーネント設計
+- **Vue.js/Nuxt.js** - 1.5年/◯  
+  <small>SPA開発 / 管理画面・UIコンポーネント設計</small>
   
-- **React.js/Next.js** - 1年/◯  
-  SSR/SSG
+- **React.js/Next.js** - 3年/◎  
+  <small>SSR/SSG</small>
 
 
 </td>
@@ -98,17 +98,17 @@ _**作成日**: 2025年07月20日_
 ![Slack](https://img.shields.io/badge/-Slack-4A154B?style=flat-square&logo=slack&logoColor=white)
 
 
-- **AWS** - 3年/◎  
-  Lambda, Aurora, S3, DynamoDB / サーバーレスアーキテクチャ構築
+- **AWS** - 4年/◎  
+  <small>Lambda, Aurora, S3, DynamoDB / サーバーレスアーキテクチャ構築</small>
   
 - **Azure** - 2年/◯  
-  App Service, Functions / エンタープライズ系システム連携
+  <small>App Service, Functions / エンタープライズ系システム連携</small>
   
 - **Docker** - 3年/◯  
-  コンテナ化, IaC / 開発環境統一・デプロイ自動化
+  <small>コンテナ化, IaC / 開発環境統一・デプロイ自動化</small>
   
 - **Slack自動化** - 2年/◎  
-  Webhook, API / リリース通知・監視アラート・デプロイフロー改善
+  <small>Webhook, API / リリース通知・監視アラート・デプロイフロー改善</small>
 
 
 ### 🗄️ データベース・ミドルウェア
@@ -118,19 +118,31 @@ _**作成日**: 2025年07月20日_
 
 
 - **PostgreSQL/MySQL** - 5年/◎  
-  クエリ最適化, インデックス設計 / TB級大量データ処理の高速化
+  <small>クエリ最適化, インデックス設計 / TB級大量データ処理の高速化</small>
   
 - **Redis** - 1年/◯  
-  キャッシュ戦略, 差分処理(SDIFF) / 大規模セッション管理・リアルタイムデータ処理
+  <small>キャッシュ戦略, 差分処理(SDIFF) / 大規模セッション管理・リアルタイムデータ処理</small>
   
 - **ElasticSearch** - 1年/◯  
-  全文検索, クラスター構築 / 大規模検索インフラ・負荷分散設計
+  <small>全文検索, クラスター構築 / 大規模検索インフラ・負荷分散設計</small>
   
 - **DynamoDB** - 1.5年/◯  
-  NoSQL設計, パフォーマンス調整 / 数千万件のユーザーデータ管理
+  <small>NoSQL設計, パフォーマンス調整 / 数千万件のユーザーデータ管理</small>
   
 - **ビッグデータ基盤**  
-  FluentD・Logstashでのデータパイプライン構築、バッチ処理最適化
+  <small>Logstashでの検索データパイプライン構築、BigQueryによるKPIダッシュボード作成</small>
+
+
+### 🤖 AI・機械学習
+![LangChain](https://img.shields.io/badge/-LangChain-FF6600?style=flat-square&logo=chain&logoColor=white)
+![OpenAI](https://img.shields.io/badge/-OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+
+
+- **LangChain** - 2年/◎  
+  <small>AI処理パイプライン構築、プロンプトエンジニアリング、文書解析システム実装</small>
+  
+- **OpenAI API** - 2年/◎  
+  <small>GPT-4統合、ChatGPT API活用、各種PDF文書の構造化データ抽出</small>
 
 
 ### 🔗 CRM・SaaSプラットフォーム
@@ -139,10 +151,10 @@ _**作成日**: 2025年07月20日_
 
 
 - **MS Dynamics 365** - 1年/◯  
-  CRM連携, Web API / 営業支援システムとの統合開発
+  <small>CRM連携, Web API / 営業支援システムとの統合開発</small>
   
 - **Salesforce** - 1年/◯  
-  Sales Cloud, API連携 / BtoB営業プロセス自動化
+  <small>Sales Cloud, API連携 / BtoB営業プロセス自動化</small>
 
 
 </td>
@@ -224,7 +236,7 @@ _**作成日**: 2025年07月20日_
 
 
 ### 🎵 **C社** ｜ フルスタックエンジニア
-`2023年8月 - 2025年5月` 
+`2023年8月 - 2024年12月` 
 
 
 #### 📱 **AI音声プラットフォーム開発プロジェクト**
@@ -484,16 +496,14 @@ syhwang.web@gmail.com
 | **リアルタイム候補表示** | 入力補完・検索提案システム |
 | **複合条件検索** | 企業属性・材料特性の多次元フィルタリング |
 
-#### 🔍 Elasticsearch大規模検索基盤
+#### 🔍 高度検索システムの実装計画
 
 | 機能 | 技術・実装内容 |
 |------|----------------|
-| **インデックス設計** | 数千万件の企業・材料データの効率的なインデックス構造設計 |
-| **クラスター活用** | 3ノード構成のElasticsearchを活用、シャード最適化で検索速度50%向上 |
-| **検索クエリ最適化** | Bool Query、Aggregation活用による複雑な検索要件の実現 |
-| **スケーラビリティ** | 水平スケーリング対応、月間1億クエリ処理を実現 |
-| **日本語検索最適化** | kuromoji形態素解析による高精度検索 |
-| **パフォーマンスチューニング** | クエリキャッシュ・フィルターキャッシュで応答速度改善 |
+| **検索基盤設計** | PostgreSQL全文検索機能を活用した初期実装 |
+| **将来的な拡張計画** | トラフィック増加に応じてElasticsearch導入を検討 |
+| **現在の最適化** | PostgreSQLインデックス最適化、クエリチューニング |
+| **日本語対応** | pg_bigmによる日本語全文検索対応 |
 
 ### 🏗️ フルスタックアーキテクチャ設計
 
@@ -525,6 +535,7 @@ syhwang.web@gmail.com
 - **CI/CD構築**: GitHub Actions、自動テスト・デプロイ
 - **コード品質**: ESLint、Prettier、detekt による品質担保
 - **監視・ログ**: 構造化ログ、エラートラッキング、パフォーマンス監視
+- **Slack自動化**: GitHub連携による自動通知、リリース通知、監視アラート、ビルド結果通知
 
 ---
 
@@ -547,7 +558,7 @@ syhwang.web@gmail.com
 | **同時接続数** | ピーク時10,000リクエスト/秒を処理 |
 | **データ取込速度** | 50,000件/分のバッチ処理 |
 | **システム稼働率** | 安定稼働を継続 |
-| **月間クエリ数** | 1億クエリ処理 |
+| **月間クエリ数** | 500万クエリ処理（現在）、拡張計画中 |
 
 # 🎵 C社 - AI音声プラットフォーム開発
 
@@ -555,7 +566,7 @@ syhwang.web@gmail.com
 
 | 項目 | 詳細 |
 |------|------|
-| **期間** | 2023年8月 - 2025年5月 |
+| **期間** | 2023年8月 - 2024年12月 |
 | **職種** | フルスタックエンジニア |
 | **チーム規模** | 10名（エンジニア8名、デザイナー1名、PM1名） |
 | **役割** | 独立開発者 - 企画・バックエンド・決済システム・運用まで一人で担当 |
@@ -625,7 +636,7 @@ syhwang.web@gmail.com
 
 | 領域 | 実装内容 |
 |------|----------|
-| **サービス分割** | 認証、音声生成、課金、通知の4つの独立サービス |
+| **サービス分割** | 認証、音声生成、課金、通知、メール配信の5つの独立サービス |
 | **サービス間通信** | gRPCによる高速通信（Protocol Buffers） |
 | **サーキットブレーカー** | 障害時の自動フェイルオーバー、リトライ制御 |
 | **分散トレーシング** | AWS X-Rayによる全体パフォーマンス監視 |
@@ -650,6 +661,8 @@ syhwang.web@gmail.com
 | 技術領域 | 実装内容 |
 |----------|----------|
 | **並行処理最適化** | Goroutines + Channelsによる音声処理パイプライン（10,000並行処理） |
+| **大規模メール配信** | SendGrid API連携、goroutineによるバッチ処理（100万通/時間のスループット） |
+| **スケジューリング** | cron風スケジューラー実装、配信時間最適化アルゴリズム |
 | **メモリ効率化** | sync.Poolによるオブジェクト再利用、GCチューニング |
 | **高速API実装** | Echo + middleware最適化で平均レイテンシ20ms達成 |
 | **プロファイリング** | pprof導入による継続的パフォーマンス改善 |
@@ -685,6 +698,7 @@ syhwang.web@gmail.com
 | **ログ管理** | 構造化ログ + CloudWatch Logsによる集中管理 |
 | **テスト自動化** | 単体・結合・E2Eテストの自動実行 |
 | **Blue/Greenデプロイ** | ダウンタイムゼロのリリース戦略 |
+| **Slack自動化** | GitHub連携、デプロイ通知、監視アラート、エラー通知の自動化 |
 
 ## 技術的な工夫・改善
 
@@ -723,7 +737,8 @@ syhwang.web@gmail.com
 ## 技術スタック
 
 ```
-Java • Kotlin • Azure SDK • Microsoft Graph API • SalesForce API • Maven
+Java • Kotlin • Azure SDK • Azure Monitor • Log Analytics
+Microsoft Graph API • SalesForce API • Maven
 ```
 
 ---
@@ -779,6 +794,16 @@ Java • Kotlin • Azure SDK • Microsoft Graph API • SalesForce API • Mav
 | **インデックス戦略** | Bloom Filterによる高速検索 |
 | **キューイング** | バックプレッシャー制御で安定稼働 |
 | **障害対応** | Dead Letter Queue実装でデータロスト防止 |
+
+### 🔷 Azure監査ログ管理
+
+| 領域 | 実装内容 |
+|------|----------|
+| **Azure Monitor連携** | Azure Activity LogsとDiagnostic Logsの統合収集 |
+| **Log Analytics** | KQLによる高度なログクエリと分析 |
+| **監査ログ処理** | Azure ADサインインログ、リソース変更ログの収集・解析 |
+| **コンプライアンス対応** | 監査証跡の長期保管とレポート生成 |
+| **アラート設定** | 異常検知と自動通知システムの構築 |
 
 ---
 
@@ -925,16 +950,15 @@ MS Dynamics 365 • Salesforce • CRM連携
 | **検索最適化** | Fuzzy Query・Synonyms対応で検索精度向上 |
 | **インデックス管理** | Index Lifecycle Managementで自動最適化 |
 
-### 🔴 Redis大規模キャッシュ基盤
+### 🔴 Redis活用による差分処理最適化
 
 | 領域 | 実装内容 |
 |------|----------|
-| **クラスター活用** | 6ノード Redis Clusterを活用した大規模キャッシュ実装 |
-| **メモリ管理** | 100GBメモリ、LRU eviction戦略 |
-| **パイプライニング** | バッチ処理で10倍のスループット向上 |
-| **Lua Script活用** | アトミックな複雑処理の実現 |
-| **パブサブ機能** | リアルタイム通知システム構築 |
-| **永続化戦略** | AOF + RDB併用で高耐久性実現 |
+| **SDIFF活用** | キーの差分処理機能を使用してDB処理をメモリ上で実行 |
+| **処理高速化** | データベース負荷を大幅削減、処理の安定性向上 |
+| **バッチ処理最適化** | 大容量データの差分比較を効率的に実装 |
+| **メモリ管理** | 適切なTTL設定による効率的なメモリ使用 |
+| **エラーハンドリング** | フォールバック処理により障害時も継続処理可能 |
 
 </td>
 </tr>

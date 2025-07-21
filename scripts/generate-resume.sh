@@ -283,13 +283,12 @@ if command -v pandoc &> /dev/null; then
     h2#スキルセット + table ul li::first-line {
       font-size: 8.5pt;
     }
-    /* Markdownの인덴트된 부분을 작게 표시 */
-    h2#スキルセット + table ul ul li,
-    h2#スキルセット + table ul li > br + *,
-    h2#スキルセット + table ul li > p {
-      font-size: 7pt !important;
-      color: #555;
-      margin-left: 1em;
+    /* small 태그 스타일 커스터마이즈 */
+    h2#スキルセット + table small {
+      font-size: 7.5pt;
+      color: #444;  /* 더 진한 회색 */
+      display: block;
+      margin-left: 0.5em;
     }
     /* 会社詳細情報（H1タイトル）の改ページ */
     h1#s社---ai連携企業材料データベース検索システム開発,
